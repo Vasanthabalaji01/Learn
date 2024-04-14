@@ -37,6 +37,8 @@ Collection of learning and Project's.
   - Docker
   - K8S
   - Jenkins
+  - Grafana
+  - Promethens
 
 # Security
   - VAPT
@@ -46,5 +48,5 @@ Collection of learning and Project's.
   - Tool's
 
 # Additional
-  - figma
+  - Figma
   - VScode
