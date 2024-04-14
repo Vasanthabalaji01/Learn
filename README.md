@@ -50,3 +50,4 @@ Collection of learning and Project's.
 # Additional
   - Figma
   - VScode
+  - Putty
