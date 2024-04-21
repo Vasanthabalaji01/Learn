@@ -20,9 +20,16 @@ Collection of learning and Project's.
   - Git
 
 # Database
+
+ **SQL**
   - Mysql
-  - Mongo DB
+  - Microsoft SQL Server
   - SQlite
+    
+ **No SQL**
+  - Mongo DB
+  - Dynamo DB
+  
 
 # [Webservers](https://github.com/Vasanthabalaji01/Webservers/blob/bac745fad06248c28c3fbac3c0f03fe57cb92a64/README.md)
   - Apache
