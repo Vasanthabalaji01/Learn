@@ -27,6 +27,7 @@ Collection of learning and Project's.
 # Webservers
   - Apache
   - NGINX
+  - Windows server
 
 # Cloud
   - Azure
