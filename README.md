@@ -7,12 +7,12 @@ Collection of learning and Project's.
   - Networking Commands
   - Bash Scripting
 
-# [Networking](https://github.com/Vasanthabalaji01/Networking/blob/a0043be548e625a6e1a04b26292632e4d281f8b7/README.md) 
+# [Network](https://github.com/Vasanthabalaji01/Networking/blob/a0043be548e625a6e1a04b26292632e4d281f8b7/README.md) 
   - Protocol/Port
   - Network Arcitecture
   - Tool's
 
-# Programming
+# [Codeing](https://github.com/Vasanthabalaji01/Coding/blob/fa4e8e1050fb7f350e2cad3dd5cffbf8ba8fde44/README.md)
   - Python
   - React
   - Node
