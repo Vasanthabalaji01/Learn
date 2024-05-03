@@ -12,7 +12,7 @@ Collection of learning and Project's.
   - Network Arcitecture
   - Tool's
 
-# [Codeing]()
+# [Code]()
   - Python
   - React
   - Node
