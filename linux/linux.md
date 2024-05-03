@@ -1,6 +1,6 @@
 # Linux 
 
-# [Linux Basics](linux/basics/basics.md)
+# [Linux Basics](basics/basics.md)
 
 - **Installation**
 - **Text Manipulation**
@@ -22,7 +22,7 @@
 
 For more in-depth learning, consider checking out the book [Linux Basics for Hackers](https://nostarch.com/linuxbasicsforhackers).
 
-# [List of Linux Commands](linux/commands/commands.md)
+# [List of Linux Commands](commands/commands.md)
 
 - List of commonly used Linux commands.
 
@@ -35,7 +35,7 @@ For more in-depth learning, consider checking out the book [Linux Basics for Hac
   - **Advanced Topics**
   - **Bash Scripting with Real-Time Task's 1-10**
 
-# [Project's](linux/project/project.md)
+# [Project's](project/project.md)
 
 - [x] [**Mini Cloud CLI Tool**](https://github.com/Vasanthabalaji01/MiniCloudCLI)
 - [ ] .
