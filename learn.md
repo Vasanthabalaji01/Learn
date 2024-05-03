@@ -29,7 +29,7 @@
   - Dynamo DB
   
 
-# [Webservers](webserver/webservers.md)
+# [Webserver](webserver/webserver.md)
   - Apache
   - NGINX
   - Windows server
