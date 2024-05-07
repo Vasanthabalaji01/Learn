@@ -34,16 +34,20 @@ Learn the basic steps to create and run a Bash script.
    
    This command will open the `vi` editor with a new file named `myscript.sh`.
 
+![Example](bash_snap/1.png)
+
 2. **Write Your Script**: Once the file is opened in `vi`, you can start writing your Bash commands. Press `i` to enter insert mode, then start typing your script. Here's a simple example:
 
    ```bash
    #!/bin/bash
    
    # This is a simple Bash script
-   echo "Hello, World!"
+   echo "Hello, Bash World!"
    ```
 
    After writing your script, press `Esc` to exit insert mode, then type `:wq` and press `Enter` to save and exit `vi`.
+
+![Example](bash_snap/2.png)
 
 3. **Set Execution Permission**: Make the script executable using the `chmod` command:
    
@@ -53,6 +57,8 @@ Learn the basic steps to create and run a Bash script.
 
    This command gives execute permission to the script file.
 
+![Example](bash_snap/3.png)
+
 4. **Run the Script**: Execute the script using `./` followed by the script name:
    
    ```bash
@@ -60,6 +66,8 @@ Learn the basic steps to create and run a Bash script.
    ```
 
    This command runs the script, and you should see the output "Hello, World!" printed in the terminal.
+
+![Example](bash_snap/4.png)
 
 By following these steps and using the `vi` editor, you can easily create and run Bash scripts to automate tasks or perform various operations in the Linux environment.
 
@@ -77,10 +85,12 @@ Variables in Bash are used to store data such as strings, numbers, or other valu
 Variables in Bash are typically declared by assigning a value to them. Unlike some other programming languages, you don't need to specify a data type for a variable in Bash. Here's a simple example:
 
  ```bash
-name="John"
-age=30
+name="vasanth"
+date=24-04-2024
 ```
-In this example, name is assigned the string value "John", and age is assigned the numeric value 30.
+In this example, name is assigned the string value "vasanth", and date is assigned the numeric value 24-04-2024.
+
+![Example](bash_snap/var_declaration.png)
 
 #### Variable Naming Convention
 When naming variables in Bash, it's recommended to use descriptive names that reflect their purpose. Variable names can consist of letters, numbers, and underscores (_), but they must start with a letter or an underscore. Additionally, variable names are case-sensitive.
@@ -90,13 +100,19 @@ You can reference the value of a variable using the $ symbol followed by the var
 
 ```bash
 echo "Name: $name"
-echo "Age: $age"
+echo "date: $date"
+```
 
+![Example](bash_snap/var_usage.png)
+
+```bash
 This will output:
 
-Name: John
-Age: 30
+Name:vasanth
+date:24-04-2024
 ```
+
+![Example](bash_snap/var_usage_op.png)
 
 #### Read-Only Variables
 You can declare a variable as read-only using the readonly command. Once a variable is marked as read-only, its value cannot be changed. Here's an example:
@@ -105,6 +121,7 @@ You can declare a variable as read-only using the readonly command. Once a varia
 readonly readonly_var="This variable is read-only"
 readonly_var="New value" # This will result in an error
 ```
+![Example](bash_snap/var_readonly.png)
 
 #### Environment Variables
 Bash also provides access to environment variables, which are variables that are predefined by the operating system or the shell itself. You can access environment variables using the $ symbol followed by the variable name. For example:
@@ -113,6 +130,9 @@ Bash also provides access to environment variables, which are variables that are
 echo "Home directory: $HOME"
 echo "Current user: $USER"
 ```
+
+![Example](bash_snap/env_var.png)
+
 These commands will display the home directory and the current user, respectively.
 
 use variables in Bash is fundamental for writing effective scripts. They allow you to store and manipulate data dynamically, making your scripts more versatile and powerful.
@@ -137,9 +157,10 @@ Here's an example of defining a simple function called `greet`:
 
 ```bash
 greet() {
-    echo "Hello, World!"
+    echo "Hello, Bash World!"
 }
 ```
+![Example](bash_snap/function_declaration.png)
 
 #### Calling Functions
 
@@ -148,6 +169,7 @@ Once a function is defined, you can call it by simply typing its name followed b
 ```bash
 greet
 ```
+![Example](bash_snap/function_call.png)
 
 #### Passing Arguments to Functions
 
@@ -159,10 +181,14 @@ greet() {
 }
 
 # Call the function with an argument
-greet "John"
+greet "i'm Mr.Cloud Explorer"
 ```
 
-This will output "Hello, John!".
+![Example](bash_snap/pass_arg_to_function.png)
+
+This will output "Hello, i'm Mr.Cloud Explorer!".
+
+![Example](bash_snap/pass_arg_to_function_op.png)
 
 #### Returning Values from Functions
 
@@ -180,8 +206,11 @@ sum=$?
 
 echo "The sum is $sum"
 ```
+![Example](bash_snap/retuen_val_function.png)
 
 This will output "The sum is 8".
+
+![Example](bash_snap/retuen_val_function_op.png)
 
 #### Local Variables
 
@@ -189,10 +218,18 @@ Variables declared within a function are local to that function by default. They
 
 ```bash
 greet() {
-    local name="World"
+    local name="Bash World"
     echo "Hello, $name!"
 }
+
+greet
 ```
+
+![Example](bash_snap/local_var.png)
+
+This will output "Hello,Bash World!"
+
+![Example](bash_snap/local_var_op.png)
 
 #### Function Scope
 
@@ -221,8 +258,11 @@ if [ "$age" -ge 18 ]; then
     echo "You are an adult."
 fi
 ```
+![Example](bash_snap/if_statement.png)
 
 In this example, if the variable `age` is greater than or equal to 18, the message "You are an adult." will be printed.
+
+![Example](bash_snap/if_statement_op.png)
 
 #### `elif` Statement
 
@@ -250,7 +290,11 @@ else
 fi
 ```
 
+![Example](bash_snap/elif_statement.png)
+
 In this example, if the `age` is between 13 and 17 (inclusive), the message "You are a teenager." will be printed.
+
+![Example](bash_snap/elif_statement_op.png)
 
 #### `else` Statement
 
@@ -274,7 +318,11 @@ else
 fi
 ```
 
+![Example](bash_snap/else_statement.png)
+
 In this example, if the `status` variable is equal to "success", the message "Operation successful." will be printed; otherwise, "Operation failed." will be printed.
+
+![Example](bash_snap/else_statement_op.png)
 
 Conditional statements are powerful tools for implementing decision-making logic in Bash scripts, allowing your scripts to respond dynamically to different situations.
 
@@ -302,7 +350,11 @@ for num in 1 2 3 4 5; do
 done
 ```
 
+![Example](bash_snap/for_loop.png)
+
 In this example, the loop will iterate over the numbers 1 through 5 and print each number.
+
+![Example](bash_snap/for_loop_op.png)
 
 #### `while` Loop
 
@@ -324,7 +376,11 @@ while [ $count -lt 5 ]; do
 done
 ```
 
+![Example](bash_snap/while_loop.png)
+
 In this example, the loop will continue executing as long as the value of the `count` variable is less than 5.
+
+![Example](bash_snap/while_loop_op.png)
 
 #### `until` Loop
 
@@ -346,7 +402,11 @@ until [ $num -ge 5 ]; do
 done
 ```
 
+![Example](bash_snap/until_loop.png)
+
 In this example, the loop will continue executing until the value of the `num` variable is greater than or equal to 5.
+
+![Example](bash_snap/until_loop_op.png)
 
 Loops are powerful tools for automating repetitive tasks in Bash scripts, allowing you to process data efficiently and perform complex operations.
 
@@ -365,66 +425,193 @@ File manipulation is a fundamental aspect of Bash scripting, allowing you to per
 You can create new files using the `touch` command or by using redirection operators with `echo` or `cat` commands. For example:
 
 ```bash
-touch newfile.txt           # Create an empty file named newfile.txt
-echo "Hello, World!" > greeting.txt   # Create a file greeting.txt with content
+touch newfile.txt           
+# Create an empty file named newfile.txt
+
+echo "Hello, Bash World!" > greeting.txt   
+# Create a file greeting.txt with content
 ```
+
+![Example](bash_snap/create_file.png)
+
+This is the output of that script
+
+![Example](bash_snap/create_file_op.png)
 
 #### Reading Files
 
 To read the contents of a file, you can use commands like `cat`, `head`, `tail`, or `less`. For example:
 
 ```bash
-cat filename.txt        # Display the entire contents of filename.txt
-head -n 10 filename.txt    # Display the first 10 lines of filename.txt
-tail -n 20 filename.txt    # Display the last 20 lines of filename.txt
-less filename.txt       # View the contents of filename.txt page by page
+echo "---dispalyed entire contents---"
+
+cat filename.txt        
+#Display the entire contents of filename.txt
+
+echo "---dispalyed first 3 lines---"
+
+head -n 3 filename.txt    
+# Display the first 10 lines of filename.txt
+
+echo "---dispalyed last 3 lines---"
+
+tail -n 3 filename.txt    
+# Display the last 20 lines of filename.txt
 ```
+
+![Example](bash_snap/read_file.png)
+
+This is the output of that script
+
+![Example](bash_snap/read_file_op.png)
 
 #### Writing to Files
 
 You can write content to files using redirection operators (`>` or `>>`) with `echo` or `cat` commands. For example:
 
 ```bash
-echo "Some content" > output.txt       # Write content to output.txt (overwrite if exists)
-echo "More content" >> output.txt      # Append content to output.txt
+echo "Some content" > output.txt
+# Write content to output.txt (overwrite if exists)
+
+echo "--- written content ---"
+cat output.txt
+
+echo "More content" >> output.txt
+# Append content to output.txt
+
+echo "--- append content ---"
+cat output.txt
 ```
+
+![Example](bash_snap/write_file.png)
+
+This is the output of that script
+
+![Example](bash_snap/write_file_op.png)
 
 #### Copying, Moving, and Renaming Files
 
 The `cp` command is used to copy files, `mv` command to move or rename files. For example:
 
 ```bash
-cp source.txt destination.txt      # Copy source.txt to destination.txt
-mv oldfile.txt newfile.txt         # Rename oldfile.txt to newfile.txt
-mv file.txt /path/to/directory     # Move file.txt to a different directory
+# file manipulation
+## copying, moving, and renameing files
+
+cp source.txt destination.txt
+# Copy source.txt to destination.txt
+
+echo "--- copyed file ---"
+ls source.txt destination.txt
+
+mv oldfile.txt newfile.txt
+# Rename oldfile.txt to newfile.txt
+
+echo "--- renamed file ---"
+ls oldfile.txt newfile.txt
+
+mv file.txt folder/file.txt
+# Move file.txt to a different directory
+
+echo "--- moved file ---"
+ls file.txt
+ls folder/file.txt
 ```
+
+![Example](bash_snap/cp_mv_file.png)
+
+This is the output of that script
+
+![Example](bash_snap/cp_mv_file_op.png)
 
 #### Deleting Files
 
 To delete files, you can use the `rm` command. Be cautious when using `rm` as it permanently deletes files. For example:
 
 ```bash
-rm unwantedfile.txt       # Delete unwantedfile.txt
-rm -rf directory         # Delete directory and its contents recursively (use with caution)
+echo "--- delete unwanted file ---"
+ls unwantedfile.txt
+
+rm unwantedfile.txt
+# Delete unwantedfile.txt
+
+echo "--- deleted unwanted file ---"
+ls unwantedfile.txt
+
+echo "--- delete unwanted directory ---"
+find folder
+
+rm -rf directory
+# Delete directory and its contents recursively (use with caution)
+
+echo "--- deleted unwanted directory ---"
+find folder
 ```
+
+![Example](bash_snap/delete_file.png)
+
+This is the output of that script
+
+![Example](bash_snap/delete_file_op.png)
 
 #### Permissions and Ownership
 
 Use the `chmod` command to change file permissions and the `chown` command to change file ownership. For example:
 
 ```bash
-chmod +x script.sh        # Add execute permission to script.sh
-chown user:group file.txt    # Change the owner and group of file.txt
+echo "--- add permission 'e' ---"
+ls -la script.sh
+
+chmod +x script.sh
+# Add execute permission to script.sh
+
+echo "--- added permission 'e' ---"
+ls -la script.sh
+
+echo "--- add ownership ---"
+ls -la file.txt
+
+sudo chown user:group file.txt
+# Change the owner and group of file.txt
+
+echo "--- added ownership ---"
+ls -la file.txt
 ```
+
+![Example](bash_snap/permission_ownership.png)
+
+This is the output of that script
+
+![Example](bash_snap/permission_ownership_op.png)
 
 #### File Compression and Archiving
 
 You can compress files using commands like `gzip`, `bzip2`, or `zip`, and archive files using the `tar` command. For example:
 
 ```bash
-gzip filename.txt         # Compress filename.txt using gzip
-tar -czvf archive.tar.gz file1 file2    # Create a gzipped tar archive containing file1 and file2
+echo "--- compress file ---"
+ls -l file.txt
+
+gzip file.txt
+# Compress filename.txt using gzip
+
+echo "--- compressed file ---" 
+ls -l file.txt.gz
+
+echo "--- archive files ---" 
+ls -l archive.tar.gz
+
+tar -czvf archive.tar.gz file1 file2
+# Create a gzipped tar archive containing file1 and file2
+
+echo "--- archived files ---" 
+ls -l archive.tar.gz
 ```
+
+![Example](bash_snap/compress_archive.png)
+
+This is the output of that script
+
+![Example](bash_snap/compress_archive_op.png)
 
 File manipulation commands and techniques in Bash scripting are essential for working with files efficiently and managing file operations effectively.
 
@@ -612,72 +799,72 @@ Packaging Bash scripts simplifies distribution and installation, making your scr
 
 Bash scripting automate tasks, create custom tools, and enhance your productivity in the Linux environment. learning the basics, mastering syntax, and exploring advanced topics, you can become proficient in scripting with Bash.
 
-# Bash Scripting with Real-Time Problems
+# Bash Scripting with Real-Time Tasks
 
-learn about Bash scripting through real-time problems commonly encountered in Linux environments.
+learn about Bash scripting through real-time Tasks commonly encountered in Linux environments.
 
-## Real-Time Problems
+## Real-Time Tasks
 
-### [Problem 1](Problems\Problem1.md)
+### [Task 1](tasks\task1.md)
 You need to automate the process of backing up important files on your system every day.
 
 ### Solution:
 Write a Bash script that uses `tar` to create a compressed archive of the files and `cron` to schedule the script to run daily.
 
-### [Problem 2](Problems\Problem2.md)
+### [Task 2](tasks\task2.md)
 You want to create a script that automatically updates the software packages on your system.
 
 ### Solution:
 Write a Bash script that uses package manager commands like `apt-get` or `yum` to update the system packages.
 
-### [Problem 3](Problems\Problem3.md)
+### [Task 3](tasks\task3.md)
 You want to automate the process of generating daily reports with the current date.
 
 ### Solution:
 Create a Bash script that uses the `date` command to get the current date and saves it to a variable, then use that variable to generate the report filename.
 
-### [Problem 4](Problems\Problem4.md)
+### [Task 4](tasks\task4.md)
 You frequently need to convert text files from one format to another.
 
 ### Solution:
 Write a Bash script with a function that takes a filename as an argument and converts it to the desired format using appropriate commands like `awk`, `sed`, or `grep`.
 
-### [Problem 5](Problems\Problem5.md)
+### [Task 5](tasks\task5.md)
 You want to create a script that checks if a specific directory exists and performs different actions based on the result.
 
 ### Solution:
 Use an `if` statement in your script to check for the existence of the directory using the `test` command (`[ -d "$directory" ]`) and execute different commands based on the result.
 
-### [Problem 6](Problems\Problem6.md)
+### [Task 6](tasks\task6.md)
 You have a directory with multiple files, and you want to perform the same operation on each file.
 
 ### Solution:
 Write a Bash script with a `for` loop that iterates over each file in the directory and executes the desired operation.
 
-### [Problem 7](Problems\Problem7.md)
+### [Task 7](tasks\task7.md)
 You need to find and delete all log files older than a certain date.
 
 ### Solution:
 Write a Bash script that uses `find` to locate files matching the criteria and `rm` to delete them.
 
-### [Problem 8](Problems\Problem8.md)
+### [Task 8](tasks\task8.md)
 You have a CSV file with data in the format "name,age,email" and you want to extract only the email addresses.
 
 ### Solution:
 Write a Bash script that uses `cut` or `awk` to extract the email addresses from each line of the file.
 
-### [Problem 9](Problems\Problem9.md)
+### [Task 9](tasks\task9.md)
 You want to write a script that automatically sends an email notification when a certain condition is met.
 
 ### Solution:
 Use command substitution to capture the output of a command that checks the condition, then use the captured value to send an email using `mail` or `sendmail`.
 
-### [Problem 10](Problems\Problem10.md)
+### [Task 10](tasks\task10.md)
 You have a script that runs commands with potential errors, and you want to handle these errors gracefully.
 
 ### Solution:
 Implement error handling in your script using constructs like `if` statements to check the exit status of commands (`$?`) and `&&` or `||` operators for conditional execution based on success or failure.
 
-tackling real-time problems and using Bash scripting to automate tasks and solve challenges in the Linux environment, you'll develop practical skills that are valuable for system administration, development, and everyday productivity.
+tackling real-time Tasks and using Bash scripting to automate tasks and solve challenges in the Linux environment, you'll develop practical skills that are valuable for system administration, development, and everyday productivity.
 
 [Back](README.md)
