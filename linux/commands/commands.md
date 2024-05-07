@@ -2,344 +2,353 @@
 
 **whoami**
 - This command displays the username of the current user.
-  [Example](link-to-example)
+  ![Example](commands_snap/whoami.png)
 
 **ls**
 - The ls command lists the contents of a directory.
-  [Example](link-to-example)
+  ![Example](commands_snap/ls.png)
 
 **cd**
 - This command changes the current directory.
-  [Example](link-to-example)
+  ![Example](commands_snap/cd.png)
 
 **pwd**
 - The pwd command prints the name of the current working directory.
-  [Example](link-to-example)
+  ![Example](commands_snap/pwd.png)
 
 **touch**
 - This command creates an empty file or updates the timestamp of an existing file.
-  [Example](link-to-example)
+  ![Example](commands_snap/touch.png)
 
 **echo**
 - The echo command is used to display a line of text/string that is passed as an argument.
-  [Example](link-to-example)
+  ![Example](commands_snap/echo.png)
 
 **vi**
 - This is a text editor in Unix and Linux operating systems.
-  [Example](link-to-example)
+  ![Example](commands_snap/vi.png)
 
 **nano**
 - Nano is a text editor for Unix-like computing systems or operating environments.
-  [Example](link-to-example)
+  ![Example](commands_snap/nano.png)
 
 **cat**
 - This command is used to concatenate and display the contents of files.
-  [Example](link-to-example)
+  ![Example](commands_snap/cat.png)
 
 **mkdir**
 - The mkdir command creates directories.
-  [Example](link-to-example)
+  ![Example](commands_snap/mkdir.png)
 
 **cp**
 - The cp command is used to copy files or directories.
-  [Example](link-to-example)
+  ![Example](commands_snap/cp.png)
 
 **mv**
 - The mv command moves files or directories from one place to another.
-  [Example](link-to-example)
+  ![Example](commands_snap/mv.png)
 
 **rmdir**
 - This command removes empty directories.
-  [Example](link-to-example)
+  ![Example](commands_snap/mkdir.png)
 
 **rm**
 - The rm command is used to remove files or directories.
-  [Example](link-to-example)
+  ![Example](commands_snap/rm.png)
 
 **ln**
 - The ln command is used to create a link to a file or directory.
-  [Example](link-to-example)
+  ![Example](commands_snap/ln.png)
 
 **useradd**
 - This command is used to create a new user account.
-  [Example](link-to-example)
+  ![Example](commands_snap/useradd.png)
 
 **sudo**
 - The sudo command allows a permitted user to execute a command as another user.
-  [Example](link-to-example)
+  ![Example](commands_snap/sudo.png)
 
 **adduser**
 - This command is used to add a new user to the system.
-  [Example](link-to-example)
+  ![Example](commands_snap/adduser.png)
 
 **su**
 - The su command is used to switch to another user account.
-  [Example](link-to-example)
+  ![Example](commands_snap/su.png)
 
 **passwd**
 - The passwd command is used to change a user's password.
-  [Example](link-to-example)
+  ![Example](commands_snap/passwd.png)
 
-**apt, yum
+**apt, yum**
 - These are package management commands used to install, update, and remove software packages.
-  [Example](link-to-example)
+  - ubuntu
+    ![Example](commands_snap/apt.png)
+  - centos
+    ![Example](commands_snap/yum.png)
 
-**update
+**update**
 - This command is used to update package indexes and software repositories.
-  [Example](link-to-example)
+  ![Example](commands_snap/update.png)
 
-**upgrade
+**upgrade**
 - This command is used to upgrade installed packages to their latest versions.
-  [Example](link-to-example)
+  ![Example](commands_snap/upgrade.png)
 
 **man**
 - The man command displays the manual pages for other commands.
-  [Example](link-to-example)
+  ![Example](commands_snap/man_man.png)
+  ![Example](commands_snap/man.png)
 
 **whatis**
 - This command displays a one-line description of a command.
-  [Example](link-to-example)
+  ![Example](commands_snap/whatis.png)
 
 **which**
 - The which command shows the full path of shell commands.
-  [Example](link-to-example)
+  ![Example](commands_snap/which.png)
 
 **whereis**
 - This command locates the binary, source, and manual page files for a command.
-  [Example](link-to-example)
+  ![Example](commands_snap/whereis.png)
 
-**wget
+**wget**
 - This command is used to download files from the internet.
-  [Example](link-to-example)
+  ![Example](commands_snap/wget.png)
 
-**curl
+**curl**
 - The curl command is used to transfer data to or from a server.
-  [Example](link-to-example)
+  ![Example](commands_snap/curl.png)
 
-**zip
+**zip**
 - This command is used to compress files into a zip archive.
-  [Example](link-to-example)
+  ![Example](commands_snap/zip.png)
 
-**unzip
+**unzip**
 - The unzip command is used to extract files from a zip archive.
-  [Example](link-to-example)
+  ![Example](commands_snap/unzip.png)
 
 **less**
 - This command is a file pager that allows backward and forward navigation through text files.
-  [Example](link-to-example)
+  ![Example](commands_snap/less.png)
+  ![Example](commands_snap/less_view.png)
+  ![Example](commands_snap/less_end.png)
 
 **head**
 - The head command displays the first few lines of a file.
-  [Example](link-to-example)
+  ![Example](commands_snap/head.png)
 
 **tail**
 - This command displays the last few lines of a file.
-  [Example](link-to-example)
+  ![Example](commands_snap/tail.png)
 
 **top**
 - The top command displays real-time information about system resource usage.
-  [Example](link-to-example)
+  ![Example](commands_snap/top.png)
 
 **cmp**
 - This command compares two files byte by byte.
-  [Example](link-to-example)
+  ![Example](commands_snap/cmp.png)
 
 **diff**
 - The diff command is used to compare the contents of two files line by line.
-  [Example](link-to-example)
+  ![Example](commands_snap/diff.png)
 
-**sort
+**sort**
 - This command sorts the lines of a text file.
-  [Example](link-to-example)
+  ![Example](commands_snap/sort.png)
 
 **find**
 - The find command is used to search for files in a directory hierarchy.
-  [Example](link-to-example)
+  ![Example](commands_snap/find.png)
 
-**cut
+**cut**
 - This command is used to extract sections from each line of input.
-  [Example](link-to-example)
+  ![Example](commands_snap/cut.png)
 
 **chmod**
 - The chmod command changes the permissions of files or directories.
-  [Example](link-to-example)
+  ![Example](commands_snap/chmod.png)
 
-**chown
+**chown**
 - This command changes the owner and group of files or directories.
-  [Example](link-to-example)
+  ![Example](commands_snap/chown.png)
 
-**ifconfig
+**ifconfig**
 - The ifconfig command displays information about network interfaces.
-  [Example](link-to-example)
+  ![Example](commands_snap/ifconfig.png)
 
-**ip address**
+**ipaddress**
 - This command displays the IP address of the system.
-  [Example](link-to-example)
+  ![Example](commands_snap/ipaddress.png)
 
-**grep
+**grep**
 - The grep command is used to search for patterns in text files.
-  [Example](link-to-example)
+  ![Example](commands_snap/grep.png)
 
-**cmd
-- This command is a placeholder for any command to be executed.
-  [Example](link-to-example)
-
-**awk
+**awk**
 - The awk command is used for pattern scanning and processing.
-  [Example](link-to-example)
+  ![Example](commands_snap/awk.png)
 
-**ping
+**ping**
 - This command is used to test the reachability of a host on a network.
-  [Example](link-to-example)
-
-**traceroute
+  ![Example](commands_snap/ping.png)
+--------------
+**traceroute**
 - The traceroute command traces the route that packets take to reach a destination.
-  [Example](link-to-example)
+  ![Example](commands_snap/traceroute.png)
 
-**netstat
+**netstat**
 - This command displays network connections, routing tables, interface statistics, and more.
-  [Example](link-to-example)
+  ![Example](commands_snap/netstate.png)
 
-**alias, unalias
+**alias, unalias**
 - These commands are used to create or remove command aliases.
-  [Example](link-to-example)
+  - ![Example](commands_snap/alias.png)
+  - ![Example](commands_snap/unalias.png)
 
-**iptables
+**iptables**
 - The iptables command is used to set up and maintain packet filtering rules.
-  [Example](link-to-example)
+  ![Example](commands_snap/iptables.png)
 
-**ufw
+**ufw**
 - This command is used to manage the Uncomplicated Firewall.
-  [Example](link-to-example)
+  ![Example](commands_snap/ufw.png)
 
 **uname**
 - The uname command prints system information.
-  [Example](link-to-example)
+  ![Example](commands_snap/uname.png)
 
-**neofetch
+**neofetch**
 - This command displays system information and ASCII art of the system logo.
-  [Example](link-to-example)
+  ![Example](commands_snap/neofetch.png)
 
-**cal
+**cal**
 - The cal command displays a calendar.
-  [Example](link-to-example)
+  ![Example](commands_snap/cal.png)
 
 **free**
 - This command displays information about free and used memory.
-  [Example](link-to-example)
+  ![Example](commands_snap/free.png)
 
-**tree
+**tree**
 - The tree command displays the directory structure in a tree-like format.
-  [Example](link-to-example)
+  ![Example](commands_snap/tree.png)
 
 **df**
 - This command displays information about disk space usage.
-  [Example](link-to-example)
+  ![Example](commands_snap/df.png)
 
 **du**
 - The du command displays information about disk usage by files and directories.
-  [Example](link-to-example)
+  ![Example](commands_snap/du.png)
 
 **ps**
 - This command displays information about currently running processes.
-  [Example](link-to-example)
+  ![Example](commands_snap/ps.png)
 
 **top**
 - The top command displays real-time information about system resource usage.
-  [Example](link-to-example)
+  ![Example](commands_snap/top.png)
 
-**kill
+**kill**
 - This command sends signals to processes, allowing them to be terminated or modified.
-  [Example](link-to-example)
+  ![Example](commands_snap/kill.png)
 
-**tar
+**tar**
 - The tar command is used to create, maintain, modify, or extract files from tar archives.
-  [Example](link-to-example)
+  ![Example](commands_snap/tar.png)
 
-**sed
+**sed**
 - This command is a stream editor for filtering and transforming text.
-  [Example](link-to-example)
+  ![Example](commands_snap/sed.png)
 
-**scp
+**scp**
 - The scp command securely copies files between hosts on a network.
-  [Example](link-to-example)
+  ![Example](commands_snap/scp.png)
 
-**dig
+**dig**
 - This command is used to perform DNS lookup operations.
-  [Example](link-to-example)
+  ![Example](commands_snap/.png)
 
-**ssh
+**ssh**
 - The ssh command is used to establish a secure shell connection to a remote server.
-  [Example](link-to-example)
+  ![Example](commands_snap/ssh.png)
 
-**rsync
+**rsync**
 - This command is used to synchronize files and directories between two locations.
-  [Example](link-to-example)
+  ![Example](commands_snap/rsync.png)
 
-**crontab
+**crontab**
 - The crontab command is used to schedule tasks to run periodically.
-  [Example](link-to-example)
+  ![Example](commands_snap/crontab.png)
 
 **watch**
 - This command runs a specified command repeatedly, displaying its output.
-  [Example](link-to-example)
+  ![Example](commands_snap/watch.png)
+  ![Example](commands_snap/watch_ps.png)
 
-**jobs
+**jobs**
 - The jobs command lists the active jobs in the shell.
-  [Example](link-to-example)
+  ![Example](commands_snap/jobs.png)
 
-**locate
+**locate**
 - This command is used to find files by name.
-  [Example](link-to-example)
+  ![Example](commands_snap/locate.png)
 
-**updatedb
+**updatedb**
 - The updatedb command updates the file database used by locate.
-  [Example](link-to-example)
+  ![Example](commands_snap/updatetedb.png)
 
-**tee
+**tee**
 - This command reads from standard input and writes to standard output and files simultaneously.
-  [Example](link-to-example)
+  ![Example](commands_snap/tee.png)
 
-**xargs
+**xargs**
 - The xargs command is used to build and execute command lines from standard input.
-  [Example](link-to-example)
+  ![Example](commands_snap/xargs.png)
 
-**systemctl start
+---------------------------
+**systemctl start**
 - This command is used to start a systemd unit.
-  [Example](link-to-example)
+  ![Example](commands_snap/start.png)
+
+**systemctl status**
+- This command is used to start a systemd unit.
+  ![Example](commands_snap/status.png)
 
 **systemctl stop**
 - This command is used to stop a systemd unit.
-  [Example](link-to-example)
+  ![Example](commands_snap/stop.png)
 
 **systemctl restart**
 - This command is used to restart a systemd unit.
-  [Example](link-to-example)
+  ![Example](commands_snap/restart.png)
 
 **systemctl enable**
 - This command is used to enable a systemd unit.
-  [Example](link-to-example)
+  ![Example](commands_snap/enable.png)
 
 **systemctl disable**
 - This command is used to disable a systemd unit.
-  [Example](link-to-example)
+  ![Example](commands_snap/disable.png)
 
 **history**
 - The history command displays previously executed commands.
-  [Example](link-to-example)
+  ![Example](commands_snap/history.png)
 
 **clear**
 - This command clears the terminal screen.
-  [Example](link-to-example)
+  ![Example](commands_snap/clear.png)
 
 **exit**
 - The exit command is used to exit the shell.
-  [Example](link-to-example)
+  ![Example](commands_snap/exit.png)
 
-**reboot
+**reboot**
 - This command reboots the system.
-  [Example](link-to-example)
+  ![Example](commands_snap/reboot.png)
 
-**shutdown
+**shutdown**
 - The shutdown command shuts down the system.
-  [Example](link-to-example)
+  ![Example](commands_snap/shutdown.png)
