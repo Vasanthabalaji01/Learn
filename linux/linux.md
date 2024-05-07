@@ -26,7 +26,7 @@ For more in-depth learning, consider checking out the book [Linux Basics for Hac
 
 - List of commonly used Linux commands.
 
-# [Bash Scripting](linux/bash/bash.md)
+# [Bash Scripting](bash/bash.md)
 
   - **Introduction to Bash**
   - **Why does a script have to start with #!?**
