@@ -1,5 +1,7 @@
 # Index of Learn
 
+![](learn_index.png)
+
 # [Linux](linux/linux.md)
   - Basic Commands
   - Manipulation Commands 
