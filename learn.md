@@ -1,29 +1,19 @@
 # Index of Learn
 
 ![](learn_index.png)
-| [**Linux**](linux/linux.md) | [**Networking**](networking/networking.md) | [**Code**](code/code.md) | [**Database**](database/database.md) | [**Webserver**](webserver/webserver.md) | [**Cloud**](cloud/cloud.md) | [**Devops**](devops/devops.md) | [**Security**](security/security.md) | [**Random**](random/random.md) |
-|-----------------------------|------------------------------------------|-----------------------------|-------------------------------------|-------------------------------------|------------------------------|-----------------------------|------------------------------|----------------------------------|
-| Basic Commands              | Protocol/Port                           | Python                      | SQL                                 | Apache                              | Azure                        | Git                         | VAPT                         | Figma                            |
-| Manipulation Commands       | Network Architecture                    | React                       | Mysql                               | NGINX                               | AWS                          | Terraform                   | OWASP                        | VScode                           |
-| Networking Commands         | Tools                                   | Node                        | Microsoft SQL Server                 | Windows Server                      |                              | Docker                      | CIS Center for Internet Security | Putty                            |
-| Bash Scripting              |                                          | Ruby                        | SQlite                              |                                     |                              | K8S                         | CTF                          | Math                             |
-|                             |                                          |                             | Mongo DB                            |                                     |                              | Jenkins                     | Tools                        | Path (Road Maps)                 |
-|                             |                                          |                             | Dynamo DB                           |                                     |                              | Grafana                     |                              |                                  |
-|                             |                                          |                             |                                     |                                     |                              | Promethens                  |                              |                                  |
-
 
 <table>
-  <tr>
-    <td>Linux</td>
-    <td>Networking</td>
-    <td>Code</td>
-    <td>Database</td>
-    <td>Webservers</td>
-    <td>Cloud</td>
-    <td>Devops</td>
-    <td>Security</td>
-    <td>Random</td>
-  </tr>
+<tr>
+  <td><a href="linux/linux.md"><strong>Linux</strong></a></td>
+  <td><a href="networking/networking.md"><strong>Networking</strong></a></td>
+  <td><a href="code/code.md"><strong>Code</strong></a></td>
+  <td><a href="database/database.md"><strong>Database</strong></a></td>
+  <td><a href="webserver/webserver.md"><strong>Webserver</strong></a></td>
+  <td><a href="cloud/cloud.md"><strong>Cloud</strong></a></td>
+  <td><a href="devops/devops.md"><strong>Devops</strong></a></td>
+  <td><a href="security/security.md"><strong>Security</strong></a></td>
+  <td><a href="random/random.md"><strong>Random</strong></a></td>
+</tr>
   <tr>
     <td>
       <ul>
