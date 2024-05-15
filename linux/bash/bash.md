@@ -627,43 +627,68 @@ You can concatenate strings using the concatenation operator (`+`) or by simply 
 
 ```bash
 string1="Hello"
-string2="World"
-concatenated="$string1 $string2"
-echo $concatenated   # Output: Hello World
+string2="Bash" 
+string3="World"
+
+concatenated="$string1, $string2 $string3"
+echo $concatenated
 ```
+
+![Example](bash_snap/concatecnation.png)
+
+This is the output of that script
+
+![Example](bash_snap/concatecnation_op.png)
 
 #### Substring Extraction
 
 To extract a substring from a string, you can use parameter expansion with the `${string:position:length}` syntax. For example:
 
 ```bash
-string="Hello, World"
+string="Hello, Bash World"
 substring=${string:0:5}
-echo $substring      # Output: Hello
+echo $substring 
 ```
+
+![Example](bash_snap/substring_extraction.png)
+
+This is the output of that script
+
+![Example](bash_snap/substring_extraction_op.png)
 
 #### Length of a String
 
 To find the length of a string, you can use parameter expansion with the `${#string}` syntax. For example:
 
 ```bash
-string="Hello, World"
+string="Hello, Bash World"
 length=${#string}
-echo $length         # Output: 12
+echo $length 
 ```
+![Example](bash_snap/len_string.png)
+
+This is the output of that script
+
+![Example](bash_snap/len_string_op.png)
 
 #### Pattern Matching
 
 Pattern matching allows you to match and manipulate strings based on specific patterns or regular expressions. You can use tools like `grep`, `sed`, and `awk` for pattern matching operations. For example:
 
 ```bash
-string="Hello, World"
+string="Hello, Bash World"
 if [[ $string =~ ^Hello ]]; then
     echo "String starts with 'Hello'"
 fi
 ```
 
 In this example, the `=~` operator is used to match the string against the regular expression `^Hello`, which checks if the string starts with "Hello".
+
+![Example](bash_snap/pattern_match.png)
+
+This is the output of that script
+
+![Example](bash_snap/pattern_match_op.png)
 
 #### String Replacement
 
@@ -672,8 +697,14 @@ You can replace substrings within a string using parameter expansion with the `$
 ```bash
 string="Hello, World"
 replaced=${string/Hello/Hi}
-echo $replaced       # Output: Hi, World
+echo $replaced
 ```
+
+![Example](bash_snap/str_replace.png)
+
+This is the output of that script
+
+![Example](bash_snap/str_replace_op.png)
 
 String manipulation operations in Bash scripting allow you to manipulate and transform strings effectively, enabling you to perform complex text processing tasks within your scripts.
 
@@ -697,6 +728,11 @@ if [ $? -ne 0 ]; then
     echo "Command failed."
 fi
 ```
+[Example](bash_snap/.png)
+
+This is the output of that script
+
+![Example](bash_snap/_op.png)
 
 #### Error Messages
 
@@ -709,6 +745,12 @@ if [ ! -f filename ]; then
 fi
 ```
 
+[Example](bash_snap/.png)
+
+This is the output of that script
+
+![Example](bash_snap/_op.png)
+
 #### Exiting on Error
 
 You can use the `set -e` option to make your script exit immediately if any command exits with a non-zero status. For example:
@@ -718,6 +760,12 @@ set -e
 command1
 command2
 ```
+
+[Example](bash_snap/.png)
+
+This is the output of that script
+
+![Example](bash_snap/_op.png)
 
 #### Error Handling Functions
 
@@ -735,6 +783,12 @@ if [ ! -f filename ]; then
 fi
 ```
 
+[Example](bash_snap/.png)
+
+This is the output of that script
+
+![Example](bash_snap/_op.png)
+
 #### Trap Signals
 
 You can use the `trap` command to trap signals and execute custom error-handling code when a signal is received. For example:
@@ -747,6 +801,11 @@ cleanup() {
 
 trap cleanup EXIT
 ```
+[Example](bash_snap/.png)
+
+This is the output of that script
+
+![Example](bash_snap/_op.png)
 
 Error handling in Bash scripting ensures that your scripts are robust and can gracefully handle unexpected situations, improving reliability and user experience.
 
@@ -763,6 +822,11 @@ To create a standalone executable from a Bash script, you can use tools like `sh
 ```bash
 shc -f script.sh
 ```
+[Example](bash_snap/.png)
+
+This is the output of that script
+
+![Example](bash_snap/_op.png)
 
 #### Adding Documentation
 
@@ -778,6 +842,12 @@ Adding documentation to your Bash scripts improves usability and helps users und
 #          -v, --version  Display script version
 ```
 
+[Example](bash_snap/.png)
+
+This is the output of that script
+
+![Example](bash_snap/_op.png)
+
 #### Managing Dependencies
 
 If your script relies on external commands or programs, you should document these dependencies and provide instructions for installing them. You can also check for dependencies programmatically and provide informative error messages if they are missing.
@@ -787,6 +857,12 @@ If your script relies on external commands or programs, you should document thes
 command -v <command> >/dev/null 2>&1 || { echo >&2 "Required command <command> not found. Aborting."; exit 1; }
 ```
 
+[Example](bash_snap/.png)
+
+This is the output of that script
+
+![Example](bash_snap/_op.png)
+
 #### Distributing as Packages or Installers
 
 For more complex scripts or projects with multiple files, you can package them as distribution packages (e.g., `.deb` for Debian-based systems or `.rpm` for Red Hat-based systems) or installers (e.g., `.exe` for Windows). Tools like `fpm` (Effing Package Management) or `debreate` can help you create distribution packages easily.
@@ -795,76 +871,18 @@ For more complex scripts or projects with multiple files, you can package them a
 fpm -s dir -t deb -n mypackage -v 1.0.0 /path/to/scripts
 ```
 
+[Example](bash_snap/.png)
+
+This is the output of that script
+
+![Example](bash_snap/_op.png)
+
 Packaging Bash scripts simplifies distribution and installation, making your scripts more accessible to users and improving the overall user experience.
 
 Bash scripting automate tasks, create custom tools, and enhance your productivity in the Linux environment. learning the basics, mastering syntax, and exploring advanced topics, you can become proficient in scripting with Bash.
 
-# Bash Scripting with Real-Time Tasks
+# [Bash Scripting with Real-Time Tasks](tasks.md)
 
 learn about Bash scripting through real-time Tasks commonly encountered in Linux environments.
 
-## Real-Time Tasks
-
-### [Task 1](tasks\task1.md)
-You need to automate the process of backing up important files on your system every day.
-
-### Solution:
-Write a Bash script that uses `tar` to create a compressed archive of the files and `cron` to schedule the script to run daily.
-
-### [Task 2](tasks\task2.md)
-You want to create a script that automatically updates the software packages on your system.
-
-### Solution:
-Write a Bash script that uses package manager commands like `apt-get` or `yum` to update the system packages.
-
-### [Task 3](tasks\task3.md)
-You want to automate the process of generating daily reports with the current date.
-
-### Solution:
-Create a Bash script that uses the `date` command to get the current date and saves it to a variable, then use that variable to generate the report filename.
-
-### [Task 4](tasks\task4.md)
-You frequently need to convert text files from one format to another.
-
-### Solution:
-Write a Bash script with a function that takes a filename as an argument and converts it to the desired format using appropriate commands like `awk`, `sed`, or `grep`.
-
-### [Task 5](tasks\task5.md)
-You want to create a script that checks if a specific directory exists and performs different actions based on the result.
-
-### Solution:
-Use an `if` statement in your script to check for the existence of the directory using the `test` command (`[ -d "$directory" ]`) and execute different commands based on the result.
-
-### [Task 6](tasks\task6.md)
-You have a directory with multiple files, and you want to perform the same operation on each file.
-
-### Solution:
-Write a Bash script with a `for` loop that iterates over each file in the directory and executes the desired operation.
-
-### [Task 7](tasks\task7.md)
-You need to find and delete all log files older than a certain date.
-
-### Solution:
-Write a Bash script that uses `find` to locate files matching the criteria and `rm` to delete them.
-
-### [Task 8](tasks\task8.md)
-You have a CSV file with data in the format "name,age,email" and you want to extract only the email addresses.
-
-### Solution:
-Write a Bash script that uses `cut` or `awk` to extract the email addresses from each line of the file.
-
-### [Task 9](tasks\task9.md)
-You want to write a script that automatically sends an email notification when a certain condition is met.
-
-### Solution:
-Use command substitution to capture the output of a command that checks the condition, then use the captured value to send an email using `mail` or `sendmail`.
-
-### [Task 10](tasks\task10.md)
-You have a script that runs commands with potential errors, and you want to handle these errors gracefully.
-
-### Solution:
-Implement error handling in your script using constructs like `if` statements to check the exit status of commands (`$?`) and `&&` or `||` operators for conditional execution based on success or failure.
-
-tackling real-time Tasks and using Bash scripting to automate tasks and solve challenges in the Linux environment, you'll develop practical skills that are valuable for system administration, development, and everyday productivity.
-
-[Back](README.md)
+[Back](../linux.md) | [Tasks](tasks\tasks.md) | [Basics](../basics/basics.md) | [Commands](../commands/commands.md)
