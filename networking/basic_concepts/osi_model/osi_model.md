@@ -219,3 +219,5 @@ The OSI Model defines the communication of a computing system into 7 different l
 - It standardizes network communications, as each layer has fixed functions and protocols.
 - Diagnosing network problems is easier with the OSI model.
 - It is easier to improve with advancements as each layer can get updates separately.
+
+[Back](../basic_concepts.md) | [Networking](../../networking.md)
