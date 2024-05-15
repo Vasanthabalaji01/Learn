@@ -193,7 +193,7 @@
 **ping**
 - This command is used to test the reachability of a host on a network.
   ![Example](commands_snap/ping.png)
---------------
+
 **traceroute**
 - The traceroute command traces the route that packets take to reach a destination.
   ![Example](commands_snap/traceroute.png)
@@ -250,7 +250,7 @@
 **top**
 - The top command displays real-time information about system resource usage.
   ![Example](commands_snap/top.png)
-
+---------------------------------------
 **kill**
 - This command sends signals to processes, allowing them to be terminated or modified.
   ![Example](commands_snap/kill.png)
@@ -352,3 +352,5 @@
 **shutdown**
 - The shutdown command shuts down the system.
   ![Example](commands_snap/shutdown.png)
+
+[Back](../linux.md) | [Basics](../basics/basics.md) | [Bash](../bash/bash.md) | [Tasks](../bash/tasks/tasks.md)

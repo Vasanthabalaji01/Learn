@@ -1108,4 +1108,4 @@ Bash scripting will greatly enhance your ability to automate tasks, write custom
 
 For more in-depth learning, check out the book ["Linux Basics for Hackers"](https://nostarch.com/linuxbasicsforhackers).
 
-[Back](README.md)
+[Back](../linux.md) | [Commands](../commands/commands.md) | [Bash](../bash/bash.md) | [Tasks](../bash/tasks/tasks.md)
