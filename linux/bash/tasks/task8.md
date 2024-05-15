@@ -1,4 +1,4 @@
-### [Problem 8](Problem8.md)
+### [Task 8](task8.md)
 You have a CSV file with data in the format "name,age,email" and you want to extract only the email addresses.
 
 ### Solution:
@@ -52,4 +52,4 @@ Now, the script will extract email addresses from each line of the CSV file, pro
 
 This solution simplifies the process of extracting specific data from CSV files, allowing you to automate data extraction tasks efficiently.
 
-[Back](https://github.com/Vasanthabalaji01/Linux/blob/c8b560d721b6d0660daebc49148e879b363ade5c/bash.md#steps) | [Next](Problem9.md) | [Previous](Problem7.md)
+[Back](tasks.md) | [Next](task9.md) | [Previous](task7.md)

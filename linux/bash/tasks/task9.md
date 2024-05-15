@@ -1,4 +1,4 @@
-### [Problem 9](Problem9.md)
+### [Task 9](task9.md)
 You want to write a script that automatically sends an email notification when a certain condition is met.
 
 ### Solution:
@@ -86,4 +86,4 @@ Now, the script will automatically send an email notification when the specified
 
 This solution enables you to send email notifications securely using Gmail's SMTP server from your Bash script.
 
-[Back](https://github.com/Vasanthabalaji01/Linux/blob/c8b560d721b6d0660daebc49148e879b363ade5c/bash.md#steps) | [Next](Problem10.md) | [Previous](Problem8.md)
+[Back](tasks.md) | [Next](task10.md) | [Previous](task8.md)

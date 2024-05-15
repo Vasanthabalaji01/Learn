@@ -1,4 +1,4 @@
-### [Problem 10](Problem10.md)
+### [Task 10](task10.md)
 You have a script that runs commands with potential errors, and you want to handle these errors gracefully.
 
 ### Solution:
@@ -116,4 +116,4 @@ Execute the script:
 
 implementing error handling in your Bash script, you ensure that any errors encountered during the automation process are handled gracefully, enhancing the reliability and robustness of your automation solution. This approach ensures that your automation script can handle real-world scenarios effectively, even in the presence of errors or unexpected conditions.
 
-[Back](https://github.com/Vasanthabalaji01/Linux/blob/c8b560d721b6d0660daebc49148e879b363ade5c/bash.md#steps) | [Previous](Problem9.md)
+[Back](tasks.md) | [Previous](task9.md)

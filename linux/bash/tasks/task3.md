@@ -1,4 +1,4 @@
-### [Problem 3](Problem3.md)
+### [Task 3](task3.md)
 You want to automate the process of generating daily reports with the current date.
 
 ### Solution:
@@ -54,4 +54,4 @@ Now, the script will generate a daily report file with the current date in the f
 
 This solution automates the process of generating daily reports, saving you time and ensuring consistency in report naming and content.
 
-[Back](https://github.com/Vasanthabalaji01/Linux/blob/c8b560d721b6d0660daebc49148e879b363ade5c/bash.md#steps) | [Next](Problem4.md) | [Previous](Problem2.md)
+[Back](tasks.md) | [Next](task4.md) | [Previous](task2.md)

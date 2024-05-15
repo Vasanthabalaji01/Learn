@@ -1,4 +1,4 @@
-### [Problem 2](Problem2.md)
+### [Task 2](task2.md)
 You want to create a script that automatically updates the software packages on your system.
 
 ### Solution:
@@ -52,8 +52,12 @@ Execute the script to update the software packages on your system:
 ./update_packages.sh
 ```
 
+![Example](task2.png)
+
 Now, the script will automatically update the software packages on your system, ensuring that you have the latest versions installed.
+
+![Example](task2_run.png)
 
 This solution automates the process of updating software packages, helping you keep your system secure and up-to-date with the latest features and bug fixes.
 
-[Back](https://github.com/Vasanthabalaji01/Linux/blob/c8b560d721b6d0660daebc49148e879b363ade5c/bash.md#steps) | [Next](Problem3.md) | [Previous](Problem1.md)
+[Back](tasks.md) | [Next](task3.md) | [Previous](task1.md)

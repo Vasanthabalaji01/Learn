@@ -1,4 +1,4 @@
-### [Problem 4](Problem4.md)
+### [Task 4](task4.md)
 You frequently need to convert text files from one format to another.
 
 ### Solution:
@@ -69,4 +69,4 @@ Now, the script will convert the input file to the desired format, providing fle
 
 This solution streamlines the process of converting text files, reducing manual effort and ensuring consistency in file format conversions.
 
-[Back](https://github.com/Vasanthabalaji01/Linux/blob/c8b560d721b6d0660daebc49148e879b363ade5c/bash.md#steps) | [Next](Problem5.md) | [Previous](Problem3.md)
+[Back](tasks.md) | [Next](task5.md) | [Previous](task3.md)

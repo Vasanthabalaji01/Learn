@@ -1,4 +1,4 @@
-### [Problem 5](Problem5.md)
+### [Task 5](task5.md)
 You want to create a script that checks if a specific directory exists and performs different actions based on the result.
 
 ### Solution:
@@ -54,4 +54,4 @@ Now, the script will check if the specified directory exists and execute differe
 
 This solution allows you to automate tasks and handle directory existence dynamically in your scripts, improving efficiency and reliability.
 
-[Back](https://github.com/Vasanthabalaji01/Linux/blob/c8b560d721b6d0660daebc49148e879b363ade5c/bash.md#steps) | [Next](Problem6.md) | [Previous](Problem4.md)
+[Back](tasks.md) | [Next](task6.md) | [Previous](task4.md)

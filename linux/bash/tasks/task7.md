@@ -1,54 +1,60 @@
-### [Problem 7](Problem7.md)
-You need to find and delete all log files older than a certain date.
+### [Task 6](task6.md)
+You have a directory with multiple files, and you want to perform the same operation on each file.
 
 ### Solution:
-To solve this problem, you can write a Bash script that uses the `find` command to locate files matching the criteria (in this case, log files older than a certain date) and the `rm` command to delete them.
+To solve this problem, you can write a Bash script with a `for` loop that iterates over each file in the directory and executes the desired operation.
 
 #### Step 1: Write the Script
 
-Create a new Bash script, let's call it `delete_old_logs.sh`, and add the following content:
+Create a new Bash script, let's call it `batch_operation.sh`, and add the following content:
 
 ```bash
 #!/bin/bash
 
-# Directory containing log files
-log_directory="/path/to/log/directory"
+# Directory containing files
+directory="/path/to/directory"
 
 # Check if the directory exists
-if [ ! -d "$log_directory" ]; then
-    echo "Error: Log directory '$log_directory' not found."
+if [ ! -d "$directory" ]; then
+    echo "Error: Directory '$directory' not found."
     exit 1
 fi
 
-# Define the threshold date (format: YYYY-MM-DD)
-threshold_date="2022-12-31"
+# Iterate over each file in the directory
+for file in "$directory"/*; do
+    if [ -f "$file" ]; then
+        echo "Processing file: $file"
 
-# Find and delete log files older than the threshold date
-find "$log_directory" -type f -name "*.log" -mtime +1 -exec rm {} \;
+        # Add your commands to perform the desired operation on each file
+        # Example: Count the number of lines in the file
+        lines=$(wc -l < "$file")
+        echo "Number of lines: $lines"
+    fi
+done
 ```
 
-Replace `/path/to/log/directory` with the path to the directory containing your log files. Modify the `threshold_date` variable to specify the cutoff date in the format `YYYY-MM-DD`.
+Replace `/path/to/directory` with the path to the directory containing your files.
 
-This script uses the `find` command to locate `.log` files (`-name "*.log"`) in the specified directory that are older than the threshold date (`-mtime +1`). The `-exec` option is used to execute the `rm` command on each matching file found.
+This script iterates over each file in the specified directory using a `for` loop. For each file, it checks if it's a regular file (`-f`) and then executes the desired operation inside the loop. In the example provided, it counts the number of lines in each file using the `wc -l` command.
 
 #### Step 2: Make the Script Executable
 
 Make the script executable using the following command:
 
 ```bash
-chmod +x delete_old_logs.sh
+chmod +x batch_operation.sh
 ```
 
 #### Step 3: Run the Script
 
-Execute the script to find and delete old log files:
+Execute the script to perform the operation on each file in the directory:
 
 ```bash
-./delete_old_logs.sh
+./batch_operation.sh
 ```
 
-Now, the script will locate and delete all log files older than the specified threshold date, helping you manage log files efficiently.
+Now, the script will iterate over each file in the directory and execute the desired operation on each file, allowing you to perform batch operations efficiently.
 
-This solution automates the process of cleaning up old log files, freeing up disk space and keeping your system organized.
+This solution automates the process of performing the same operation on multiple files, saving you time and effort.
 
-[Back](https://github.com/Vasanthabalaji01/Linux/blob/c8b560d721b6d0660daebc49148e879b363ade5c/bash.md#steps) | [Next](Problem8.md) | [Previous](Problem6.md)
+[Back](tasks.md) | [Next](task7.md) | [Previous](task5.md)

@@ -1,4 +1,4 @@
-### [Problem 1](Problem1.md)
+### [Task 1](task1.md)
 You need to automate the process of backing up important files on your system every day.
 
 ### Solution:
@@ -14,18 +14,24 @@ Create a new Bash script, let's call it `backup.sh`, and add the following conte
 # Backup script to create compressed archive of important files
 
 # Define variables
-backup_dir="/path/to/backup"  # Directory to store backup files
-source_dir="/path/to/source"   # Directory containing files to be backed up
+backup_dir="/home/vasanth"  # Directory to store backup files
+source_dir="/home/vasanth/folder"   # Directory containing files to be backed up
 backup_file="backup_$(date +%Y-%m-%d).tar.gz"  # Backup file name with current date
 
 # Create backup directory if it doesn't exist
 mkdir -p "$backup_dir"
 
 # Create compressed archive of source directory
-tar -czf "$backup_dir/$backup_file" "$source_dir"
+tar -czf "$backup_dir/$backup_file" "$source_dir" >/dev/null 2>&1
 
-# Print success message
-echo "Backup completed: $backup_file created in $backup_dir"
+# Check if backup was successful
+if [ $? -eq 0 ]; then
+  # Print success message
+  echo "Backup completed: $backup_file created in $backup_dir"
+else
+  # Print error message if backup failed
+  echo "Backup failed. Please check if the source directory exists and has appropriate permissions."
+fi
 ```
 
 Replace `/path/to/backup` with the directory where you want to store the backup files, and `/path/to/source` with the directory containing the files you want to back up.
@@ -54,8 +60,12 @@ Add the following line to schedule the backup script to run every day at midnigh
 
 Replace `/path/to/backup.sh` with the full path to your backup script.
 
+![Example](task1.png)
+
 Now, the backup script will run automatically every day at midnight, creating a compressed archive of your important files in the specified backup directory.
+
+![Example](task1_run.png)
 
 This solution automates the process of backing up important files on your system, ensuring that your data is regularly backed up and protected.
 
-[Back](https://github.com/Vasanthabalaji01/Linux/blob/c8b560d721b6d0660daebc49148e879b363ade5c/bash.md#steps) | [Next](Problem2.md)
+[Back](./tasks.md) | [Next](task2.md)

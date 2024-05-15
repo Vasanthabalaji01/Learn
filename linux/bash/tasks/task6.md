@@ -1,4 +1,4 @@
-### [Problem 6](Problem6.md)
+### [Task 6](task6.md)
 You have a directory with multiple files, and you want to perform the same operation on each file.
 
 ### Solution:
@@ -57,4 +57,4 @@ Now, the script will iterate over each file in the directory and execute the des
 
 This solution automates the process of performing the same operation on multiple files, saving you time and effort.
 
-[Back](https://github.com/Vasanthabalaji01/Linux/blob/c8b560d721b6d0660daebc49148e879b363ade5c/bash.md#steps) | [Next](Problem7.md) | [Previous](Problem5.md)
+[Back](tasks.md) | [Next](task7.md) | [Previous](task5.md)
