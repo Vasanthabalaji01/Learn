@@ -8,18 +8,18 @@
   - Networking Commands
   - Bash Scripting
 
-# [Networking](networking\networking.md) 
+# [Networking](networking/networking.md) 
   - Protocol/Port
   - Network Arcitecture
   - Tool's
 
-# [Code](code\code.md)
+# [Code](code/code.md)
   - Python
   - React
   - Node
   - Ruby
 
-# [Database](database\database.md)
+# [Database](database/database.md)
 
  **SQL**
   - Mysql
@@ -31,16 +31,16 @@
   - Dynamo DB
   
 
-# [Webservers](webserver\webservers.md)
+# [Webservers](webserver/webservers.md)
   - Apache
   - NGINX
   - Windows server
 
-# [Cloud](cloud\cloud.md)
+# [Cloud](cloud/cloud.md)
   - Azure
   - AWS
 
-# [Devops](devops\devops.md)
+# [Devops](devops/devops.md)
   - Git
   - Terraform
   - Docker
@@ -49,14 +49,14 @@
   - Grafana
   - Promethens
 
-# [Security](security\security.md)
+# [Security](security/security.md)
   - VAPT
   - OWASP
   - CIS Center for Internet Security
   - CTF
   - Tool's
 
-# [Random](random\random.md)
+# [Random](random/random.md)
   - Figma
   - VScode
   - Putty
