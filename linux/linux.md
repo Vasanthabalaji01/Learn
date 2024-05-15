@@ -1,4 +1,6 @@
-# Linux 
+# Linux
+
+Here, you'll find essential topics to help you understand and work with Linux more effectively.
 
 # [Linux Basics](basics/basics.md)
 
@@ -37,5 +39,5 @@ For more in-depth learning, consider checking out the book [Linux Basics for Hac
 
 # [Project's](project/project.md)
 
-- [x] [**Mini Cloud CLI Tool**](https://github.com/Vasanthabalaji01/MiniCloudCLI)
+- [x] [**Mini Cloud CLI Tool**](project/minicloud/minicloud.md)
 - [ ] .
