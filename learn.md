@@ -2,7 +2,7 @@
 
 ![](learn_index.png)
 
-# [Linux](linux\linux.md)
+# [Linux](linux/linux.md)
   - Basic Commands
   - Manipulation Commands 
   - Networking Commands
