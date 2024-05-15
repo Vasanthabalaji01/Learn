@@ -1,6 +1,8 @@
 # Python
 
-## Basics
+## [setup](setup/setup.md)
+
+## [Basics](basics/basics.md)
 - Basic syntax
 - variables
 - Data types
@@ -13,11 +15,11 @@
 - Sets
 - Dictionaries
 
-## Package Managers
+## [Package Managers](package_managers/package_managers.md)
 - pip
 - canda
 
-## DSA
+## [DSA](dsa\dsa.md)
 - Arrays & Linked Lists
 - Heaps, Stacks, Queue
 - Hash Tables
@@ -25,12 +27,12 @@
 - Recursion
 - Sorting Alogorithums
 
-## OOP
+## [OOP](oop/oop.md)
 - Classes
 - Inheritance
 - Methodes
 
-## Advance
+## [Advance](advance/advance.md)
 - List
 - Comprehensions
 - Generators
@@ -45,28 +47,32 @@
 - Threading
 - Advanced Methods
 
-## libraries
+## [libraries](libraries/libraries.md)
 - Numpy
 - pandas
 - matplotlib
 - Seabron
 - Scikit-Learn
 - Tensorflow
-- Pytorch 
+- Pytorch
 
-## Automation
+## [Automation](automation/automation.md)
 - File Manipulation
 - Web Scraping
 - GUI Automations
 - Network Automation
 
-## Web Application
+## [Web Application](web_application/web_application.md)
 - flask
 - Django
 - fastAPI
 
-## Testing
+## [Testing](testing/testing.md)
 - Unit testing
 - intergration testing
 - End to End testing
 - load testing
+
+## [Remove](remove/remove.md)
+
+[Back](../code.md)
