@@ -1,7 +1,7 @@
 # code 
 
 ## [Python](python/python.md)
-## [React]()
-## [Nodejs]()
+## React
+## Nodejs
 
 [Back](../learn.md)
