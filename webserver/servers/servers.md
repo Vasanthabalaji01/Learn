@@ -1,15 +1,6 @@
-# Webservers
+# Various Web Servers
 
-## Apache
-
-**Linux - Ubuntu**
-
-- **Installation**
-- **Setup**
-- **Site Host in Local**
-- **Site Host in Cloud**
-
-## Nginx
+## [Apache](apache/apache.md)
 
 **Linux - Ubuntu**
 
@@ -18,7 +9,16 @@
 - **Site Host in Local**
 - **Site Host in Cloud**
 
-## Windows Server
+## [Nginx](nginx/nginx.md)
+
+**Linux - Ubuntu**
+
+- **Installation**
+- **Setup**
+- **Site Host in Local**
+- **Site Host in Cloud**
+
+## [Windows Server](windows_server/windows_server.md)
 
 **Windows**
 
@@ -26,3 +26,5 @@
 - **Setup**
 - **Site Host in Local**
 - **Site Host in Cloud**
+
+[Back](../webserver.md)
