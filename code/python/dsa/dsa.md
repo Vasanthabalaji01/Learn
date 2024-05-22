@@ -170,17 +170,3 @@ print("Sorted List:", sorted_list)
 These concepts and algorithms is crucial for solving various programming problems efficiently.
 
 [Back](../python.md) | [Code](../../code.md)
-
---------------------------------------------------------------------------------
-
-### 1. Arrays & Linked Lists:
-
-### 2. Heaps, Stacks, Queue:
-
-### 3. Hash Tables:
-
-### 4. Binary Search Trees:
-
-### 5. Recursion:
-
-### 6. Sorting Algorithms:
