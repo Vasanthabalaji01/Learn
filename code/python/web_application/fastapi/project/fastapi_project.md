@@ -32,4 +32,4 @@ List of three FastAPI projects for beginners, intermediate, and expert level dev
      - Authentication and authorization for device access.
      - Real-time data streaming and event handling.
 
-[Back](../../web_application.md) | [Python](../../../python.md) | [Code](../../../../code.md)
+[Back](../../project.md) | [Python](../../../python.md) | [Code](../../../../code.md)
