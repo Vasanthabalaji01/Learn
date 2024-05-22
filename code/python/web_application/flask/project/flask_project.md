@@ -32,4 +32,4 @@ list of projects for beginners, intermediate, and expert level Flask developers
      - Device status monitoring and control (e.g., temperature, lights, security cameras).
      - Customizable rules and automation for device interactions.
 
-[Back](../../web_application.md) | [Python](../../../python.md) | [Code](../../../../code.md)
+[Back](../../project.md) | [Python](../../../python.md) | [Code](../../../../code.md)
