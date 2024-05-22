@@ -15,9 +15,7 @@ Protocol/Port | Network Arcitecture | Tool's
 Python | React | Node | Ruby
 
 # [Database](database/database.md)
-**SQL** - Mysql | Microsoft SQL Server | SQlite
-
-**No SQL** - Mongo DB | Dynamo DB |
+**SQL** - Mysql | Microsoft SQL Server | SQlite | **No SQL** - Mongo DB | Dynamo DB 
 
 # [Web Server](webserver/webserver.md)
 Apache | Nginx | Windows server
