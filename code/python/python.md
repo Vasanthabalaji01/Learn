@@ -19,7 +19,7 @@
 - pip
 - canda
 
-## [DSA](dsa\dsa.md)
+## [DSA](dsa/dsa.md)
 - Arrays & Linked Lists
 - Heaps, Stacks, Queue
 - Hash Tables
