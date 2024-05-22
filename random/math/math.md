@@ -1,4 +1,4 @@
-# Topics in Mathematics and Computer Science
+# Mathematics on Computer Science
 
 ## Boolean Algebra
 
@@ -280,3 +280,5 @@ We can represent this system using matrices and vectors and solve for the values
 - Linear algebra is fundamental in computer graphics for representing and manipulating 2D and 3D objects. Matrices are used to perform transformations such as translation, rotation, scaling, and projection.
 - Machine learning algorithms, such as linear regression, logistic regression, and neural networks, rely heavily on linear algebra for modeling and optimization. Matrices are used to represent datasets and model parameters, and linear transformations are applied during the training and inference stages.
 - Linear algebra is also used in cryptography for operations such as encryption, decryption, and error correction. Matrices and vectors are used to represent cryptographic keys and perform cryptographic operations.
+
+[Back](../random.md)
