@@ -3,7 +3,7 @@ Concepts you should be familiar with.
 
 In Depth
 
-[OSI Model](osi_model\osi_model.md) | [IP Addresses](ip_address\ip_address.md) | [MAC Addresses](mac_address\mac_address.md) | [Routing and Switching](routing_switching\routing_switching.md) | [TCP IP](tcp_ip\tcp_ip.md) | [TCP and UDP](tcp_udp\tcp-udp.md) |  [DNS](dns\dns.md) | [VPN](vpn\vpn.md) | [TLS and SSL](tls_ssl\tls_ssl.md) | [Firewall](firewall\firewall.md)
+[OSI Model](osi_model/osi_model.md) | [IP Addresses](ip_address/ip_address.md) | [MAC Addresses](mac_address/mac_address.md) | [Routing and Switching](routing_switching/routing_switching.md) | [TCP IP](tcp_ip/tcp_ip.md) | [TCP and UDP](tcp_udp/tcp-udp.md) |  [DNS](dns/dns.md) | [VPN](vpn/vpn.md) | [TLS and SSL](tls_ssl/tls_ssl.md) | [Firewall](firewall/firewall.md)
 
 # How Does a Networking Work?
 
