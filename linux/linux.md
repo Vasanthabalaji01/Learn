@@ -41,3 +41,5 @@ For more in-depth learning, consider checking out the book [Linux Basics for Hac
 
 - [x] [**Mini Cloud CLI Tool**](project/minicloud/minicloud.md)
 - [ ] .
+
+[Back](../learn.md)
