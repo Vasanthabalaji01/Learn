@@ -32,4 +32,4 @@ list of three projects for beginners, intermediate, and expert level Django deve
      - User presence indicators (online/offline status).
      - File sharing and multimedia messages.
 
-[Back](../../web_application.md) | [Python](../../../python.md) | [Code](../../../../code.md)
+[Back](../../project.md) | [Python](../../../python.md) | [Code](../../../../code.md)
