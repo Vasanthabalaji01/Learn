@@ -1,6 +1,6 @@
 # Construct Work in Progress 🛠️
 
-# Learning Repository
+# Learn
 
 Welcome to my corner of the internet, where I document my adventures in cloud computing and cybersecurity. This repository serves as my virtual journal, chronicling my journey from 2020 to the present day.
 
