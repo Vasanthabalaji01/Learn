@@ -1,5 +1,3 @@
-# Nginx
-
 ## Linux - Ubuntu
 
 - **Installation**

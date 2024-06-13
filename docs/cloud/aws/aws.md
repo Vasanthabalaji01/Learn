@@ -1,5 +1,3 @@
-# AWS
-
 ## [Basic Concepts](basic_concepts/basic_concepts.md)
 Understand fundamental concepts and terminology related to AWS, including regions, availability zones, IAM, and more.
 
@@ -11,8 +9,6 @@ Discover a wide range of AWS services across compute, storage, databases, networ
 
 ## [Command Line Interface](aws_cli/aws_cli.md)
 The AWS Command Line Interface (CLI) for managing AWS resources, automating tasks, and scripting operations in the AWS environment.
-
-## [Project](../projects/aws/aws.md)
+text
+## [Project](../projects/cloud_resume_aws.md)
 Discover AWS-related projects for practical learning and implementation.
-
-[Back](../cloud.md) | [Projects](../projects/projects.md)

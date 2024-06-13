@@ -1,5 +1,3 @@
-# MongoDB
-
 ## Prerequisites
 
 The hardware requirements can vary based on factors like the size of your data and expected workload.
@@ -124,5 +122,3 @@ client.close
 ```
 
 These examples demonstrate how to establish connections with mysql using different programming languages. Ensure that you have the necessary drivers and libraries installed for each language before attempting to connect.
-
-[Back](../basics/basics.md) | [Database](../../database.md)

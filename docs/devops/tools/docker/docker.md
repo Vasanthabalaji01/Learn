@@ -1,5 +1,3 @@
-# Docker
-
 Docker is a platform that enables developers to automate the deployment of applications inside lightweight, portable containers. Containers bundle the application and its dependencies together, ensuring consistency across different environments.
 
 ## Introduction to Docker
@@ -123,5 +121,3 @@ Here are some essential Docker commands
 - **Networking** Configuring container networking can be complex in certain environments.
 
 Docker revolutionizes the way applications are developed, shipped, and deployed. encapsulating applications and their dependencies into containers, Docker ensures consistency, portability, and efficiency.
-
-[Back](../tools.md)

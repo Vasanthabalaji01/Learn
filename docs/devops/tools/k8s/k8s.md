@@ -1,5 +1,3 @@
-# Kubernetes (K8s)
-
 Kubernetes, often abbreviated as K8s, is an open-source container orchestration platform designed to automate the deployment, scaling, and management of containerized applications. It provides a platform-agnostic framework for managing containerized workloads and services, allowing developers to focus on building and running applications without worrying about the underlying infrastructure.
 
 ## Key Concepts
@@ -70,5 +68,3 @@ Kubernetes Services enable service discovery and load balancing for applications
 ## Self-Healing
 
 Kubernetes automatically monitors the health of Pods and restarts or replaces them if they fail. Kubernetes also supports rolling updates and rollbacks for Deployments to ensure seamless application updates without downtime.
-
-[Back](../tools.md)

@@ -1,5 +1,3 @@
-# Git and GitHub
-
 Git and GitHub are essential tools for modern software development. 
 
 [Introduction to Git](#introduction-to-git)
@@ -158,5 +156,3 @@ GitHub Actions allow you to automate workflows directly from your repository. Yo
 Git and GitHub are indispensable tools for modern software development, offering powerful features for version control, collaboration, and project management. 
 
 how to use Git effectively and leveraging GitHub's collaborative features can significantly enhance your development workflow, making it easier to manage code changes, collaborate with team members, and deliver high-quality software.
-
-[Back](../tools.md)

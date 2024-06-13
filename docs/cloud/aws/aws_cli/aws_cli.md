@@ -52,5 +52,3 @@ listed use cases and provide an explanation for each
 Explore the full documentation and detailed instructions on the [AWS CLI Documentation](https://docs.aws.amazon.com/cli/index.html)
 
 The AWS CLI offers a seamless way to automate tasks, script interactions, and integrate AWS functionality directly into your workflows from the command line.
-
-[Back](../aws.md)

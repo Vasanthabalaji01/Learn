@@ -1,5 +1,3 @@
-# Grafana
-
 Grafana is an open-source platform for monitoring and observability, allowing you to visualize metrics and logs from various data sources. 
 
 It provides customizable dashboards, alerting capabilities, and powerful visualization tools to help you understand and analyze your data.
@@ -98,6 +96,4 @@ Grafana supports a plugin architecture that allows users to extend its functiona
 - **Alerting Complexity** Configuring and managing alerting rules may require some expertise to ensure they are accurate and reliable.
 - **Data Source Integration** Integrating with certain data sources or databases may require additional setup or configuration.
 
-Grafana is a powerful tool for monitoring and observability, providing a rich set of features for visualizing metrics and logs from various data sources. By leveraging Grafana's capabilities, organizations can gain valuable insights into their systems' performance, troubleshoot issues, and make data-driven decisions to improve efficiency and reliability. With its flexibility, scalability, and active community support, Grafana remains a popular choice for monitoring and visualization
-
-[Back](../tools.md)
+Grafana is a powerful tool for monitoring and observability, providing a rich set of features for visualizing metrics and logs from various data sources. By leveraging Grafana's capabilities, organizations can gain valuable insights into their systems' performance, troubleshoot issues, and make data-driven decisions to improve efficiency and reliability. With its flexibility, scalability, and active community support, Grafana remains a popular choice for monitoring and visualization.

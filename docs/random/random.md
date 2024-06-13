@@ -14,4 +14,6 @@
 
 - **[xmind](xmind/xmind.md)**
 
-[Back](../learn.md)
+- **[Notion](notion/notion.md)**
+
+- **[MKDocs](mkdocs/mkdocs.md)**

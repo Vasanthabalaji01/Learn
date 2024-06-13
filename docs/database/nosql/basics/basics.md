@@ -104,5 +104,3 @@ NoSQL databases can be broadly categorized into four main types based on their d
    - **Use Case** Ideal for applications involving complex relationships, such as social networks and recommendation engines.
 
    - **Examples** - Neo4j, Amazon Neptune.
-
-[Back](../../nosql/nosql.md)

@@ -1,5 +1,3 @@
-# MySQL
-
 ## Prerequisites
 
 The hardware requirements can vary based on the version and edition of MySQL you intend to install. Generally, the prerequisites include
@@ -118,5 +116,3 @@ client.close
 Make sure to replace placeholders (like `your_host`, `your_database`, etc.) with your actual server and database details.
 
 These examples demonstrate how to establish connections with mysql using different programming languages. Ensure that you have the necessary drivers and libraries installed for each language before attempting to connect.
-
-[Back](../basics/basics.md) | [Database](../../database.md)

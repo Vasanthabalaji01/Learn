@@ -61,5 +61,3 @@ and **IBM Cloud**, **Alibaba Cloud**, **Oracle Cloud**, **Salesforce Cloud** etc
 These cloud providers offer a diverse range of services and solutions tailored to the needs of businesses, developers, and organizations across various industries. 
 
 Choosing the right cloud provider and service model depends on factors such as scalability, performance, security, compliance, and cost-effectiveness, as well as specific use cases and requirements.
-
-[Back](../cloud.md) | [AWS](../aws/aws.md) | [Azure](../azure/azure.md) | [Projects](../projects/projects.md)

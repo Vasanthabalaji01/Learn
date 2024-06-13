@@ -23,5 +23,3 @@ The Center for Internet Security (CIS) is a nonprofit organization that focuses 
    - Helps organizations find trusted cybersecurity solutions that align with CIS best practices and standards, facilitating informed decision-making in selecting and implementing security technologies.
 
 Through these initiatives and collaborations with industry partners, government agencies, and cybersecurity experts, CIS aims to empower organizations with the knowledge and resources needed to effectively manage cybersecurity risks and protect against evolving threats.
-
-[Back](../Standardization_Frameworks.md)

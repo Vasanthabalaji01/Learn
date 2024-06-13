@@ -42,5 +42,3 @@
 ## [Grafana](grafana/grafana.md)
 - An open-source analytics and monitoring platform that integrates with various data sources, including Prometheus, Elasticsearch, and more. 
 - Grafana allows the creation of dynamic, customizable dashboards for visualizing metrics.
-
-[Back](../devops.md)

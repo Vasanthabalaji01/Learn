@@ -107,5 +107,3 @@ AWS Organizations enables you to centrally manage and govern your environment as
 
     - **Overview** [AWS Organizations](https://aws.amazon.com/organizations/)
     - **Documentation** [AWS Organizations Documentation](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html)
-
-[Back](../aws.md)

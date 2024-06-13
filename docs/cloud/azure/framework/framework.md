@@ -150,5 +150,3 @@ Azure Arc extends Azure management and services to any infrastructure, allowing 
 - **Azure Services** Use Azure data services on any infrastructure.
 
 These frameworks and tools provide comprehensive guidance and best practices to help organizations achieve their cloud goals efficiently and securely.
-
-[Back](../azure.md)

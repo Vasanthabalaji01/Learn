@@ -18,7 +18,7 @@ theme:
   logo: img/Mr.Cloudexplorer_logo.png
   favicon: img/Mr.Cloudexplorer_logo.png
   icon:
-    repo: fontawesome/brands/github  
+    repo: fontawesome/brands/github
   features:
     - navigation.instant
     - header.autohide
@@ -31,9 +31,9 @@ nav:
     - Index: linux/linux.md
     - Basics: linux/basics/basics.md
     - Commands: linux/commands/commands.md
-    - Bash: 
+    - Bash:
       - Basics: linux/bash/bash.md
-      - Tasks: 
+      - Tasks:
         - List: linux/bash/tasks/tasks.md
         - Task 1: linux/bash/tasks/task1.md
         - Task 2: linux/bash/tasks/task2.md
@@ -46,9 +46,9 @@ nav:
         - Task 9: linux/bash/tasks/task9.md
         - Task 10: linux/bash/tasks/task10.md
     - Project: linux/project/project.md
-  - Networking: 
+  - Networking:
     - Index: networking/networking.md
-    - Basics: 
+    - Basics:
       - Intro: networking/basic_concepts/basic_concepts.md
       - OSI Model: networking/basic_concepts/osi_model/osi_model.md
       - IP Addresses: networking/basic_concepts/ip_address/ip_address.md
@@ -66,17 +66,17 @@ nav:
       - CISCO Packet Tracer: networking/tools/cisco_packet_tracer/cisco_packet_tracer.md
   - Code:
     - Intro: code/code.md
-    - Python: 
+    - Python:
       - Index: code/python/python.md
       - Setup: code/python/setup/setup.md
-      - Basics: code/python/basics/basics.md 
+      - Basics: code/python/basics/basics.md
       - Package Managers: code/python/package_managers/package_managers.md
       - DSA: code/python/dsa/dsa.md
       - OOP: code/python/oop/oop.md
       - Advance: code/python/advance/advance.md
       - Libraries: code/python/libraries/libraries.md
       - Automation: code/python/automation/automation.md
-      - Web Application: 
+      - Web Application:
         - Index: code/python/web_application/web_application.md
         - Flask: code/python/web_application/flask/flask.md
         - Django: code/python/web_application/django/django.md
@@ -88,24 +88,90 @@ nav:
     - Node.js: code/nodejs/nodejs.md
     - PHP: code/php/php.md
     - Ruby: code/ruby/ruby.md
-  - Database: 
+  - Database:
     - Intro: database/database.md
-  - Web Server: 
+    - SQL:
+      - Intro: database/sql/sql.md
+      - Basics: database/sql/basics/basics.md
+      - SQLite: database/sql/sqlite/sqlite.md
+      - Microsoft SQL Server: database/sql/microsoft_sql_server/microsoft_sql_server.md
+      - MySQL: database/sql/mysql/mysql.md
+    - NoSQL:
+      - Intro: database/nosql/nosql.md
+      - Basics: database/nosql/basics/basics.md
+      - DynamoDB: database/nosql/dynamo_db/dynamo_db.md
+      - MongoDB: database/nosql/mongo_db/mongo_db.md
+  - Web Server:
     - Intro: webserver/webserver.md
-  - Cloud: 
+    - Basics: webserver/basics/basics.md
+    - Servers:
+      - Apache: webserver/servers/apache/apache.md
+      - Nginx: webserver/servers/nginx/nginx.md
+      - Windows Server: webserver/servers/windows_server/windows_server.md
+  - Cloud:
     - Intro: cloud/cloud.md
-  - Devops: 
-    - Intro: devops/devops.md
-  - Security: 
-    - Intro: security/security.md
-  - Random: 
+    - Basics: cloud/basic_concepts/basic_concepts.md
+    - AWS:
+      - Index: cloud/aws/aws.md
+      - Basics: cloud/aws/basic_concepts/basic_concepts.md
+      - Frameworks: cloud/aws/framework/framework.md
+      - Services: cloud/aws/services/services.md
+      - AWS CLI: cloud/aws/aws_cli/aws_cli.md
+      - Project:
+        - Cloud Resume: cloud/projects/cloud_resume_aws.md
+    - Azure:
+      - Index: cloud/azure/azure.md
+      - Basics: cloud/azure/basic_concepts/basic_concept.md
+      - Frameworks: cloud/azure/framework/framework.md
+      - Services: cloud/azure/framework/framework.md
+      - Azure CLI: cloud/azure/azure_cli/azure_cli.md
+      - Project:
+        - Cloud Resume: cloud/projects/cloud_resume_azure.md
+  - DevOps:
+    - Index: devops/devops.md
+    - Basics: devops/basics/basics.md
+    - Tools:
+      - List: devops/tools/tools.md
+      - Git GitHub: devops/tools/git_github/git_github.md
+      - Ansible: devops/tools/ansible/ansible.md
+      - Docker: devops/tools/docker/docker.md
+      - Puppet: devops/tools/puppet/puppet.md
+      - Jenkins: devops/tools/jenkins/jenkins.md
+      - Chef: devops/tools/chef/chef.md
+      - Nagios: devops/tools/nagios/nagios.md
+      - Kubernetes: devops/tools/k8s/k8s.md
+      - Terraform: devops/tools/terraform/terraform.md
+      - Prometheus: devops/tools/prometheus/prometheus.md
+      - Grafana: devops/tools/grafana/grafana.md
+  - Security:
+    - Index: security/security.md
+    - Basics: security/basics/basics.md
+    - Standardization/Frameworks:
+      - Intro: security/standardization_frameworks/standardization_frameworks.md
+      - OWASP: security/standardization_frameworks/owasp/owasp.md
+      - CIS: security/standardization_frameworks/cis/cis.md
+    - Tools:
+    - Practice:
+      - Labs: security/practice/labs/labs.md
+      - Vuln Machine: security/practice/vuln_machine/vuln_machine.md
+      - CTF: security/practice/ctf/ctf.md
+  - Random:
     - Intro: random/random.md
+    - API: random/api/api.md
+    - Figma: random/figma/figma.md
+    - Flameshot: random/flameshot/flameshot.md
+    - Math: random/math/math.md
+    - Putty: random/putty/putty.md
+    - VScode: random/vscode/vscode.md
+    - Xmind: random/xmind/xmind.md
+    - Notion: random/notion/notion.md
+    - MKDocs: random/mkdocs/mkdocs.md
 
 extra:
   social:
-    - icon: fontawesome/brands/github 
+    - icon: fontawesome/brands/github
       link: https://github.com/Vasanthabalaji01
-    - icon: fontawesome/brands/linkedin 
+    - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/vasanthabalaji
-    - icon: fontawesome/brands/instagram 
+    - icon: fontawesome/brands/instagram
       link: https://www.instagram.com/mrcloudexplorer

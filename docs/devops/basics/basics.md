@@ -109,5 +109,3 @@ This lifecycle consists of several key phases, each playing a crucial role in en
    - **Tools** - Chef, Puppet, [Terraform](../tools/terraform/terraform.md), AWS, Azure, Google Cloud.
 
 The DevOps lifecycle is integral to modern software development, promoting efficiency, quality, and agility. this continuous process, organizations can deliver better software faster, meeting the ever-evolving needs of their users and the market.
-
-[Back](../devops.md)

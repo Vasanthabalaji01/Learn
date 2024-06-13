@@ -1,5 +1,3 @@
-# Microsoft SQL Server
-
 ## Prerequisites
 
 The hardware requirements for Microsoft SQL Server can vary depending on the version and edition you intend to install.
@@ -133,5 +131,3 @@ client.close
 Make sure to replace `'your_server_name'`, `'your_database_name'`, `'your_username'`, and `'your_password'` with your actual connection details.
 
 These examples demonstrate how to establish connections with Microsoft SQL Server using different programming languages. Ensure that you have the necessary drivers and libraries installed for each language before attempting to connect.
-
-[Back](../basics/basics.md) | [Database](../../database.md)

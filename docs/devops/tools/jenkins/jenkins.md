@@ -1,5 +1,3 @@
-# Jenkins
-
 Jenkins is an open-source automation server that facilitates continuous integration and continuous delivery (CI/CD) pipelines. It automates the building, testing, and deployment of applications, allowing development teams to deliver software more efficiently and reliably.
 
 ## Key Features
@@ -93,5 +91,3 @@ Jenkins provides monitoring and logging capabilities to track build and job exec
 - **Security Risks** Improperly configured Jenkins instances may pose security risks, such as exposure of sensitive data or unauthorized access.
 
 Jenkins is a versatile automation server that enables continuous integration and continuous delivery for software development projects.Automating build, test, and deployment processes, Jenkins helps teams deliver high-quality software more efficiently and reliably. With its extensive plugin ecosystem, robust architecture, and active community, Jenkins remains a popular choice for CI/CD pipelines in the software industry.
-
-[Back](../tools.md)

@@ -1,5 +1,3 @@
-# SQLite
-
 ## No Prerequisites
 
 SQLite is a lightweight, serverless database engine that requires minimal hardware resources.SQLite can run on almost any hardware configuration, including low-power devices like smartphones and IoT devices.
@@ -87,6 +85,4 @@ end
 # Close connection (not required for SQLite)
 ```
 
-SQLite is often used as a prebuilt, embedded database engine within programming languages and applications. Its lightweight nature and simplicity make it an excellent choice for scenarios where a standalone database solution is needed without the overhead of a separate database server. 
-
-[Back](../basics/basics.md) | [Database](../../database.md)
+SQLite is often used as a prebuilt, embedded database engine within programming languages and applications. Its lightweight nature and simplicity make it an excellent choice for scenarios where a standalone database solution is needed without the overhead of a separate database server.

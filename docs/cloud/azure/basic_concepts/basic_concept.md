@@ -80,5 +80,3 @@ Azure offers several pricing options
 - **Free Tier** Azure offers a free tier for new customers, providing limited access to a range of services for a certain period to help users get started with Azure at no cost.
 
 It's essential to monitor your Azure usage regularly to avoid unexpected charges, and Azure provides tools and services to help you manage and optimize your costs effectively.
-
-[Back](../azure.md)

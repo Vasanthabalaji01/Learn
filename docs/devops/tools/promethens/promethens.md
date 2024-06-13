@@ -1,5 +1,3 @@
-# Prometheus
-
 Prometheus is an open-source monitoring and alerting toolkit designed for reliability and scalability.
 
 It collects metrics from monitored targets, stores them efficiently, and provides powerful querying and visualization capabilities.
@@ -88,5 +86,3 @@ Prometheus integrates seamlessly with Kubernetes for monitoring containerized wo
 Prometheus is a powerful monitoring and alerting toolkit designed for reliability, scalability, and flexibility. With its multi-dimensional data model, powerful query language, and built-in alerting capabilities, Prometheus is well-suited for monitoring modern, cloud-native applications and microservices architectures.
 
 integrating with Kubernetes and other cloud-native technologies, Prometheus helps organizations gain insights into the performance and health of their systems, enabling proactive monitoring, troubleshooting, and optimization.
-
-[Back](../tools.md)

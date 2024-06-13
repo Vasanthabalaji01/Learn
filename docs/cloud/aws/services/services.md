@@ -92,5 +92,3 @@ Amazon Web Services (AWS) offers a broad and set of cloud services, list of some
 2. **AWS Elemental MediaLive** - Broadcast-grade live video processing.
 
 This is not an exhaustive list, but it includes many of the core services offered by AWS. Each of these services can be further explored to understand their specific use cases, pricing, and configurations.
-
-[Back](../aws.md)

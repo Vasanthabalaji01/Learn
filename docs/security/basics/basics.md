@@ -66,5 +66,3 @@ Security encompasses various domains, each focusing on different aspects of prot
    - Ensures that mobile devices, applications, and networks are protected from security threats.
 
 Security is a multifaceted discipline that requires a comprehensive understanding of various principles, practices, and technologies. By adhering to these basics and leveraging established frameworks and best practices, individuals and organizations can better protect their assets and data from potential threats.
-
-[Back](../security.md)

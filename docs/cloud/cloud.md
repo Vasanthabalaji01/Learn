@@ -12,8 +12,6 @@ Amazon Web Services (AWS) is a cloud computing platform provided by Amazon.com. 
 
 Microsoft Azure is a cloud computing platform provided by Microsoft, offering a comprehensive suite of cloud services for building, deploying, and managing applications and services through Microsoft-managed data centers.
 
-# [Projects](projects/projects.md)
+# Projects
 
 Cloud projects can cover a wide range of use cases and scenarios, leveraging the capabilities of cloud computing platforms to address various business needs and challenges.
-
-[Back](../learn.md) | [Cloud Computing](basic_concepts/basic_concepts.md) | [AWS](aws/aws.md) | [Azure](azure/azure.md) | [Projects](projects/projects.md)

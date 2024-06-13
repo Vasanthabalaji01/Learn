@@ -1,5 +1,3 @@
-# Flameshot
-
 Flameshot is a powerful yet easy-to-use screenshot tool designed for Linux, but it is also available on Windows and macOS. 
 
 It offers a rich feature set that enhances your screenshot-taking experience, including annotation tools, customizable options, and integration with other applications.
@@ -98,5 +96,3 @@ To capture and annotate a screenshot
 4. Save the annotated image or copy it to the clipboard for easy sharing.
 
 Flameshot make it an essential tool for anyone who needs to capture and share screenshots regularly.
-
-[Back](../random.md)

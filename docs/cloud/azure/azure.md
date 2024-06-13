@@ -1,5 +1,3 @@
-# Azure
-
 ## [Basic Concepts](basic_concepts/basic_concept.md)
 
 Gain insights into fundamental concepts and terminology related to Azure, including regions, resource groups, Azure Active Directory (AAD), and more.
@@ -14,7 +12,5 @@ Explore a wide range of Azure services spanning compute, storage, databases, net
 ## [Command Line Interface](azure_cli/azure_cli.md)
 The Azure Command Line Interface (CLI) for managing Azure resources, automating tasks, and scripting operations in the Azure environment.
 
-## [Project](../projects/azure/azure.md)
+## [Project](../projects/cloud_resume_azure.md)
 Explore Azure-related projects for hands-on learning and practical experience.
-
-[Back](../cloud.md) | [Projects](../projects/projects.md)

@@ -1,4 +1,3 @@
-# [DevOps](basics/basics.md)
 DevOps is a cultural and professional movement that emphasizes collaboration and communication between software developers and IT operations.
 
 ## Learning Prerequisites
@@ -19,5 +18,3 @@ The DevOps ecosystem includes a variety of tools that facilitate continuous inte
 - **Terraform** Infrastructure as Code (IaC) tool for building, changing, and versioning infrastructure safely and efficiently.
 - **Prometheus** Monitoring and alerting toolkit designed for reliability and scalability, particularly in dynamic environments.
 - **Grafana** Open-source platform for monitoring and observability, allowing you to visualize metrics and logs from various data sources.
-
-[Back](../learn.md) | [Basics](basics/basics.md) | [Tool](tools/tools.md)

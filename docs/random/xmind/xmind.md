@@ -1,5 +1,3 @@
-# XMind
-
 Create our mind maps
 
 ## Why I Used It For
@@ -26,5 +24,3 @@ Create our mind maps
 4. **Sync** XMind also offers syncing capabilities, allowing you to sync your offline work with the web version or across multiple devices when you're back online.
 
 Whether you're brainstorming ideas, planning projects, or organizing information, XMind provides a platform for visual thinking were this site learn is started...
-
-[Back](../random.md)

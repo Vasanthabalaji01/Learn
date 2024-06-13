@@ -96,5 +96,3 @@ Microsoft Azure offers a wide range of cloud services designed to meet various c
 1. **Azure Blockchain Service** - Fully managed ledger service.
 
 This list includes many core Azure services, but it is not exhaustive. Each service can be further explored to understand its specific capabilities, pricing, and configurations.
-
-[Back](../azure.md)

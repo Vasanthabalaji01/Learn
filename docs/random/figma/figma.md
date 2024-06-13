@@ -1,8 +1,6 @@
-# figma
-
 Figma is a powerful tool for designing and prototyping interfaces.
 
-### **Getting Started with Figma**
+## **Getting Started with Figma**
 
  **Introduction to Figma**
    - **Sign up and Dashboard Tour** Create a Figma account and familiarize yourself with the Figma interface.
@@ -33,7 +31,7 @@ Figma is a powerful tool for designing and prototyping interfaces.
    - Linking frames to create a basic prototype.
    - Previewing and sharing prototypes.
 
-### **Enhancing Your Skills**
+## **Enhancing Your Skills**
 
  **Advanced Components and Variants**
    - Creating complex components with nested elements.
@@ -55,7 +53,7 @@ Figma is a powerful tool for designing and prototyping interfaces.
    - Using Figma’s built-in prototyping features for user testing.
    - Exporting prototypes and sharing them with stakeholders.
 
-### **Mastering Figma**
+## **Mastering Figma**
 
  **Advanced Techniques and Plugins**
    - Using and creating plugins to enhance Figma’s capabilities.
@@ -77,7 +75,7 @@ Figma is a powerful tool for designing and prototyping interfaces.
    - Exporting assets and specs for developers.
    - Utilizing Figma’s Inspect panel for a seamless handoff.
 
-### **Resources for Learning Figma**
+## **Resources for Learning Figma**
 
  **Official Figma Resources**
    - [Figma Help Center](https://help.figma.com/)
@@ -97,5 +95,3 @@ Figma is a powerful tool for designing and prototyping interfaces.
    - Redesign existing websites or apps.
    - Create your own portfolio projects.
    - Participate in design challenges and hackathons.
-
-[Back](../random.md)

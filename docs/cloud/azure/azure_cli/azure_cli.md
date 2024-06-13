@@ -36,5 +36,3 @@ The Azure Command Line Interface (CLI) provides a command-line interface for man
 This [Azure CLI Documentation](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest) provides detailed information on installing the Azure CLI, getting started guides, command reference, and more.
 
 The Azure CLI offers a powerful and flexible way to manage Azure resources and automate tasks directly from the command line.
-
-[Back](../azure.md)

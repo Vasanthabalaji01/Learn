@@ -98,5 +98,3 @@ SQL commands are categorized into five types based on their functionality
    - Optimized tables for specific use cases.
    - **Use Case** Designed for specialized workloads and high-performance analytics.
    - **Examples** - SAP HANA, Teradata
-
-[Back](../../sql/sql.md)

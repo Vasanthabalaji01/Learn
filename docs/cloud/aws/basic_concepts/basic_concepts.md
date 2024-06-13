@@ -81,5 +81,3 @@ AWS offers several pricing options, including
 - **Free Tier** AWS offers a free tier for new customers, providing limited access to a range of services for a certain period (usually 12 months) to help users get started with AWS at no cost.
 
 It's essential to monitor your AWS usage regularly to avoid unexpected charges, and AWS provides tools and services to help you manage and optimize your costs effectively.
-
-[Back](../aws.md)

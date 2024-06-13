@@ -1,5 +1,3 @@
-# PuTTY
-
 PuTTY is a free and open-source terminal emulator, serial console, and network file transfer application. It supports various network protocols, including SSH, Telnet, rlogin, and raw socket 
 connection. 
 
@@ -55,5 +53,3 @@ PuTTY is primarily used for establishing secure connections to remote servers. H
 - **Customization** You can customize the appearance and behavior of your terminal window, including font size, colors, and window size.
 
 PuTTY is a tool for remote server management, offering robust features for secure and customizable connections. Whether you're a system administrator or a developer, PuTTY provides a reliable way to access and manage your servers.
-
-[Back](../random.md)

@@ -13,5 +13,3 @@
   
 - **Site Host in Cloud**
   - Steps to host a website on a cloud server running Windows.
-
-[Back](../servers.md)

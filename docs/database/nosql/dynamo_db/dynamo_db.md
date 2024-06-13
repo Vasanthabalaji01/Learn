@@ -1,5 +1,3 @@
-# DynamoDB
-
 ## No Prerequisites
 
 DynamoDB is a fully managed NoSQL database service provided by AWS, so there are no prerequisites. However, to interact with DynamoDB, you'll need an AWS account and access to the AWS Management Console or AWS SDK.
@@ -84,5 +82,3 @@ end
 ```
 
 DynamoDB being a cloud-based NoSQL database service provided by AWS, requires appropriate credentials for access and usage operates on a pay-as-you-go pricing model, where you are charged based on the resources you consume and the operations you perform.
-
-[Back](../basics/basics.md) | [Database](../../database.md)

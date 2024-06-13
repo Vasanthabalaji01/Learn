@@ -45,5 +45,3 @@ Web servers are used for
 - Sending and receiving emails via SMTP.
 - Handling file transfers via FTP.
 - Running web-based applications with server-side scripting.
-
-[Back](../webserver.md)

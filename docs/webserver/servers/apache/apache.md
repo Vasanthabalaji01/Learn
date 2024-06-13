@@ -1,5 +1,3 @@
-# Apache
-
 ## Linux - Ubuntu
 
 - **Installation**
