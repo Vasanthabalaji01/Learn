@@ -1,0 +1,89 @@
+site_name: Learn
+
+repo_url: https://github.com/Vasanthabalaji01/Learn
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: default
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+    - scheme: slate
+      primary: default
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+  logo: img/Mr.Cloudexplorer_logo.png
+  favicon: img/Mr.Cloudexplorer_logo.png
+  icon:
+    repo: fontawesome/brands/github  
+  features:
+    - navigation.instant
+    - header.autohide
+    - navigation.tabs
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Linux:
+    - Index: linux/linux.md
+    - Basics: linux/basics/basics.md
+    - Commands: linux/commands/commands.md
+    - Bash: 
+      - Basics: linux/bash/bash.md
+      - Tasks: 
+        - List: linux/bash/tasks/tasks.md
+        - Task 1: linux/bash/tasks/task1.md
+        - Task 2: linux/bash/tasks/task2.md
+        - Task 3: linux/bash/tasks/task3.md
+        - Task 4: linux/bash/tasks/task4.md
+        - Task 5: linux/bash/tasks/task5.md
+        - Task 6: linux/bash/tasks/task6.md
+        - Task 7: linux/bash/tasks/task7.md
+        - Task 8: linux/bash/tasks/task8.md
+        - Task 9: linux/bash/tasks/task9.md
+        - Task 10: linux/bash/tasks/task10.md
+    - Project: linux/project/project.md
+  - Networking: 
+    - Index: networking/networking.md
+    - Basics: 
+      - Intro: networking/basic_concepts/basic_concepts.md
+      - OSI Model: networking/basic_concepts/osi_model/osi_model.md
+      - IP Addresses: networking/basic_concepts/ip_address/ip_address.md
+      - MAC Addresses: networking/basic_concepts/mac_address/mac_address.md
+      - Routing and Switching: networking/basic_concepts/routing_switching/routing_switching.md
+      - TCP/IP: networking/basic_concepts/tcp_ip/tcp_ip.md
+      - TCP and UDP: networking/basic_concepts/tcp_udp/tcp-udp.md
+      - DNS: networking/basic_concepts/dns/dns.md
+      - VPN: networking/basic_concepts/vpn/vpn.md
+      - TLS and SSL: networking/basic_concepts/tls_ssl/tls_ssl.md
+      - Firewall: networking/basic_concepts/firewall/firewall.md
+    - Protocols/Ports: networking/protocols_ports/protocols_ports.md
+    - Tools:
+      - Intro: networking/tools/tools.md
+      - CISCO Packet Tracer: networking/tools/cisco_packet_tracer/cisco_packet_tracer.md
+  - Code:
+    - Intro: code/code.md
+  - Database: 
+    - Intro: database/database.md
+  - Web Server: 
+    - Intro: webserver/webserver.md
+  - Cloud: 
+    - Intro: cloud/cloud.md
+  - Devops: 
+    - Intro: devops/devops.md
+  - Security: 
+    - Intro: security/security.md
+  - Random: 
+    - Intro: random/random.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/Vasanthabalaji01
+    - icon: fontawesome/brands/linkedin 
+      link: https://www.linkedin.com/in/vasanthabalaji
+    - icon: fontawesome/brands/instagram 
+      link: https://www.instagram.com/mrcloudexplorer
