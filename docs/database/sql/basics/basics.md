@@ -1,23 +1,34 @@
-# SQL Bascis
+## What is SQL ?
 
-## How SQL Works
+   - SQL databases are relational databases that store data in tables and use SQL for querying and manipulating data.
+   - They enforce a rigid schema where data is organized into rows and columns.
 
-When you execute an SQL command in any Relational Database Management System (RDBMS), the system processes the command to determine the best way to fulfill the request. This involves several components that work together to interpret and execute the query efficiently.
+## How SQL Works ?
+
+When you execute an SQL command in any Relational Database Management System (RDBMS), the system processes the command to determine the best way to fulfill the request. 
+
+This involves several components that work together to interpret and execute the query efficiently.
+
+## ACID - Atomicity, Consistency, Isolation, Durability
+   - **ACID** is a set of properties that guarantee reliable transaction processing in databases.
+   - **Atomicity** ensures that transactions are either fully completed or fully aborted.
+   - **Consistency** ensures that the database remains in a valid state before and after each transaction.
+   - **Isolation** ensures that concurrent transactions do not interfere with each other.
+   - **Durability** ensures that committed transactions are permanently saved even in the event of a system failure.
 
 ## Components Involved in SQL Execution
 
 1. **Query Dispatcher**
-
-   - The query dispatcher directs the query to the appropriate query processor. It ensures that the query reaches the correct component for further processing.
+      - The query dispatcher directs the query to the appropriate query processor. It ensures that the query reaches the correct component for further processing.
 
 2. **Optimization Engines**
-   - Optimization engines analyze different ways to execute the query and choose the most efficient execution plan. They consider various factors like indexes, joins, and available resources to optimize the query performance.
+      - Optimization engines analyze different ways to execute the query and choose the most efficient execution plan. They consider various factors like indexes, joins, and available resources to optimize the query performance.
 
 3. **Classic Query Engine**
-   - Handles non-SQL queries or legacy queries that might be part of the system. It's responsible for queries that don't conform to modern SQL standards but still need processing.
+      - Handles non-SQL queries or legacy queries that might be part of the system. It's responsible for queries that don't conform to modern SQL standards but still need processing.
 
 4. **SQL Query Engine**
-   - Specifically designed to handle SQL queries. It interprets and executes SQL commands, ensuring that the data retrieval and manipulation are performed according to the SQL standard.
+      - Specifically designed to handle SQL queries. It interprets and executes SQL commands, ensuring that the data retrieval and manipulation are performed according to the SQL standard.
 
 ## Types of SQL Commands
 
@@ -27,7 +38,7 @@ SQL commands are categorized into five types based on their functionality
 
    - Used to define and modify the structure of database objects such as tables, indexes, and schemas.
 
-   - **Commands**
+    **Commands**
 
      - `CREATE`: Creates a new database object.
      - `ALTER`: Modifies an existing database object.
@@ -38,7 +49,7 @@ SQL commands are categorized into five types based on their functionality
 
    - Used for managing data within database objects.
 
-   - **Commands**
+    **Commands**
 
      - `SELECT`: Retrieves data from the database.
      - `INSERT`: Adds new data into a table.
@@ -49,7 +60,7 @@ SQL commands are categorized into five types based on their functionality
 
    - Used to control access to data in the database.
 
-   - **Commands**
+    **Commands**
 
      - `GRANT`: Gives a user permission to perform specific tasks.
      - `REVOKE`: Removes permissions from a user.
@@ -58,7 +69,7 @@ SQL commands are categorized into five types based on their functionality
 
    - Used to manage transactions in the database, ensuring data integrity and consistency.
 
-   - **Commands**
+    **Commands**
    
      - `COMMIT` Saves the transaction changes to the database.
      - `ROLLBACK` Reverts the transaction changes if something goes wrong.
@@ -68,33 +79,38 @@ SQL commands are categorized into five types based on their functionality
 
    - Primarily used to query the database and retrieve data.
 
-   - **Command**
+    **Command**
 
      - `SELECT` The only DQL command, used to fetch data from the database based on specified criteria.
 
-## Types of SQL Databases
+## Various SQL Databases
 
 1. **Commercial SQL Databases**
-   - Organized into tables with predefined schemas.
-   - **Use Case** Suitable for enterprise-level applications requiring robust features and support.
-   - **Examples** - Oracle Database, [Microsoft SQL Server](../microsoft_sql_server/microsoft_sql_server.md), IBM Db2
+      - Organized into tables with predefined schemas.
+      - **Use Case** Suitable for enterprise-level applications requiring robust features and support.
+      - **Examples** - Oracle Database, [Microsoft SQL Server](../microsoft_sql_server/microsoft_sql_server.md), IBM Db2   
 
 2. **Open Source SQL Databases**
-   - Data in tables with community-supported extensions.
-   - **Use Case** Ideal for startups and small to medium-sized businesses.
-   - **Examples** - [MySQL](../mysql/mysql.md), PostgreSQL, MariaDB
+      - Data in tables with community-supported extensions.
+      - **Use Case** Ideal for startups and small to medium-sized businesses.
+      - **Examples** - [MySQL](../mysql/mysql.md), PostgreSQL, MariaDB
 
 3. **Embedded SQL Databases**
-   - Lightweight and self-contained within applications.
-   - **Use Case** Perfect for mobile and desktop applications with minimal configuration.
-   - **Examples** - [SQLite](../sqlite/sqlite.md), Firebird
+      - Lightweight and self-contained within applications.
+      - **Use Case** Perfect for mobile and desktop applications with minimal configuration.
+      - **Examples** - [SQLite](../sqlite/sqlite.md), Firebird
 
 4. **Cloud-Based SQL Databases**
-   - Managed by cloud providers, scalable tables.
-   - **Use Case** Best for applications needing high availability and scalability.
-   - **Examples** - Amazon RDS, Google Cloud SQL, Azure SQL Database
+      - Managed by cloud providers, scalable tables.
+      - **Use Case** Best for applications needing high availability and scalability.
+      - **Examples** - Amazon RDS, Google Cloud SQL, Azure SQL Database
 
 5. **Specialized SQL Databases**
-   - Optimized tables for specific use cases.
-   - **Use Case** Designed for specialized workloads and high-performance analytics.
-   - **Examples** - SAP HANA, Teradata
+      - Optimized tables for specific use cases.
+      - **Use Case** Designed for specialized workloads and high-performance analytics.
+      - **Examples** - SAP HANA, Teradata
+
+## Use Cases
+
+   - Traditional relational databases are well-suited for applications with structured data and complex relationships, such as e-commerce platforms, banking systems, and enterprise resource planning (ERP) systems.
+   - SQL databases are preferred when data integrity, consistency, and transactional support are critical requirements.

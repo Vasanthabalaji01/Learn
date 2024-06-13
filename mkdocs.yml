@@ -91,25 +91,23 @@ nav:
   - Database:
     - Intro: database/database.md
     - SQL:
-      - Intro: database/sql/sql.md
       - Basics: database/sql/basics/basics.md
       - SQLite: database/sql/sqlite/sqlite.md
       - Microsoft SQL Server: database/sql/microsoft_sql_server/microsoft_sql_server.md
       - MySQL: database/sql/mysql/mysql.md
     - NoSQL:
-      - Intro: database/nosql/nosql.md
       - Basics: database/nosql/basics/basics.md
       - DynamoDB: database/nosql/dynamo_db/dynamo_db.md
       - MongoDB: database/nosql/mongo_db/mongo_db.md
   - Web Server:
-    - Intro: webserver/webserver.md
+    - Index: webserver/webserver.md
     - Basics: webserver/basics/basics.md
     - Servers:
       - Apache: webserver/servers/apache/apache.md
       - Nginx: webserver/servers/nginx/nginx.md
       - Windows Server: webserver/servers/windows_server/windows_server.md
   - Cloud:
-    - Intro: cloud/cloud.md
+    - Index: cloud/cloud.md
     - Basics: cloud/basic_concepts/basic_concepts.md
     - AWS:
       - Index: cloud/aws/aws.md
@@ -119,14 +117,16 @@ nav:
       - AWS CLI: cloud/aws/aws_cli/aws_cli.md
       - Project:
         - Cloud Resume: cloud/projects/cloud_resume_aws.md
+        - More: https://vasanthabalaji01.github.io/AWS/
     - Azure:
       - Index: cloud/azure/azure.md
       - Basics: cloud/azure/basic_concepts/basic_concept.md
       - Frameworks: cloud/azure/framework/framework.md
-      - Services: cloud/azure/framework/framework.md
+      - Services: cloud/azure/services/services.md
       - Azure CLI: cloud/azure/azure_cli/azure_cli.md
       - Project:
         - Cloud Resume: cloud/projects/cloud_resume_azure.md
+        - More: https://vasanthabalaji01.github.io/Azure/
   - DevOps:
     - Index: devops/devops.md
     - Basics: devops/basics/basics.md
@@ -147,16 +147,16 @@ nav:
     - Index: security/security.md
     - Basics: security/basics/basics.md
     - Standardization/Frameworks:
-      - Intro: security/standardization_frameworks/standardization_frameworks.md
-      - OWASP: security/standardization_frameworks/owasp/owasp.md
-      - CIS: security/standardization_frameworks/cis/cis.md
-    - Tools:
+      - Intro: security/Standardization_Frameworks/Standardization_Frameworks.md
+      - OWASP: security/Standardization_Frameworks/owasp/owasp.md
+      - CIS: security/Standardization_Frameworks/cis/cis.md
+    - Tools: security/tools/tools.md
     - Practice:
       - Labs: security/practice/labs/labs.md
-      - Vuln Machine: security/practice/vuln_machine/vuln_machine.md
+      - Vuln Machine: security/practice/vuln_machin/vuln_machin.md
       - CTF: security/practice/ctf/ctf.md
   - Random:
-    - Intro: random/random.md
+    - Index: random/random.md
     - API: random/api/api.md
     - Figma: random/figma/figma.md
     - Flameshot: random/flameshot/flameshot.md

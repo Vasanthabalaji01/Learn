@@ -1,5 +1,3 @@
-# Basics of DevOps
-
 ## Introduction to DevOps
 
 DevOps aims to shorten the development lifecycle and deliver high-quality software continuously. By integrating development and operations, DevOps helps to break down silos, enabling faster and more efficient software delivery.
