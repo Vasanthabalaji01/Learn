@@ -1,14 +1,12 @@
-# Package Managers
-
 Package managers are tools used to install, manage, and update software packages or libraries in a programming language.
 
-In Python, the most commonly used package manager
+## In Python, the most commonly used package manager
 
 - `pip` short for "Pip Installs Packages". 
 
 - `conda` is another package manager, primarily associated with the Anaconda distribution, which is popular in data science and scientific computing communities. 
 
-Let's explore these package managers in more detail:
+Let's explore these package managers in more detail
 
 ## pip
 
@@ -48,7 +46,7 @@ Let's explore these package managers in more detail:
 
 ## Setup Conda
 
-Setting up `conda` involves installing Anaconda or Miniconda, which are Python distributions that come with `conda` and many pre-installed packages commonly used in data science and scientific computing. Here's how to set up `conda`:
+Setting up `conda` involves installing Anaconda or Miniconda, which are Python distributions that come with `conda` and many pre-installed packages commonly used in data science and scientific computing. Here's how to set up `conda`
 
 ### Anaconda
 
@@ -93,5 +91,3 @@ Setting up `conda` is straightforward, and it provides a convenient way to manag
 - **Environment Management**: `conda` provides tools for creating and managing isolated environments, allowing you to manage dependencies separately for different projects.
 
 Both `pip` and `conda` are powerful tools for managing Python packages, and the choice between them depends on your specific requirements and use cases. If you're working with the Anaconda distribution or need to manage non-Python dependencies, `conda` may be the preferred choice. Otherwise, `pip` is the standard package manager for Python packages.
-
-[Back](../python.md) | [Code](../../code.md)

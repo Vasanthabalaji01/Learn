@@ -1,5 +1,3 @@
-# fastAPI
-
 Learning FastAPI from scratch to becoming an expert involves a systematic approach that includes studying the fundamentals, building projects, and continuously expanding your knowledge
 
 ### Step 1: Setup and Basics
@@ -34,5 +32,3 @@ Learning FastAPI from scratch to becoming an expert involves a systematic approa
 - **Official FastAPI Documentation** [FastAPI Documentation](https://fastapi.tiangolo.com/)
 - **Books and Tutorials** Miguel Grinberg's "FastAPI Web Development with Python" is a comprehensive book covering FastAPI from beginner to advanced topics. Also, explore tutorials and blog posts on FastAPI from reputable sources.
 - **Online Courses** Platforms like Udemy, Coursera, and Pluralsight offer courses on FastAPI for beginners to advanced users.
-
-[Back](../../python.md) | [Project](../project.md) | [Code](../../../code.md)

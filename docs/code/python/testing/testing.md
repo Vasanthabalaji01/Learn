@@ -1,5 +1,3 @@
-# Testing
-
 Testing is an essential aspect of software development to ensure the quality, reliability, and performance of applications. there are different types of testing commonly used in software development
 
 ## Unit Testing
@@ -55,5 +53,3 @@ Load testing involves testing the performance and scalability of the application
 Simulating thousands of concurrent users accessing a web application to measure response times, throughput, and resource utilization.
 
 Each type of testing plays a crucial role in ensuring the quality and reliability of software applications.
-
-[Back](../python.md) | [Code](../../code.md)

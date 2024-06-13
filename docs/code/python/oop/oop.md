@@ -1,5 +1,3 @@
-# OOP
-
 Object-oriented programming (OOP) is a programming paradigm based on the concept of "objects", which can contain data (attributes) and code (methods).
 
 ## Classes
@@ -53,5 +51,3 @@ Object-oriented programming (OOP) is a programming paradigm based on the concept
   In this example, we create objects `my_car` and `my_electric_car` of classes `Car` and `ElectricCar` respectively. We then call the `drive()` method on both objects to simulate driving. Since `ElectricCar` inherits from `Car`, it can also call the `drive()` method. Additionally, we call the `charge()` method on `my_electric_car` to simulate charging, which is specific to electric cars.
 
 Classes, inheritance, and methods is fundamental for designing and implementing object-oriented solutions in Python. They enable modular, reusable, and maintainable code structures.
-
-[Back](../python.md) | [Code](../../code.md)

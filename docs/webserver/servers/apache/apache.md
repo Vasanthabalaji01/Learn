@@ -26,5 +26,3 @@ sudo apt install apache2
   - Steps to host a website on a cloud server with Apache.
   
   When hosting a website on a cloud server with Apache, you'll need to ensure that your server's firewall settings allow traffic on port 80 (HTTP) and optionally port 443 (HTTPS). You can then configure Apache to serve your website files as you would on a local server.
-
-[Back](../servers.md)

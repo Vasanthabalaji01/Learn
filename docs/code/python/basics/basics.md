@@ -1,6 +1,4 @@
-## Basics
-
-# Basic syntax
+## Basic syntax
 
 Let's go through Python's basic syntax
 
@@ -96,7 +94,7 @@ finally:
 
 These are the basic elements of Python syntax. Understanding these will help you start writing Python code effectively.
 
-# variables
+## variables
 
 Variables in Python are used to store data values. Unlike some other programming languages, Python does not require you to explicitly declare the data type of a variable.
 
@@ -160,7 +158,7 @@ print(x)  # Output: 7
 
 working with variables is fundamental to writing Python code effectively.
 
-# Data types
+## Data types
 
 Let's delve deeper into each data types
 
@@ -269,7 +267,7 @@ print("NoneType result:", result)
 
 The characteristics and usage of each data type is essential for writing efficient and effective Python code.
 
-# Conditionals
+## Conditionals
 
 Let's dive into conditionals in Python
 
@@ -375,7 +373,7 @@ In this example, the code inside the inner `if` statement is only executed if bo
 
 These conditional statements allows you to control the flow of your program and execute specific blocks of code based on different conditions.
 
-# Loops
+## Loops
 
 Loops are essential constructs in programming that allow you to execute a block of code repeatedly. In Python, there are two main types of loops: `for` loops and `while` loops, nested loops provide a way to iterate over multiple sequences or perform complex iterations.
 
@@ -383,13 +381,13 @@ Loops are essential constructs in programming that allow you to execute a block 
 
 The `for` loop is used to iterate over a sequence (such as lists, tuples, strings, or ranges) and execute a block of code for each item in the sequence.
 
-#### Syntax:
+#### Syntax
 ```python
 for item in sequence:
     # code block
 ```
 
-#### Example:
+#### Example
 ```python
 fruits = ["apple", "banana", "cherry"]
 
@@ -401,13 +399,13 @@ for fruit in fruits:
 
 The `while` loop is used to repeatedly execute a block of code as long as a condition is true.
 
-#### Syntax:
+#### Syntax
 ```python
 while condition:
     # code block
 ```
 
-#### Example:
+#### Example
 ```python
 i = 1
 
@@ -420,14 +418,14 @@ while i <= 5:
 
 Nested loops allow you to use one loop inside another loop, providing a way to perform more complex iterations.
 
-#### Syntax:
+#### Syntax
 ```python
 for item1 in sequence1:
     for item2 in sequence2:
         # code block
 ```
 
-#### Example:
+#### Example
 ```python
 for i in range(3):
     for j in range(2):
@@ -442,7 +440,7 @@ Python provides several loop control statements to modify the execution of loops
 
 The `break` statement terminates the loop prematurely when a certain condition is met.
 
-#### Syntax:
+#### Syntax
 ```python
 for item in sequence:
     if condition:
@@ -453,7 +451,7 @@ for item in sequence:
 
 The `continue` statement skips the rest of the code inside the loop for the current iteration and moves to the next iteration.
 
-#### Syntax:
+#### Syntax
 ```python
 for item in sequence:
     if condition:
@@ -464,7 +462,7 @@ for item in sequence:
 
 An `else` block can be used with loops to execute a block of code after the loop completes normally (i.e., without encountering a `break` statement).
 
-#### Syntax:
+#### Syntax
 ```python
 for item in sequence:
     # code block
@@ -472,7 +470,7 @@ else:
     # code block
 ```
 
-#### Example:
+#### Example
 ```python
 fruits = ["apple", "banana", "cherry"]
 
@@ -486,7 +484,7 @@ else:
 
 Using loops and loop control statements, you can write efficient and flexible code to handle repetitive tasks and complex iterations in Python.
 
-# Exceptions
+## Exceptions
 
 Let's explore exceptions in more detail, including examples and syntax
 
@@ -498,7 +496,7 @@ Exceptions are events that occur during the execution of a program that disrupt 
 
 In Python, you can handle exceptions using `try`, `except`, `finally`, and `else` blocks.
 
-#### Syntax:
+#### Syntax
 ```python
 try:
     # code block where exceptions may occur
@@ -515,7 +513,7 @@ finally:
     # optional block always executed regardless of whether an exception occurs or not
 ```
 
-### Example:
+### Example
 
 ```python
 try:
@@ -528,26 +526,26 @@ finally:
     print("End of try-except block")
 ```
 
-#### Explanation:
+#### Explanation
 - In this example, the code inside the `try` block attempts to divide `10` by `0`, which raises a `ZeroDivisionError`.
 - The `except ZeroDivisionError` block catches the exception and prints an error message.
 - The `else` block is executed if no exception occurs, printing "Division successful".
 - The `finally` block is always executed, regardless of whether an exception occurs or not, printing "End of try-except block".
 
-### Common Exception Types:
+### Common Exception Types
 
-- **`ZeroDivisionError`**: Raised when attempting to divide by zero.
-- **`TypeError`**: Raised when an operation or function is applied to an object of inappropriate type.
-- **`ValueError`**: Raised when a function receives an argument of the correct type but with an inappropriate value.
-- **`FileNotFoundError`**: Raised when a file or directory is requested but cannot be found.
-- **`IndexError`**: Raised when trying to access an index that is out of range.
-- **`KeyError`**: Raised when trying to access a key that does not exist in a dictionary.
+- **`ZeroDivisionError`** Raised when attempting to divide by zero.
+- **`TypeError`** Raised when an operation or function is applied to an object of inappropriate type.
+- **`ValueError`** Raised when a function receives an argument of the correct type but with an inappropriate value.
+- **`FileNotFoundError`** Raised when a file or directory is requested but cannot be found.
+- **`IndexError`** Raised when trying to access an index that is out of range.
+- **`KeyError`** Raised when trying to access a key that does not exist in a dictionary.
 
 ### Raising Exceptions
 
 You can also raise exceptions manually using the `raise` statement.
 
-#### Syntax:
+#### Syntax
 ```python
 raise ExceptionType("Error message")
 ```
@@ -568,29 +566,29 @@ else:
     print("Square root:", result)
 ```
 
-#### Explanation:
+#### Explanation
 - The `sqrt` function raises a `ValueError` if the input number is negative.
 - Inside the `try` block, the `sqrt` function is called with `-4` as an argument.
 - The `except ValueError` block catches the raised exception and prints the error message.
 
 Exceptions handling errors and ensuring the robustness of your Python programs. By understanding how to use them effectively, you can write more resilient and reliable code.
 
-# Functions
+## Functions
 
 Let's explore functions in Python in more detail, including examples and syntax
 
-### Defining Functions:
+### Defining Functions
 
 You define a function in Python using the `def` keyword followed by the function name, parameters (if any), and a colon `:`. The body of the function is indented and contains the code to be executed when the function is called.
 
-#### Syntax:
+#### Syntax
 ```python
 def function_name(parameter1, parameter2, ...):
     # code block
     return value
 ```
 
-### Example:
+### Example
 
 ```python
 def greet(name):
@@ -600,23 +598,23 @@ message = greet("Alice")
 print(message)
 ```
 
-#### Explanation:
+#### Explanation
 - In this example, we define a function named `greet` that takes one parameter `name`.
 - Inside the function, we use string formatting to create a greeting message.
 - The `return` statement returns the greeting message.
 - We call the `greet` function with the argument `"Alice"` and store the returned message in the variable `message`.
 - Finally, we print the message.
 
-### Function Parameters:
+### Function Parameters
 
 Functions can accept zero or more parameters. Parameters are variables that are used to pass data to the function when it is called.
 
-#### Types of Parameters:
-- **Positional Parameters**: These parameters are defined by their position in the function definition and are mandatory.
-- **Keyword Parameters**: These parameters are identified by their parameter name when calling the function and have default values.
-- **Variable-length Parameters**: These parameters allow you to pass a variable number of arguments to a function.
+#### Types of Parameters
+- **Positional Parameters** These parameters are defined by their position in the function definition and are mandatory.
+- **Keyword Parameters** These parameters are identified by their parameter name when calling the function and have default values.
+- **Variable-length Parameters** These parameters allow you to pass a variable number of arguments to a function.
 
-### Example:
+### Example
 
 ```python
 def add(a, b):
@@ -626,15 +624,15 @@ result = add(3, 5)
 print("Sum:", result)
 ```
 
-#### Explanation:
+#### Explanation
 - In this example, the `add` function takes two positional parameters `a` and `b`.
 - When the function is called with arguments `3` and `5`, it returns the sum of the two numbers, which is then printed.
 
-### Function Return Values:
+### Function Return Values
 
 Functions can optionally return a value using the `return` statement. If a function does not have a return statement, it returns `None` by default.
 
-### Example:
+### Example
 
 ```python
 def square(x):
@@ -644,16 +642,16 @@ result = square(4)
 print("Square:", result)
 ```
 
-#### Explanation:
+#### Explanation
 - In this example, the `square` function takes one parameter `x`.
 - It calculates the square of `x` using the exponent operator `**`.
 - The result is returned using the `return` statement and stored in the variable `result`.
 
-### Function Documentation (Docstrings):
+### Function Documentation (Docstrings)
 
 You can add documentation to your functions using docstrings, which are string literals enclosed in triple quotes `"""`. Docstrings provide information about the purpose, usage, and behavior of the function.
 
-### Example:
+### Example
 
 ```python
 def greet(name):
@@ -663,77 +661,77 @@ def greet(name):
 print(greet.__doc__)
 ```
 
-#### Explanation:
+#### Explanation
 - In this example, the `greet` function has a docstring that describes its purpose.
 - The `print(greet.__doc__)` statement prints the docstring of the `greet` function.
 
 Functions are fundamental building blocks in Python programming, allowing you to write modular, reusable code.
 
-# Lists
+## Lists
 
 Let's explore lists in Python in more detail, including examples and syntax Lists can contain elements of different data types, and the elements can be accessed and manipulated using indexing and slicing.
 
-### Creating Lists:
+### Creating Lists
 
 You can create a list in Python by enclosing a sequence of elements within square brackets `[ ]`, separated by commas.
 
-#### Syntax:
+#### Syntax
 ```python
 my_list = [element1, element2, ...]
 ```
 
-### Example:
+### Example
 
 ```python
 fruits = ["apple", "banana", "cherry", "date"]
 ```
 
-#### Explanation:
+#### Explanation
 - In this example, we create a list named `fruits` containing four elements: `"apple"`, `"banana"`, `"cherry"`, and `"date"`.
 
-### Accessing Elements:
+### Accessing Elements
 
 You can access elements of a list using indexing. Indexing starts from `0` for the first element and goes up to `n-1`, where `n` is the length of the list. Negative indexing is also supported, where `-1` refers to the last element, `-2` refers to the second last element, and so on.
 
-#### Syntax:
+#### Syntax
 ```python
 element = my_list[index]
 ```
 
-### Example:
+### Example
 
 ```python
 print("First fruit:", fruits[0])
 print("Last fruit:", fruits[-1])
 ```
 
-#### Explanation:
+#### Explanation
 - In this example, we use indexing to access the first and last elements of the `fruits` list.
 
-### Slicing Lists:
+### Slicing Lists
 
 You can extract a sublist (slice) from a list using slicing. Slicing allows you to specify a range of indices to extract a portion of the list.
 
-#### Syntax:
+#### Syntax
 ```python
 sublist = my_list[start_index:end_index]
 ```
 
-### Example:
+### Example
 
 ```python
 print("First two fruits:", fruits[:2])
 print("Last two fruits:", fruits[-2:])
 ```
 
-#### Explanation:
+#### Explanation
 - In this example, we use slicing to extract the first two and last two fruits from the `fruits` list.
 
-### Modifying Lists:
+### Modifying Lists
 
 Lists in Python are mutable, meaning you can modify the elements of a list after it has been created. You can change, add, or remove elements from a list.
 
-#### Example:
+#### Example
 
 ```python
 fruits[1] = "grape"
@@ -741,14 +739,14 @@ fruits.append("orange")
 fruits.remove("cherry")
 ```
 
-#### Explanation:
+#### Explanation
 - In this example, we modify the `fruits` list by replacing the second element with `"grape"`, adding `"orange"` to the end of the list using the `append()` method, and removing `"cherry"` from the list using the `remove()` method.
 
-### List Operations and Methods:
+### List Operations and Methods
 
 Python provides various operations and methods to work with lists, such as concatenation (`+`), repetition (`*`), length (`len()`), sorting (`sorted()`), and more.
 
-### Example:
+### Example
 
 ```python
 numbers = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3]
@@ -757,57 +755,57 @@ print("Length of numbers:", len(numbers))
 print("Sorted numbers:", sorted(numbers))
 ```
 
-#### Explanation:
+#### Explanation
 - In this example, we use the `len()` function to find the length of the `numbers` list and the `sorted()` function to sort the elements of the list.
 
 Lists are versatile data structures in Python that allow you to store and manipulate collections of items efficiently. Understanding how to create, access, modify, and work with lists is essential for writing effective Python code.
 
-# Tuples
+## Tuples
 
 Tuples in Python are ordered collections of items, similar to lists. However, unlike lists, tuples are immutable, meaning their elements cannot be changed or modified after the tuple is created. Tuples are commonly used for representing fixed collections of items, such as coordinates, database records, or function return values. Let's explore tuples in Python in more detail, including examples and syntax:
 
-### Creating Tuples:
+### Creating Tuples
 
 You can create a tuple in Python by enclosing a sequence of elements within parentheses `( )`, separated by commas.
 
-#### Syntax:
+#### Syntax
 ```python
 my_tuple = (element1, element2, ...)
 ```
 
-### Example:
+### Example
 
 ```python
 coordinates = (3, 4)
 ```
 
-#### Explanation:
+#### Explanation
 - In this example, we create a tuple named `coordinates` containing two elements: `3` and `4`.
 
-### Accessing Elements:
+### Accessing Elements
 
 You can access elements of a tuple using indexing, similar to lists. Indexing starts from `0` for the first element and goes up to `n-1`, where `n` is the length of the tuple. Negative indexing is also supported.
 
-#### Syntax:
+#### Syntax
 ```python
 element = my_tuple[index]
 ```
 
-### Example:
+### Example
 
 ```python
 print("First coordinate:", coordinates[0])
 print("Second coordinate:", coordinates[1])
 ```
 
-#### Explanation:
+#### Explanation
 - In this example, we use indexing to access the first and second elements of the `coordinates` tuple.
 
-### Tuple Packing and Unpacking:
+### Tuple Packing and Unpacking
 
 Tuple packing is the process of packing multiple values into a single tuple. Tuple unpacking is the process of extracting values from a tuple into individual variables.
 
-#### Example:
+#### Example
 
 ```python
 person = ("John", 30, "New York")
@@ -818,86 +816,86 @@ print("Age:", age)
 print("City:", city)
 ```
 
-#### Explanation:
+#### Explanation
 - In this example, we create a tuple named `person` containing three elements: `"John"`, `30`, and `"New York"`.
 - We then unpack the tuple into three variables: `name`, `age`, and `city`.
 - Finally, we print the values of these variables.
 
-### Immutable Nature:
+### Immutable Nature
 
 Tuples are immutable, meaning once a tuple is created, its elements cannot be changed or modified.
 
-#### Example:
+#### Example
 
 ```python
 coordinates[0] = 5  # Raises TypeError: 'tuple' object does not support item assignment
 ```
 
-#### Explanation:
+#### Explanation
 - In this example, we attempt to modify the first element of the `coordinates` tuple, which raises a `TypeError` because tuples do not support item assignment.
 
-### When to Use Tuples:
+### When to Use Tuples
 
 - Tuples are often used when you want to store a fixed collection of items that should not be changed.
 - They are useful for representing data that should remain constant throughout the execution of a program, such as configuration settings or database records.
 
 Tuples are lightweight data structures in Python that provide an efficient way to store and manage fixed collections of items. Understanding how to create, access, and use tuples is important for writing clear and maintainable Python code.
 
-# Sets
+## Sets
 
 Sets in Python are unordered collections of unique elements. They are commonly used for tasks that involve membership testing, removing duplicates from a sequence, and performing mathematical set operations such as union, intersection, difference, and symmetric difference. Sets are mutable, meaning you can add or remove elements from a set after it has been created. Let's explore sets in Python in more detail, including examples and syntax:
 
-### Creating Sets:
+### Creating Sets
 
 You can create a set in Python by enclosing a sequence of elements within curly braces `{ }`, separated by commas.
 
-#### Syntax:
+#### Syntax
 ```python
 my_set = {element1, element2, ...}
 ```
 
-### Example:
+### Example
 
 ```python
 fruits = {"apple", "banana", "cherry"}
 ```
 
-#### Explanation:
+#### Explanation
 - In this example, we create a set named `fruits` containing three unique elements: `"apple"`, `"banana"`, and `"cherry"`.
 
 ### Accessing Elements:
 
 You cannot access elements of a set using indexing, as sets are unordered collections. However, you can check for membership using the `in` keyword.
 
-#### Example:
+#### Example
 
 ```python
 print("Is 'banana' in fruits set?", "banana" in fruits)
 ```
 
-#### Explanation:
+#### Explanation
 - In this example, we check if the element `"banana"` is present in the `fruits` set using the `in` keyword.
 
-### Adding and Removing Elements:
+### Adding and Removing Elements
 
 You can add elements to a set using the `add()` method and remove elements using the `remove()` or `discard()` methods.
 
-#### Example:
+#### Example
 
 ```python
 fruits.add("orange")
 fruits.remove("banana")
 ```
 
-#### Explanation:
+#### Explanation
 - In this example, we add the element `"orange"` to the `fruits` set using the `add()` method.
 - We then remove the element `"banana"` from the set using the `remove()` method.
 
-### Set Operations:
+### Set Operations
 
 Python provides various set operations to perform common set tasks, such as union, intersection, difference, and symmetric difference.
 
-#### Example:
+#### Example
 
 ```python
 set1 = {1, 2, 3, 4}
@@ -914,7 +912,7 @@ print("Difference set:", difference_set)
 print("Symmetric difference set:", symmetric_difference_set)
 ```
 
-#### Explanation:
+#### Explanation
 - In this example, we perform various set operations between two sets `set1` and `set2`.
 - The `union()` method returns a set containing all unique elements present in either `set1` or `set2`.
 - The `intersection()` method returns a set containing all elements present in both `set1` and `set2`.
@@ -927,72 +925,72 @@ Sets are efficient data structures in Python for tasks involving unique elements
 
 Dictionaries in Python are unordered collections of key-value pairs. They are used to store and retrieve data in a flexible and efficient manner. Dictionaries are mutable, meaning you can add, modify, and delete key-value pairs after the dictionary is created. Keys within a dictionary must be unique and immutable, while values can be of any data type and mutable. Let's explore dictionaries in Python in more detail, including examples and syntax:
 
-### Creating Dictionaries:
+### Creating Dictionaries
 
 You can create a dictionary in Python by enclosing a comma-separated list of key-value pairs within curly braces `{ }`, with each key-value pair separated by a colon `:`.
 
-#### Syntax:
+#### Syntax
 ```python
 my_dict = {key1: value1, key2: value2, ...}
 ```
 
-### Example:
+### Example
 
 ```python
 student = {"name": "Alice", "age": 20, "major": "Computer Science"}
 ```
 
-#### Explanation:
+#### Explanation
 - In this example, we create a dictionary named `student` containing three key-value pairs: `"name": "Alice"`, `"age": 20`, and `"major": "Computer Science"`.
 
-### Accessing Elements:
+### Accessing Elements
 
 You can access the value associated with a specific key in a dictionary by using the key within square brackets `[ ]`.
 
-#### Example:
+#### Example
 
 ```python
 print("Student name:", student["name"])
 print("Student age:", student["age"])
 ```
 
-#### Explanation:
+#### Explanation
 - In this example, we access the values associated with the keys `"name"` and `"age"` in the `student` dictionary.
 
-### Adding and Modifying Elements:
+### Adding and Modifying Elements
 
 You can add new key-value pairs to a dictionary or modify existing key-value pairs by assigning a value to a key.
 
-#### Example:
+#### Example
 
 ```python
 student["grade"] = "A"
 student["age"] = 21
 ```
 
-#### Explanation:
+#### Explanation
 - In this example, we add a new key-value pair `"grade": "A"` to the `student` dictionary and modify the value associated with the key `"age"`.
 
-### Removing Elements:
+### Removing Elements
 
 You can remove key-value pairs from a dictionary using the `del` keyword or the `pop()` method.
 
-#### Example:
+#### Example
 
 ```python
 del student["major"]
 major = student.pop("major", "Unknown")
 ```
 
-#### Explanation:
+#### Explanation
 - In this example, we remove the key-value pair `"major": "Computer Science"` from the `student` dictionary using the `del` keyword.
 - We also use the `pop()` method to remove the key-value pair `"major": "Computer Science"` and store the value in the variable `major`.
 
-### Dictionary Operations and Methods:
+### Dictionary Operations and Methods
 
 Python provides various operations and methods to work with dictionaries, such as accessing keys and values, iterating over items, checking membership, merging dictionaries, and more.
 
-### Example:
+### Example
 
 ```python
 print("Keys:", student.keys())
@@ -1007,12 +1005,10 @@ print("Is 'age' in student dictionary?", "age" in student)
 student.update({"grade": "A", "status": "active"})
 ```
 
-#### Explanation:
+#### Explanation
 - In this example, we use dictionary methods such as `keys()`, `values()`, and `items()` to retrieve keys, values, and key-value pairs from the `student` dictionary.
 - We iterate over the items in the dictionary using a `for` loop and print each key-value pair.
 - We check for the presence of the key `"age"` in the dictionary using the `in` keyword.
 - We merge additional key-value pairs into the dictionary using the `update()` method.
 
 Dictionaries are powerful data structures in Python for storing and retrieving key-value pairs efficiently. Understanding how to create, access, modify, and use dictionaries is essential for writing effective and concise Python code.
-
-[Back](../python.md) | [Code](../../code.md)

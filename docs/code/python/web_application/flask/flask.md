@@ -1,5 +1,3 @@
-# Flask
-
 Learning Flask from scratch to becoming an expert involves a combination of studying the fundamentals, building projects, and continuously expanding your knowledge.
 
 ### Step 1: Understand the Basics
@@ -36,5 +34,3 @@ Learning Flask from scratch to becoming an expert involves a combination of stud
 - **Books** "Flask Web Development" by Miguel Grinberg is a highly recommended book for learning Flask in-depth.
 - **Online Courses** Platforms like Udemy, Coursera, and Pluralsight offer courses on Flask for beginners to advanced users.
 - **Tutorials and Blog Posts** Follow tutorials and read blog posts on Flask from reputable sources like Real Python, Miguel Grinberg's blog, and Flask official blog.
-
-[Back](../../python.md) | [Project](../project.md) | [Code](../../../code.md)

@@ -66,6 +66,28 @@ nav:
       - CISCO Packet Tracer: networking/tools/cisco_packet_tracer/cisco_packet_tracer.md
   - Code:
     - Intro: code/code.md
+    - Python: 
+      - Index: code/python/python.md
+      - Setup: code/python/setup/setup.md
+      - Basics: code/python/basics/basics.md 
+      - Package Managers: code/python/package_managers/package_managers.md
+      - DSA: code/python/dsa/dsa.md
+      - OOP: code/python/oop/oop.md
+      - Advance: code/python/advance/advance.md
+      - Libraries: code/python/libraries/libraries.md
+      - Automation: code/python/automation/automation.md
+      - Web Application: 
+        - Index: code/python/web_application/web_application.md
+        - Flask: code/python/web_application/flask/flask.md
+        - Django: code/python/web_application/django/django.md
+        - FastAPI: code/python/web_application/fastapi/fastapi.md
+        - Project: code/python/web_application/project.md
+      - Testing: code/python/testing/testing.md
+      - Remove: code/python/remove/remove.md
+    - React: code/react/react.md
+    - Node.js: code/nodejs/nodejs.md
+    - PHP: code/php/php.md
+    - Ruby: code/ruby/ruby.md
   - Database: 
     - Intro: database/database.md
   - Web Server: 

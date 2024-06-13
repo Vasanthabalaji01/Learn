@@ -1,5 +1,3 @@
-# Django
-
 Learning Django from scratch to becoming an expert involves a systematic approach that includes studying the fundamentals, building projects, and continuously expanding your knowledge.
 
 ### Step 1: Setup and Basics
@@ -33,7 +31,5 @@ Learning Django from scratch to becoming an expert involves a systematic approac
 
 ### Resources
 - **Official Django Documentation** [Django Documentation](https://docs.djangoproject.com/en/stable/)
-- **Books and Tutorials**: "Django for Beginners" and "Django for APIs" by William S. Vincent are highly recommended books for beginners. Also, explore tutorials and blog posts on Django from reputable sources.
-- **Online Courses**: Platforms like Udemy, Coursera, and Pluralsight offer courses on Django for beginners to advanced users.
-
-[Back](../../python.md) | [Project](../project.md) | [Code](../../../code.md)
+- **Books and Tutorials** "Django for Beginners" and "Django for APIs" by William S. Vincent are highly recommended books for beginners. Also, explore tutorials and blog posts on Django from reputable sources.
+- **Online Courses** Platforms like Udemy, Coursera, and Pluralsight offer courses on Django for beginners to advanced users.

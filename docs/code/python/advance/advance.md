@@ -1,5 +1,3 @@
-# Advance
-
 ## Comprehensions
 
 Comprehensions in Python provide a concise and readable way to create lists, dictionaries, and sets using a single line of code. They allow you to generate these data structures by specifying the expression and the iteration over a sequence, often replacing traditional loops. There are three types of comprehensions in Python list comprehensions, dictionary comprehensions, and set comprehensions.
@@ -718,5 +716,3 @@ Advanced methods in Python typically refer to more specialized or advanced funct
       path('', index),
   ]
   ```
-
-[Back](../python.md) | [Code](../../code.md)

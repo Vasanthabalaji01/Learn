@@ -1,5 +1,3 @@
-# Automation
-
 Automation in Python involves streamlining repetitive tasks by writing scripts or programs to perform them automatically.
 
 ### 1. File Manipulation
@@ -80,5 +78,3 @@ Network automation involves automating tasks related to network devices and infr
   # Send commands to the device
   output = ssh_connection.send_command('show interfaces')
   ```
-
-[Back](../python.md) | [Code](../../code.md)

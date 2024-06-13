@@ -1,8 +1,6 @@
-# Libraries
+## To import a library in Python, follow these steps
 
-To import a library in Python, follow these steps:
-
-1. **Install the Library (if necessary)**:
+1. **Install the Library (if necessary)**
    If you haven't already installed the library, you can use a package manager like pip to install it. Open your command-line interface (CLI) and run the following command:
    ```
    pip install library_name
@@ -10,7 +8,7 @@ To import a library in Python, follow these steps:
 
    Replace `library_name` with the name of the library you want to install.
 
-2. **Import the Library**:
+2. **Import the Library**
    In your Python script or interactive session, use the `import` statement to import the library. You can import the entire library or specific modules/functions from it. Here's how you can import the entire library:
    ```python
    import library_name
@@ -21,7 +19,7 @@ To import a library in Python, follow these steps:
    from library_name import module_name
    ```
 
-3. **Use the Library**:
+3. **Use the Library**
    Once imported, you can use the functions, classes, and other resources provided by the library in your code. For example:
    ```python
    import library_name
@@ -122,5 +120,3 @@ Selection of libraries! Each of these libraries is widely used in various domain
   ```python
   import torch
   ```
-
-[Back](../python.md) | [Code](../../code.md)

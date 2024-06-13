@@ -26,5 +26,3 @@ sudo apt install nginx
   - Steps to host a website on a cloud server with Nginx.
 
   When hosting a website on a cloud server with Nginx, you'll need to ensure that your server's firewall settings allow traffic on port 80 (HTTP) and optionally port 443 (HTTPS). You can then configure Nginx to serve your website files and manage domain configuration as needed.
-
-[Back](../servers.md)
