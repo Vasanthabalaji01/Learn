@@ -1,4 +1,3 @@
-## Mindfulness
 
 ### Productivity
 
