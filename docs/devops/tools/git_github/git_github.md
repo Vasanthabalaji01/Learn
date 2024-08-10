@@ -156,3 +156,12 @@ GitHub Actions allow you to automate workflows directly from your repository. Yo
 Git and GitHub are indispensable tools for modern software development, offering powerful features for version control, collaboration, and project management. 
 
 how to use Git effectively and leveraging GitHub's collaborative features can significantly enhance your development workflow, making it easier to manage code changes, collaborate with team members, and deliver high-quality software.
+
+## Resources
+
+| Resource Name                | Description                                     | URL                                                |
+|------------------------------|-------------------------------------------------|----------------------------------------------------|
+| Learn Git Branching           | An interactive tutorial to understand Git branching | [Visit Site](https://learngitbranching.js.org/)     |
+| Oh My Git!                    | A visual and interactive game to learn Git      | [Visit Site](https://ohmygit.org/)                  |
+| Visual Git Guide              | A concise visual guide to Git commands          | [Visit Site](https://marklodato.github.io/visual-git-guide/index-en.html) |
+| Explain Git with D3           | A visual Git commit explanation using D3.js     | [Visit Site](https://onlywei.github.io/explain-git-with-d3/#commit)  |
