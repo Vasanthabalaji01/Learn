@@ -1,21 +1,75 @@
-## Mindfulness
+### **Productivity**
 
-### Productivity
+#### 1-3-5 Rule
+- Prioritize daily tasks: 1 big task, 3 medium tasks, and 5 small tasks.
+- Focus on completing these tasks each day.
+- Simplifies decision-making.
 
-| **Video Title**                                                     | **Key Takeaways**                                                                                                                                   | **Link**                                                             |
-|---------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| **Increase Productivity by 90% With 1-3-5 Rule**                    | - Prioritize daily tasks: 1 big task, 3 medium tasks, and 5 small tasks. <br> - Focus on completing these tasks each day. <br> - Simplifies decision-making. | [Watch Here](https://youtu.be/MrhnJS3-m4w?si=qsA3_sMwcH9bVdeG)       |
-| **POMODORO TECHNIQUE - My Favorite Tool to Improve Studying and Productivity** | - Work in focused intervals of 25 minutes (Pomodoros) followed by 5-minute breaks. <br> - After 4 Pomodoros, take a longer break. <br> - Enhances focus and reduces burnout. | [Watch Here](https://www.youtube.com/watch?v=mNBmG24djoY)            |
+Increase Productivity by 90% With 1-3-5 Rule
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MrhnJS3-m4w?si=qsA3_sMwcH9bVdeG" frameborder="0" allowfullscreen></iframe>
 
+#### Pomodoro Technique 
+- Work in focused intervals of 25 minutes (Pomodoros) followed by 5-minute breaks.
+- After 4 Pomodoros, take a longer break.
+- Enhances focus and reduces burnout.
 
-### Discipline and Focus
+POMODORO TECHNIQUE - My Favorite Tool to Improve Studying and Productivity
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mNBmG24djoY" frameborder="0" allowfullscreen></iframe>
 
-| **Video Title**                                             | **Key Takeaways**                                                                                                                                         | **Link**                                                             |
-|-------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| **How to Build Unbreakable Discipline by Chris Williamson** | - Establish clear goals and reasons for discipline. <br> - Build small, consistent habits. <br> - Focus on progress, not perfection.                       | [Watch Here](https://www.youtube.com/watch?v=G57QInhSnJk)            |
-| **How to Force Your Brain to Curving Hard Doing**           | - Train your brain to associate hard tasks with rewards. <br> - Break tasks into smaller, manageable parts. <br> - Consistent practice strengthens habits. | [Watch Here](https://www.youtube.com/watch?v=K8ZgwZf1E3E)            |
-| **How to Stop Wasting Your Life**                           | - Prioritize time management. <br> - Set clear, achievable goals. <br> - Eliminate distractions and focus on meaningful activities.                        | [Watch Here](https://www.youtube.com/watch?v=YucXxma_-ko)            |
-| **The Most Eye Opening 10 Minutes of Your Life**            | - Reflect on your current life trajectory. <br> - Make conscious decisions to change direction if necessary. <br> - Take immediate action.                | [Watch Here](https://www.youtube.com/watch?v=TLKxdTmk-zc)            |
-| **Why Discipline Must Come from Within - Jocko Podcast**    | - Discipline is a personal responsibility. <br> - It comes from a deep commitment to oneself. <br> - External forces can only motivate temporarily.        | [Watch Here](https://www.youtube.com/watch?v=9OF06n1jNkM)            |
-| **How to Build Self Discipline - Marcus Aurelius**          | - Practice self-reflection and mindfulness. <br> - Embrace discomfort as a tool for growth. <br> - Discipline leads to freedom.                           | [Watch Here](https://www.youtube.com/watch?v=njDLNt-1ugM)            |
-| **Avoiding Distractions and Doing Deep Work**               | - Create a distraction-free environment. <br> - Schedule time blocks for deep work. <br> - Focus on one task at a time.                                    | [Watch Here](https://www.youtube.com/watch?v=f7V76Ky-_v8)            | 
+### **Discipline and Focus**
+
+#### Build Unbreakable Discipline
+- Establish clear goals and reasons for discipline.
+- Build small, consistent habits.
+- Focus on progress, not perfection.
+
+How to Build Unbreakable Discipline
+<iframe width="560" height="315" src="https://www.youtube.com/embed/G57QInhSnJk" frameborder="0" allowfullscreen></iframe>
+
+#### Curving Hard Doing
+- Train your brain to associate hard tasks with rewards.
+- Break tasks into smaller, manageable parts.
+- Consistent practice strengthens habits.
+
+How to Force Your Brain to Curving Hard Doing
+<iframe width="560" height="315" src="https://www.youtube.com/embed/K8ZgwZf1E3E" frameborder="0" allowfullscreen></iframe>
+
+#### Stop Wasting Your Life
+- Prioritize time management.
+- Set clear, achievable goals.
+- Eliminate distractions and focus on meaningful activities.
+
+How to Stop Wasting Your Life
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YucXxma_-ko" frameborder="0" allowfullscreen></iframe>
+
+#### Eye Opening 10 Minutes of Your Life
+- Reflect on your current life trajectory.
+- Make conscious decisions to change direction if necessary.
+- Take immediate action.
+
+The Most Eye Opening 10 Minutes of Your Life
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TLKxdTmk-zc" frameborder="0" allowfullscreen></iframe>
+
+#### Why Discipline Must Come from Within
+- Discipline is a personal responsibility.
+- It comes from a deep commitment to oneself.
+- External forces can only motivate temporarily.
+
+Why Discipline Must Come from Within - Jocko Podcast
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9OF06n1jNkM" frameborder="0" allowfullscreen></iframe>
+
+#### Build Self Discipline
+- Practice self-reflection and mindfulness.
+- Embrace discomfort as a tool for growth.
+- Discipline leads to freedom.
+
+How to Build Self Discipline - Marcus Aurelius
+<iframe width="560" height="315" src="https://www.youtube.com/embed/njDLNt-1ugM" frameborder="0" allowfullscreen></iframe>
+
+#### Doing Deep Work
+- Create a distraction-free environment.
+- Schedule time blocks for deep work.
+- Focus on one task at a time.
+
+Avoiding Distractions and Doing Deep Work
+<iframe width="560" height="315" src="https://www.youtube.com/embed/f7V76Ky-_v8" frameborder="0" allowfullscreen></iframe>
