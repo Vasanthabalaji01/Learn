@@ -1,0 +1,7421 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../linux/">
+      
+      
+        <link rel="next" href="../../commands/commands/">
+      
+      
+      <link rel="icon" href="../../../img/Mr.Cloudexplorer_logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.38">
+    
+    
+      
+        <title>Basics - Learn</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8c3ca2c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="default" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#linux-basics" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Learn" class="md-header__button md-logo" aria-label="Learn" data-md-component="logo">
+      
+  <img src="../../../img/Mr.Cloudexplorer_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Learn
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Basics
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="default" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="default" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Vasanthabalaji01/Learn" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../about/" class="md-tabs__link">
+        
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../linux/" class="md-tabs__link">
+          
+  
+  Linux
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../networking/networking/" class="md-tabs__link">
+          
+  
+  Networking
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../code/code/" class="md-tabs__link">
+          
+  
+  Code
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../database/database/" class="md-tabs__link">
+          
+  
+  Database
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../webserver/webserver/" class="md-tabs__link">
+          
+  
+  Web Server
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../cloud/cloud/" class="md-tabs__link">
+          
+  
+  Cloud
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../devops/devops/" class="md-tabs__link">
+          
+  
+  DevOps
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../security/security/" class="md-tabs__link">
+          
+  
+  Security
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../random/random/" class="md-tabs__link">
+          
+  
+  Random
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../Mindfulness/Mindfulness/" class="md-tabs__link">
+        
+  
+    
+  
+  Mindfulness
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Learn" class="md-nav__button md-logo" aria-label="Learn" data-md-component="logo">
+      
+  <img src="../../../img/Mr.Cloudexplorer_logo.png" alt="logo">
+
+    </a>
+    Learn
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Vasanthabalaji01/Learn" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Linux
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Linux
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Basics
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Basics
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hosted-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hosted Installation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bare-metal-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bare Metal Installation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text-manipulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text Manipulation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Text Manipulation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vi" class="md-nav__link">
+    <span class="md-ellipsis">
+      vi
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nano" class="md-nav__link">
+    <span class="md-ellipsis">
+      nano
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other Commands
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#network-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Network Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#managing-network-connections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Network Connections
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analyzing-network-traffic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analyzing Network Traffic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoring-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monitoring Tools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#firewall-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Firewall Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#removal-and-uninstallation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removal and Uninstallation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Removal and Uninstallation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#package-managers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Package Managers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manual-removal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manual Removal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cleaning-package-manager-cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cleaning Package Manager Cache
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file-and-directory-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      File and Directory Permissions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="File and Directory Permissions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understanding-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding Permissions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewing-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viewing Permissions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changing-ownership" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changing Ownership
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#special-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Special Permissions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#process-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Process Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#process-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process Basics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewing-processes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viewing Processes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-processes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Processes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-control-signals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process Control Signals
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Environment Variables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="User Environment Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Environment Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewing-environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viewing Environment Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting Environment Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Environment Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#predefined-environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Predefined Environment Variables
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compression-and-archiving" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compression and Archiving
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Compression and Archiving">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#compression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compression
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decompression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decompression
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#archiving" class="md-nav__link">
+    <span class="md-ellipsis">
+      Archiving
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extracting-from-archives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extracting from Archives
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file-system-and-storage-devices" class="md-nav__link">
+    <span class="md-ellipsis">
+      File System and Storage Devices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="File System and Storage Devices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      File Systems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-storage-devices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Storage Devices
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#file-system-check-and-repair" class="md-nav__link">
+    <span class="md-ellipsis">
+      File System Check and Repair
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#log-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Log System
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Log System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction-to-system-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to System Logs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log-files-location" class="md-nav__link">
+    <span class="md-ellipsis">
+      Log Files Location
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewing-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viewing Logs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log-rotation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Log Rotation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoring-logs-in-real-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monitoring Logs in Real-time
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Services
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Services">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction-to-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to Services
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#service-management-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Service Management Commands
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#service-unit-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Service Unit Files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-systemd-units" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Systemd Units
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#systemd-service-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Systemd Service Dependencies
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secure-connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Secure Connection
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Secure Connection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#secure-shell-ssh" class="md-nav__link">
+    <span class="md-ellipsis">
+      Secure Shell (SSH)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Secure Shell (SSH)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-features-of-ssh" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Features of SSH
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage Example
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#public-key-authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Public Key Authentication
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#virtual-private-network-vpn" class="md-nav__link">
+    <span class="md-ellipsis">
+      Virtual Private Network (VPN)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Virtual Private Network (VPN)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#benefits-of-vpn" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benefits of VPN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage-example_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wireless-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wireless Network
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Wireless Network">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wireless-networking-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wireless Networking Basics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wireless-configuration-with-iwconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wireless Configuration with iwconfig
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connecting-to-wi-fi-networks-with-nmcli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connecting to Wi-Fi Networks with nmcli
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#graphical-tools-for-wireless-networking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graphical Tools for Wireless Networking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting-wireless-connectivity-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting Wireless Connectivity Issues
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kernel-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kernel Modules
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kernel Modules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction-to-kernel-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to Kernel Modules
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction to Kernel Modules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types-of-kernel-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Kernel Modules
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kernel-module-management-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kernel Module Management Commands
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-configuration-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module Configuration Files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-loading-kernel-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Auto-loading Kernel Modules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting-kernel-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting Kernel Modules
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#job-scheduling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Job Scheduling
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Job Scheduling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction-to-job-scheduling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to Job Scheduling
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cron" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cron
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cron">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cron-configuration-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cron Configuration Files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crontab-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      Crontab Command
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cron-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cron Syntax
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-cron-job" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Cron Job
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anacron" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anacron
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Anacron">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-scripting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Scripting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Python Scripting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting Up Python
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-and-running-python-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating and Running Python Scripts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integrated-development-environments-ides" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integrated Development Environments (IDEs)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bash-scripting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bash Scripting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bash Scripting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction-to-bash" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to Bash
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-bash-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a Bash Script
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basic-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Syntax
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic Syntax">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conditional-statements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conditional Statements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Loops
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-topics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Topics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced Topics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-manipulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      File Manipulation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="File Manipulation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-creating-and-writing-to-a-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Creating and Writing to a File
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string-manipulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      String Manipulation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="String Manipulation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-concatenating-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Concatenating Strings
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command-substitution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command Substitution
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Command Substitution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-getting-the-current-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Getting the Current Date
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Handling
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Error Handling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-checking-if-a-file-exists" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Checking if a File Exists
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/commands/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Commands
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Bash
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Bash
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bash/bash/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_2" id="__nav_3_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tasks
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Tasks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bash/tasks/tasks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    List
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bash/tasks/task1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Task 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bash/tasks/task2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Task 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bash/tasks/task3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Task 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bash/tasks/task4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Task 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bash/tasks/task5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Task 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bash/tasks/task6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Task 6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bash/tasks/task7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Task 7
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bash/tasks/task8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Task 8
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bash/tasks/task9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Task 9
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bash/tasks/task10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Task 10
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Project
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Networking
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Networking
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../networking/networking/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Basics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Basics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../networking/basic_concepts/basic_concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../networking/basic_concepts/osi_model/osi_model/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OSI Model
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../networking/basic_concepts/ip_address/ip_address/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IP Addresses
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../networking/basic_concepts/mac_address/mac_address/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MAC Addresses
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../networking/basic_concepts/routing_switching/routing_switching/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Routing and Switching
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../networking/basic_concepts/tcp_ip/tcp_ip/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TCP/IP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../networking/basic_concepts/tcp_udp/tcp-udp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TCP and UDP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../networking/basic_concepts/dns/dns/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DNS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../networking/basic_concepts/vpn/vpn/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VPN
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../networking/basic_concepts/tls_ssl/tls_ssl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TLS and SSL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../networking/basic_concepts/firewall/firewall/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firewall
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../networking/protocols_ports/protocols_ports/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Protocols/Ports
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tools
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../networking/tools/tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../networking/tools/cisco_packet_tracer/cisco_packet_tracer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CISCO Packet Tracer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Code
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Code
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../code/code/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Python
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../code/python/python/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../code/python/setup/setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../code/python/basics/basics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../code/python/package_managers/package_managers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Package Managers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../code/python/dsa/dsa/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DSA
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../code/python/oop/oop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OOP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../code/python/advance/advance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Advance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../code/python/libraries/libraries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Libraries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../code/python/automation/automation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Automation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2_10" id="__nav_5_2_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Web Application
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_2_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2_10">
+            <span class="md-nav__icon md-icon"></span>
+            Web Application
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../code/python/web_application/web_application/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../code/python/web_application/flask/flask/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Flask
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../code/python/web_application/django/django/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Django
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../code/python/web_application/fastapi/fastapi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FastAPI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../code/python/web_application/project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Project
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../code/python/testing/testing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Testing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../code/python/remove/remove/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Remove
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../code/react/react/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    React
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../code/nodejs/nodejs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Node.js
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../code/php/php/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PHP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../code/ruby/ruby/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ruby
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Database
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Database
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../database/database/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    SQL
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            SQL
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../database/sql/basics/basics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../database/sql/sqlite/sqlite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SQLite
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../database/sql/microsoft_sql_server/microsoft_sql_server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Microsoft SQL Server
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../database/sql/mysql/mysql/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MySQL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    NoSQL
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            NoSQL
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../database/nosql/basics/basics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../database/nosql/dynamo_db/dynamo_db/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DynamoDB
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../database/nosql/mongo_db/mongo_db/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MongoDB
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Web Server
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Web Server
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../webserver/webserver/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../webserver/basics/basics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Servers
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3">
+            <span class="md-nav__icon md-icon"></span>
+            Servers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../webserver/servers/apache/apache/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Apache
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../webserver/servers/nginx/nginx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nginx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../webserver/servers/windows_server/windows_server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Windows Server
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Cloud
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Cloud
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cloud/cloud/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cloud/basic_concepts/basic_concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    AWS
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            AWS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cloud/aws/aws/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cloud/aws/basic_concepts/basic_concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cloud/aws/framework/framework/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Frameworks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cloud/aws/services/services/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Services
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cloud/aws/aws_cli/aws_cli/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS CLI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_3_6" id="__nav_8_3_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Project
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Project
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cloud/projects/cloud_resume_aws/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cloud Resume
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://vasanthabalaji01.github.io/AWS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    More
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_4" id="__nav_8_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Azure
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_4">
+            <span class="md-nav__icon md-icon"></span>
+            Azure
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cloud/azure/azure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cloud/azure/basic_concepts/basic_concept/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cloud/azure/framework/framework/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Frameworks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cloud/azure/services/services/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Services
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cloud/azure/azure_cli/azure_cli/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Azure CLI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_4_6" id="__nav_8_4_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Project
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            Project
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cloud/projects/cloud_resume_azure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cloud Resume
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://vasanthabalaji01.github.io/Azure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    More
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    DevOps
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            DevOps
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../devops/devops/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../devops/basics/basics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_3" id="__nav_9_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tools
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_3">
+            <span class="md-nav__icon md-icon"></span>
+            Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../devops/tools/tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    List
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../devops/tools/git_github/git_github/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Git GitHub
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../devops/tools/ansible/ansible/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ansible
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../devops/tools/docker/docker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Docker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../devops/tools/puppet/puppet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Puppet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../devops/tools/jenkins/jenkins/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jenkins
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../devops/tools/chef/chef/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chef
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../devops/tools/nagios/nagios/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nagios
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../devops/tools/k8s/k8s/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kubernetes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../devops/tools/terraform/terraform/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Terraform
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../devops/tools/prometheus/prometheus.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Prometheus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../devops/tools/grafana/grafana/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grafana
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../security/security/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../security/basics/basics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_3" id="__nav_10_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Standardization/Frameworks
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_3">
+            <span class="md-nav__icon md-icon"></span>
+            Standardization/Frameworks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../security/Standardization_Frameworks/Standardization_Frameworks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../security/Standardization_Frameworks/owasp/owasp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OWASP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../security/Standardization_Frameworks/cis/cis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CIS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../security/tools/tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_5" id="__nav_10_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Practice
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_5">
+            <span class="md-nav__icon md-icon"></span>
+            Practice
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../security/practice/labs/labs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Labs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../security/practice/vuln_machin/vuln_machin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vuln Machine
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../security/practice/ctf/ctf/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CTF
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Random
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            Random
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../random/random/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../random/api/api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../random/figma/figma/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Figma
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../random/flameshot/flameshot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Flameshot
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../random/math/math/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Math
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../random/putty/putty/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Putty
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../random/vscode/vscode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VScode
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../random/xmind/xmind/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Xmind
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../random/notion/notion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Notion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../random/mkdocs/mkdocs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MKDocs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Mindfulness/Mindfulness/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mindfulness
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hosted-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hosted Installation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bare-metal-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bare Metal Installation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text-manipulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text Manipulation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Text Manipulation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vi" class="md-nav__link">
+    <span class="md-ellipsis">
+      vi
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nano" class="md-nav__link">
+    <span class="md-ellipsis">
+      nano
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other Commands
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#network-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Network Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#managing-network-connections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Network Connections
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analyzing-network-traffic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analyzing Network Traffic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoring-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monitoring Tools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#firewall-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Firewall Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#removal-and-uninstallation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removal and Uninstallation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Removal and Uninstallation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#package-managers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Package Managers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manual-removal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manual Removal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cleaning-package-manager-cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cleaning Package Manager Cache
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file-and-directory-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      File and Directory Permissions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="File and Directory Permissions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understanding-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding Permissions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewing-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viewing Permissions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changing-ownership" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changing Ownership
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#special-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Special Permissions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#process-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Process Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#process-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process Basics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewing-processes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viewing Processes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-processes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Processes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-control-signals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process Control Signals
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Environment Variables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="User Environment Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Environment Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewing-environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viewing Environment Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting Environment Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Environment Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#predefined-environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Predefined Environment Variables
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compression-and-archiving" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compression and Archiving
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Compression and Archiving">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#compression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compression
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decompression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decompression
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#archiving" class="md-nav__link">
+    <span class="md-ellipsis">
+      Archiving
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extracting-from-archives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extracting from Archives
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file-system-and-storage-devices" class="md-nav__link">
+    <span class="md-ellipsis">
+      File System and Storage Devices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="File System and Storage Devices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      File Systems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-storage-devices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Storage Devices
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#file-system-check-and-repair" class="md-nav__link">
+    <span class="md-ellipsis">
+      File System Check and Repair
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#log-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Log System
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Log System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction-to-system-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to System Logs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log-files-location" class="md-nav__link">
+    <span class="md-ellipsis">
+      Log Files Location
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewing-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viewing Logs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log-rotation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Log Rotation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoring-logs-in-real-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monitoring Logs in Real-time
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Services
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Services">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction-to-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to Services
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#service-management-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Service Management Commands
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#service-unit-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Service Unit Files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-systemd-units" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Systemd Units
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#systemd-service-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Systemd Service Dependencies
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secure-connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Secure Connection
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Secure Connection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#secure-shell-ssh" class="md-nav__link">
+    <span class="md-ellipsis">
+      Secure Shell (SSH)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Secure Shell (SSH)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-features-of-ssh" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Features of SSH
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage Example
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#public-key-authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Public Key Authentication
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#virtual-private-network-vpn" class="md-nav__link">
+    <span class="md-ellipsis">
+      Virtual Private Network (VPN)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Virtual Private Network (VPN)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#benefits-of-vpn" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benefits of VPN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage-example_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wireless-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wireless Network
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Wireless Network">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wireless-networking-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wireless Networking Basics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wireless-configuration-with-iwconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wireless Configuration with iwconfig
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connecting-to-wi-fi-networks-with-nmcli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connecting to Wi-Fi Networks with nmcli
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#graphical-tools-for-wireless-networking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graphical Tools for Wireless Networking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting-wireless-connectivity-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting Wireless Connectivity Issues
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kernel-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kernel Modules
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kernel Modules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction-to-kernel-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to Kernel Modules
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction to Kernel Modules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types-of-kernel-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Kernel Modules
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kernel-module-management-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kernel Module Management Commands
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-configuration-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module Configuration Files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-loading-kernel-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Auto-loading Kernel Modules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting-kernel-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting Kernel Modules
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#job-scheduling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Job Scheduling
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Job Scheduling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction-to-job-scheduling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to Job Scheduling
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cron" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cron
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cron">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cron-configuration-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cron Configuration Files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crontab-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      Crontab Command
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cron-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cron Syntax
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-cron-job" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Cron Job
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anacron" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anacron
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Anacron">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-scripting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Scripting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Python Scripting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting Up Python
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-and-running-python-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating and Running Python Scripts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integrated-development-environments-ides" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integrated Development Environments (IDEs)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bash-scripting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bash Scripting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bash Scripting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction-to-bash" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to Bash
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-bash-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a Bash Script
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basic-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Syntax
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic Syntax">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conditional-statements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conditional Statements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Loops
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-topics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Topics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced Topics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-manipulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      File Manipulation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="File Manipulation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-creating-and-writing-to-a-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Creating and Writing to a File
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string-manipulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      String Manipulation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="String Manipulation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-concatenating-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Concatenating Strings
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command-substitution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command Substitution
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Command Substitution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-getting-the-current-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Getting the Current Date
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Handling
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Error Handling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-checking-if-a-file-exists" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Checking if a File Exists
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="linux-basics">Linux Basics</h1>
+<p>Welcome to the Linux Basics guide! Below you'll find essential topics to help you understand and work with Linux more effectively.</p>
+<ul>
+<li><strong>Installation</strong></li>
+</ul>
+<p>Learn how to install Linux distributions.</p>
+<h2 id="installation">Installation</h2>
+<p>In this module, you'll learn how to install Ubuntu, one of the most popular Linux distributions. </p>
+<p>There are two common methods for installation:</p>
+<h3 id="hosted-installation">Hosted Installation</h3>
+<ol>
+<li><strong>Set up Virtualization Software:</strong></li>
+<li>
+<p>Download and install virtualization software such as VMware Workstation or VirtualBox on your host machine.</p>
+</li>
+<li>
+<p><strong>Download Ubuntu ISO:</strong></p>
+</li>
+<li>
+<p>Download the Ubuntu installation ISO file from the official Ubuntu website.</p>
+</li>
+<li>
+<p><strong>Create Virtual Machine:</strong></p>
+</li>
+<li>Open your virtualization software and create a new virtual machine.</li>
+<li>
+<p>Configure the virtual machine settings, such as RAM, CPU, and disk space allocation.</p>
+</li>
+<li>
+<p><strong>Mount Ubuntu ISO:</strong></p>
+</li>
+<li>
+<p>Attach the Ubuntu ISO file to the virtual machine's virtual CD/DVD drive.</p>
+</li>
+<li>
+<p><strong>Boot Virtual Machine:</strong></p>
+</li>
+<li>
+<p>Start the virtual machine and boot from the attached Ubuntu ISO.</p>
+</li>
+<li>
+<p><strong>Install Ubuntu:</strong></p>
+</li>
+<li>Follow the on-screen instructions to proceed with the Ubuntu installation.</li>
+<li>
+<p>Choose installation options such as language, keyboard layout, and installation type (e.g., erase disk and install Ubuntu, or manual partitioning).</p>
+</li>
+<li>
+<p><strong>Configure System:</strong></p>
+</li>
+<li>
+<p>Set up user accounts, passwords, and system preferences as prompted during the installation process.</p>
+</li>
+<li>
+<p><strong>Complete Installation:</strong></p>
+</li>
+<li>Once the installation is complete, restart the virtual machine and boot into the newly installed Ubuntu system.</li>
+<li>Perform any additional configuration or software installation as needed.</li>
+</ol>
+<h3 id="bare-metal-installation">Bare Metal Installation</h3>
+<ol>
+<li><strong>Create Bootable USB Drive:</strong></li>
+<li>Download the Ubuntu installation ISO file from the official website.</li>
+<li>
+<p>Use a tool like Rufus (on Windows) or dd (on Linux) to create a bootable USB drive from the ISO file.</p>
+</li>
+<li>
+<p><strong>Prepare System:</strong></p>
+</li>
+<li>Ensure that your target system meets the minimum hardware requirements for Ubuntu.</li>
+<li>
+<p>Back up any important data from the system as the installation process may involve disk partitioning and formatting.</p>
+</li>
+<li>
+<p><strong>Boot from USB Drive:</strong></p>
+</li>
+<li>Insert the bootable USB drive into the target system.</li>
+<li>
+<p>Boot the system from the USB drive by accessing the BIOS or UEFI firmware settings and setting the USB drive as the primary boot device.</p>
+</li>
+<li>
+<p><strong>Start Installation:</strong></p>
+</li>
+<li>Once the system boots from the USB drive, you'll see the Ubuntu installer.</li>
+<li>
+<p>Choose the language and other preferences, then proceed with the installation.</p>
+</li>
+<li>
+<p><strong>Partitioning:</strong></p>
+</li>
+<li>Choose the installation type, such as erasing the disk and installing Ubuntu, or manual partitioning.</li>
+<li>
+<p>If dual-booting, ensure to allocate space for Ubuntu alongside existing operating systems.</p>
+</li>
+<li>
+<p><strong>Configure System:</strong></p>
+</li>
+<li>
+<p>Set up user accounts, passwords, time zone, and other system preferences during the installation process.</p>
+</li>
+<li>
+<p><strong>Complete Installation:</strong></p>
+</li>
+<li>Once the installation is complete, remove the USB drive and restart the system.</li>
+<li>
+<p>Boot into the newly installed Ubuntu system and perform any post-installation configuration or software installation as needed.</p>
+</li>
+<li>
+<p><strong>Text Manipulation</strong></p>
+</li>
+</ol>
+<p>Master commands for manipulating text files.</p>
+<h2 id="text-manipulation">Text Manipulation</h2>
+<p>In this module, you'll master commands for manipulating text files efficiently.</p>
+<h3 id="vi">vi</h3>
+<ul>
+<li><strong>Description:</strong> vi is a powerful and versatile text editor with many advanced features for editing text files.</li>
+<li><strong>Usage:</strong> </li>
+<li>To open a file for editing: <code>vi filename</code></li>
+<li>
+<p>Once in vi, you can navigate, edit, and save files using various commands. Some additional commands and features include:</p>
+<ul>
+<li><strong>Navigation:</strong></li>
+<li><code>h</code>, <code>j</code>, <code>k</code>, <code>l</code>: Move cursor left, down, up, and right respectively.</li>
+<li><code>Ctrl + f</code>, <code>Ctrl + b</code>: Scroll forward and backward one screen.</li>
+<li><strong>Editing:</strong></li>
+<li><code>i</code>: initiated to write </li>
+<li><code>x</code>: Delete character under cursor.</li>
+<li><code>dd</code>: Delete the current line.</li>
+<li><code>u</code>: Undo the last change.</li>
+<li><code>.</code>: Repeat the last command.</li>
+<li><strong>Copying, Cutting, and Pasting:</strong></li>
+<li><code>yy</code>: Yank (copy) the current line.</li>
+<li><code>p</code>: Paste the yanked text after the cursor.</li>
+<li><code>dd</code>: Cut (delete) the current line.</li>
+<li><code>P</code>: Paste the cut text before the cursor.</li>
+<li><strong>Searching and Replacing:</strong></li>
+<li><code>/pattern</code>: Search forward for the specified pattern.</li>
+<li><code>?pattern</code>: Search backward for the specified pattern.</li>
+<li><code>:s/pattern/replacement/g</code>: Replace all occurrences of pattern with replacement.</li>
+<li><strong>Visual Mode:</strong></li>
+<li><code>v</code>: Enter visual mode to select text for manipulation.</li>
+<li><strong>Multiple Files:</strong></li>
+<li><code>:e filename</code>: Open another file for editing.</li>
+<li><code>:n</code>: Open the next file in the argument list.</li>
+<li><code>:prev</code>: Open the previous file in the argument list.</li>
+<li><code>:wn</code>: Write changes and open the next file in the argument list.</li>
+</ul>
+</li>
+<li>
+<p><strong>Example:</strong> To open a file named <code>example.txt</code> for editing with vi and perform advanced editing operations: <code>vi example.txt</code></p>
+</li>
+</ul>
+<h3 id="nano">nano</h3>
+<ul>
+<li><strong>Description:</strong> nano is designed to be a user-friendly text editor with simple keyboard shortcuts and intuitive interface.</li>
+<li><strong>Usage:</strong></li>
+<li>To open a file for editing: <code>nano filename</code></li>
+<li>
+<p>In nano, you can navigate, edit, and save files using keyboard shortcuts displayed at the bottom of the editor. Some additional options and features include:</p>
+<ul>
+<li><strong>Navigation:</strong></li>
+<li><code>Ctrl + Arrow keys</code>: Move cursor word by word.</li>
+<li><code>Alt + /</code>: Go to the specified line number.</li>
+<li><strong>Editing:</strong></li>
+<li><code>Alt + A</code>: Select text for cutting or copying.</li>
+<li><code>Alt + 6</code>: Copy selected text.</li>
+<li><code>Alt + 0</code>: Cut selected text.</li>
+<li><code>Alt + U</code>: Undo the last change.</li>
+<li><code>Alt + E</code>: Redo the last undone change.</li>
+<li><strong>Search and Replace:</strong></li>
+<li><code>Ctrl + \</code>: Search for text.</li>
+<li><code>Alt + R</code>: Replace text.</li>
+<li><strong>Indentation:</strong></li>
+<li><code>Alt + &lt;</code>: Decrease indentation.</li>
+<li><code>Alt + &gt;</code>: Increase indentation.</li>
+<li><strong>Spell Checking:</strong></li>
+<li><code>Alt + T</code>: Enable or disable spell checking.</li>
+<li><strong>Help:</strong></li>
+<li><code>Ctrl + G</code>: Display the help menu.</li>
+</ul>
+</li>
+<li>
+<p><strong>Example:</strong> To open a file named <code>example.txt</code> for editing with nano and use advanced editing features: <code>nano example.txt</code></p>
+</li>
+</ul>
+<h3 id="other-commands">Other Commands</h3>
+<ul>
+<li><strong>cat</strong>: Display the contents of a file.</li>
+<li><strong>grep</strong>: Search for specific patterns or text within files.</li>
+<li><strong>sed</strong>: Stream editor for filtering and transforming text.</li>
+<li><strong>awk</strong>: Powerful text processing tool for pattern scanning and processing.</li>
+<li><strong>sort</strong>: Sort lines of text files.</li>
+<li><strong>cut</strong>: Extract sections from each line of files.</li>
+<li><strong>head</strong>: Display the beginning of a file.</li>
+<li><strong>tail</strong>: Display the end of a file.</li>
+<li><strong>tr</strong>: Translate or delete characters.</li>
+<li><strong>tee</strong>: Read from standard input and write to standard output and files simultaneously.</li>
+<li><strong>wc</strong>: Count words, lines, and characters in files.</li>
+</ul>
+<p>These commands, along with vi and nano, are essential for efficiently manipulating text files in a Linux environment also there are many text editor avilable.</p>
+<h2 id="network-management">Network Management</h2>
+<p>Understand how to manage and analyze network connections.</p>
+<h3 id="managing-network-connections">Managing Network Connections</h3>
+<p>Linux provides several commands and tools to manage network connections. Some common ones include:</p>
+<ul>
+<li><strong>ifconfig</strong>: Used to configure network interfaces, view their status, and assign IP addresses.</li>
+<li><strong>ip</strong>: A more powerful and versatile alternative to ifconfig for network configuration and management.</li>
+<li><strong>netstat</strong>: Displays network connections, routing tables, interface statistics, masquerade connections, and multicast memberships.</li>
+<li><strong>ss</strong>: Another tool to investigate sockets, network connections, routing tables, and multicast memberships.</li>
+<li><strong>route</strong>: Used to view and manipulate IP routing tables.</li>
+</ul>
+<h3 id="analyzing-network-traffic">Analyzing Network Traffic</h3>
+<p>Understanding network traffic is essential for troubleshooting and optimizing network performance. Here are some tools for analyzing network traffic:</p>
+<ul>
+<li><strong>tcpdump</strong>: A powerful command-line packet analyzer that allows you to capture network traffic.</li>
+<li><strong>Wireshark</strong>: A graphical network protocol analyzer that lets you analyze the traffic in real-time and dissect it to understand its structure.</li>
+<li><strong>tshark</strong>: A command-line version of Wireshark for capturing and analyzing packets.</li>
+</ul>
+<h3 id="monitoring-tools">Monitoring Tools</h3>
+<p>To monitor network usage and performance, Linux offers several tools:</p>
+<ul>
+<li><strong>iftop</strong>: Displays bandwidth usage on an interface in real-time.</li>
+<li><strong>nload</strong>: Monitors network traffic and bandwidth usage in a graph format.</li>
+<li><strong>vnstat</strong>: Provides network traffic and bandwidth monitoring on a specific interface.</li>
+</ul>
+<h3 id="firewall-configuration">Firewall Configuration</h3>
+<p>Managing firewall rules is crucial for network security. Linux provides various tools for firewall configuration:</p>
+<ul>
+<li><strong>iptables</strong>: A command-line utility for configuring IPv4 packet filtering rules in the Linux kernel.</li>
+<li><strong>ufw (Uncomplicated Firewall)</strong>: A user-friendly interface for managing iptables firewall rules.</li>
+</ul>
+<p>These tools and commands empower you to manage, analyze, and optimize network connections effectively in a Linux environment.</p>
+<h2 id="removal-and-uninstallation">Removal and Uninstallation</h2>
+<p>Learn methods for removing software and packages.</p>
+<h3 id="package-managers">Package Managers</h3>
+<p>Linux distributions use package managers to install, update, and remove software packages. Here are some common package managers and their corresponding commands:</p>
+<ul>
+<li><strong>apt (Advanced Package Tool)</strong>:</li>
+<li>To remove a package: <code>sudo apt remove package_name</code></li>
+<li>
+<p>To remove a package along with its configuration files: <code>sudo apt purge package_name</code></p>
+</li>
+<li>
+<p><strong>yum</strong>:</p>
+</li>
+<li>To remove a package: <code>sudo yum remove package_name</code></li>
+<li>
+<p>To remove a package along with its configuration files: <code>sudo yum remove package_name</code></p>
+</li>
+<li>
+<p><strong>dnf (Dandified YUM)</strong>:</p>
+</li>
+<li>
+<p>To remove a package: <code>sudo dnf remove package_name</code></p>
+</li>
+<li>
+<p><strong>zypper</strong>:</p>
+</li>
+<li>
+<p>To remove a package: <code>sudo zypper remove package_name</code></p>
+</li>
+<li>
+<p><strong>pacman</strong>:</p>
+</li>
+<li>To remove a package: <code>sudo pacman -R package_name</code></li>
+<li>To remove a package along with its dependencies that are not required by any other package: <code>sudo pacman -Rs package_name</code></li>
+</ul>
+<h3 id="manual-removal">Manual Removal</h3>
+<p>In some cases, you may need to manually remove software or files. Here are some common methods:</p>
+<ul>
+<li><strong>Delete Files or Directories</strong>:</li>
+<li>
+<p>Use the <code>rm</code> command to delete files or directories: <code>rm file_name</code> or <code>rm -r directory_name</code> (for directories).</p>
+</li>
+<li>
+<p><strong>Uninstall Scripts</strong>:</p>
+</li>
+<li>
+<p>Some software packages come with uninstall scripts. Look for an <code>uninstall.sh</code> or <code>uninstall.py</code> script in the software's installation directory and run it.</p>
+</li>
+<li>
+<p><strong>Source Installations</strong>:</p>
+</li>
+<li>If you installed software from source code, you may need to run <code>make uninstall</code> or <code>make remove</code> from the source directory to uninstall it.</li>
+</ul>
+<h3 id="cleaning-package-manager-cache">Cleaning Package Manager Cache</h3>
+<p>After removing packages, you can clean up the package manager's cache to free up disk space:</p>
+<ul>
+<li><strong>apt</strong>: <code>sudo apt clean</code> or <code>sudo apt autoclean</code></li>
+<li><strong>yum</strong>: <code>sudo yum clean all</code></li>
+<li><strong>dnf</strong>: <code>sudo dnf clean all</code></li>
+<li><strong>zypper</strong>: <code>sudo zypper clean</code></li>
+<li><strong>pacman</strong>: <code>sudo pacman -Sc</code></li>
+</ul>
+<p>removing software and packages, you can keep your Linux system clean and efficient, removing unnecessary clutter and freeing up disk space.</p>
+<h2 id="file-and-directory-permissions">File and Directory Permissions</h2>
+<p>Explore file and directory permission settings.</p>
+<h3 id="understanding-permissions">Understanding Permissions</h3>
+<p>Linux uses a permission system to control access to files and directories. Each file and directory has three sets of permissions: one for the owner, one for the group, and one for others. These permissions define who can read, write, or execute the file or directory.</p>
+<ul>
+<li><strong>Read (r)</strong>: Allows viewing the contents of a file or listing the contents of a directory.</li>
+<li><strong>Write (w)</strong>: Allows modifying or deleting the file, or adding, removing, or renaming files in the directory.</li>
+<li><strong>Execute (x)</strong>: Allows executing the file as a program or traversing the directory.</li>
+</ul>
+<h3 id="viewing-permissions">Viewing Permissions</h3>
+<p>You can view permissions using the ls command with the -l option, which displays detailed information about files and directories, including their permissions.</p>
+<p><code>ls -l file or diretory</code></p>
+<p>Changing Permissions
+You can change permissions using the chmod command. Here are some common usage examples:
+- <strong>Symbolic Mode</strong>: Uses symbols to represent permissions.
+  - <strong>chmod u+x file</strong>: Add execute permission for the owner.
+  - <strong>chmod g-w file</strong>: Remove write permission for the group.
+  - <strong>chmod o=r file</strong>: Set read-only permission for others.
+- <strong>Numeric Mode</strong>: Uses numeric values to represent permissions.
+  - <strong>chmod 755 file</strong>: Give read, write, and execute permission to the owner, and read and execute permission to the group and others.
+  - <strong>chmod 644 file</strong>: Give read and write permission to the owner, and read-only permission to the group and others.</p>
+<h3 id="changing-ownership">Changing Ownership</h3>
+<p>You can change ownership of files and directories using the chown command. For example:
+<code>chown user:group file or directory</code></p>
+<h3 id="special-permissions">Special Permissions</h3>
+<p>Linux also supports special permissions such as the setuid, setgid, and sticky bit. These permissions can be set using symbolic or numeric mode with chmod.</p>
+<ul>
+<li><strong>Setuid (s)</strong>: When set on an executable file, the file will run with the permissions of the file's owner rather than the user who executed it.</li>
+<li><strong>Setgid (s)</strong>: When set on a directory, newly created files within the directory inherit the group ownership of the directory rather than the user's default group.</li>
+<li><strong>Sticky bit (t)</strong>: When set on a directory, only the owner of a file or the directory owner can delete or rename the file within that directory.</li>
+</ul>
+<h2 id="process-management">Process Management</h2>
+<p>Understand how to manage processes in Linux.</p>
+<h3 id="process-basics">Process Basics</h3>
+<p>A process is an instance of a running program. Each process has a unique process ID (PID) assigned to it.</p>
+<h3 id="viewing-processes">Viewing Processes</h3>
+<p>You can view running processes using various commands</p>
+<ul>
+<li><strong>ps</strong>: Displays information about processes currently running in the system.</li>
+<li>
+<p>Example: <code>ps aux</code> to display detailed information about all processes.</p>
+</li>
+<li>
+<p><strong>top</strong>: Provides a dynamic real-time view of running processes. It displays CPU usage, memory usage, and other details.</p>
+</li>
+<li>Example: <code>top</code></li>
+</ul>
+<h3 id="managing-processes">Managing Processes</h3>
+<p>Linux provides several commands to manage processes</p>
+<ul>
+<li><strong>kill</strong>: Terminates a process by sending a signal to it. The default signal is SIGTERM.</li>
+<li>
+<p>Example: <code>kill PID</code></p>
+</li>
+<li>
+<p><strong>killall</strong>: Terminates all processes by name.</p>
+</li>
+<li>
+<p>Example: <code>killall process_name</code></p>
+</li>
+<li>
+<p><strong>pkill</strong>: Sends a signal to one or more processes based on criteria such as name, user, or group.</p>
+</li>
+<li>
+<p>Example: <code>pkill -u username</code></p>
+</li>
+<li>
+<p><strong>pgrep</strong>: Searches for processes by name and other attributes and prints their IDs.</p>
+</li>
+<li>
+<p>Example: <code>pgrep -u username</code></p>
+</li>
+<li>
+<p><strong>renice</strong>: Changes the priority of running processes.</p>
+</li>
+<li>
+<p>Example: <code>renice 10 PID</code></p>
+</li>
+<li>
+<p><strong>nice</strong>: Runs a command with modified scheduling priority.</p>
+</li>
+<li>
+<p>Example: <code>nice -n 10 command</code></p>
+</li>
+<li>
+<p><strong>top and htop</strong>: Allow you to interactively manage processes. You can kill, renice, and monitor processes directly from these utilities.</p>
+</li>
+</ul>
+<h3 id="process-control-signals">Process Control Signals</h3>
+<p>Signals are software interrupts sent to processes to indicate events or requests. Some common signals include</p>
+<ul>
+<li><strong>SIGTERM (15)</strong>: Termination signal, allows the process to clean up before exiting.</li>
+<li><strong>SIGKILL (9)</strong>: Kill signal, immediately terminates the process.</li>
+<li><strong>SIGHUP (1)</strong>: Hangup signal, often used to instruct daemons to reload their configuration files.</li>
+<li><strong>SIGINT (2)</strong>: Interrupt signal, typically generated by pressing Ctrl+C to interrupt a process.</li>
+</ul>
+<p>manageing processes is essential for system administration and troubleshooting tasks in Linux. With the knowledge of process management commands and signals, you can effectively control and monitor processes running on your system.</p>
+<h2 id="user-environment-variables">User Environment Variables</h2>
+<p>Learn about setting and managing user environment variables.</p>
+<h3 id="environment-variables">Environment Variables</h3>
+<p>Environment variables are dynamic values that affect the processes and shell sessions on a Linux system. They are used to customize the behavior of applications and system processes.</p>
+<h3 id="viewing-environment-variables">Viewing Environment Variables</h3>
+<p>You can view the current environment variables using the <code>env</code> command or the <code>printenv</code> command:</p>
+<pre><code class="language-bash">$ env
+$ printenv
+</code></pre>
+<h3 id="setting-environment-variables">Setting Environment Variables</h3>
+<p>You can set environment variables for the current shell session using the export command:</p>
+<pre><code class="language-bash">$ export VARIABLE_NAME=value
+</code></pre>
+<p>To make environment variables persistent across sessions, you can add them to your shell configuration file such as .bashrc or .bash_profile:</p>
+<pre><code class="language-bash">$ echo 'export VARIABLE_NAME=value' &gt;&gt; ~/.bashrc
+</code></pre>
+<h3 id="managing-environment-variables">Managing Environment Variables</h3>
+<p>Here are some common operations for managing environment variables</p>
+<p>Display Value: To display the value of an environment variable, use the echo command:</p>
+<pre><code class="language-bash">$ echo $VARIABLE_NAME
+</code></pre>
+<p>Unset Variable: To remove an environment variable, use the unset command:</p>
+<pre><code class="language-bash">$ unset VARIABLE_NAME
+</code></pre>
+<p>Reload Configuration: After modifying shell configuration files, you can reload them to apply changes:</p>
+<pre><code class="language-bash">$ source ~/.bashrc
+</code></pre>
+<h3 id="predefined-environment-variables">Predefined Environment Variables</h3>
+<p>Linux systems have several predefined environment variables that provide information about the system and the current shell session. Some common ones include</p>
+<p>PATH: Specifies directories to search for executable files.
+HOME: Represents the user's home directory.
+USER: Represents the current username.
+PWD: Represents the current working directory.</p>
+<p>seting and managing user environment variables is crucial for customizing your Linux environment and configuring applications work effectively manipulate environment variables to suit your needs.</p>
+<h2 id="compression-and-archiving">Compression and Archiving</h2>
+<p>Explore commands for compressing and archiving files.</p>
+<h3 id="compression">Compression</h3>
+<p>Compression reduces the size of files or directories to save disk space and facilitate easier transfer. Linux provides various compression utilities</p>
+<ul>
+<li><strong>gzip</strong>: A widely used compression utility that compresses files into the gzip (.gz) format.</li>
+<li>
+<p>Example: <code>gzip filename</code></p>
+</li>
+<li>
+<p><strong>bzip2</strong>: Another compression utility that produces smaller compressed files compared to gzip.</p>
+</li>
+<li>
+<p>Example: <code>bzip2 filename</code></p>
+</li>
+<li>
+<p><strong>xz</strong>: A powerful compression utility that offers higher compression ratios but slower compression and decompression speeds.</p>
+</li>
+<li>
+<p>Example: <code>xz filename</code></p>
+</li>
+<li>
+<p><strong>zip</strong>: A compression utility compatible with Windows that creates ZIP archives.</p>
+</li>
+<li>Example: <code>zip archive_name.zip file1 file2 directory</code></li>
+</ul>
+<h3 id="decompression">Decompression</h3>
+<p>You can decompress compressed files using corresponding decompression utilities</p>
+<ul>
+<li><strong>gunzip</strong>: Decompresses files compressed with gzip.</li>
+<li>
+<p>Example: <code>gunzip filename.gz</code></p>
+</li>
+<li>
+<p><strong>bunzip2</strong>: Decompresses files compressed with bzip2.</p>
+</li>
+<li>
+<p>Example: <code>bunzip2 filename.bz2</code></p>
+</li>
+<li>
+<p><strong>unxz</strong>: Decompresses files compressed with xz.</p>
+</li>
+<li>
+<p>Example: <code>unxz filename.xz</code></p>
+</li>
+<li>
+<p><strong>unzip</strong>: Decompresses ZIP archives.</p>
+</li>
+<li>Example: <code>unzip archive_name.zip</code></li>
+</ul>
+<h3 id="archiving">Archiving</h3>
+<p>Archiving combines multiple files or directories into a single file for easier storage and transfer. Linux offers the following archiving utilities</p>
+<ul>
+<li><strong>tar</strong>: A command-line utility for creating and manipulating tar archives.</li>
+<li>Example: <code>tar -cvf archive.tar file1 file2 directory</code></li>
+</ul>
+<h3 id="extracting-from-archives">Extracting from Archives</h3>
+<p>You can extract files from archives using the tar utility</p>
+<ul>
+<li><strong>Extracting a tar archive</strong></li>
+<li>Example: <code>tar -xvf archive.tar</code></li>
+</ul>
+<p>compression and archiving commands in Linux, you can efficiently manage disk space, transfer files, and streamline your workflow. These utilities provide essential tools for packaging and distributing files and directories in a compressed format.</p>
+<h2 id="file-system-and-storage-devices">File System and Storage Devices</h2>
+<p>Understand Linux file systems and managing storage devices.</p>
+<h3 id="file-systems">File Systems</h3>
+<p>A file system is a method used by operating systems to organize and store data on storage devices. Linux supports various file systems, including</p>
+<ul>
+<li>
+<p><strong>ext4</strong>: The default file system for most Linux distributions. It provides improved performance and features compared to its predecessors (ext2, ext3).</p>
+</li>
+<li>
+<p><strong>XFS</strong>: A high-performance file system designed for scalability and reliability. It is commonly used in enterprise environments.</p>
+</li>
+<li>
+<p><strong>Btrfs</strong>: A modern file system with features such as snapshots, data integrity, and RAID-like functionality.</p>
+</li>
+<li>
+<p><strong>FAT32</strong>: A file system compatible with multiple operating systems, commonly used for USB drives and external storage devices.</p>
+</li>
+<li>
+<p><strong>NTFS</strong>: A file system developed by Microsoft, often used for Windows partitions but supported by Linux for read-only access.</p>
+</li>
+</ul>
+<h3 id="managing-storage-devices">Managing Storage Devices</h3>
+<p>Linux provides several commands and utilities for managing storage devices</p>
+<ul>
+<li><strong>fdisk</strong>: A command-line utility for partitioning disk drives.</li>
+<li>
+<p>Example: <code>fdisk /dev/sdX</code></p>
+</li>
+<li>
+<p><strong>mkfs</strong>: Used to create file systems on disk partitions.</p>
+</li>
+<li>
+<p>Example: <code>mkfs.ext4 /dev/sdX1</code></p>
+</li>
+<li>
+<p><strong>mount</strong>: Mounts a file system to a specific directory in the file system hierarchy.</p>
+</li>
+<li>
+<p>Example: <code>mount /dev/sdX1 /mnt</code></p>
+</li>
+<li>
+<p><strong>umount</strong>: Unmounts a mounted file system.</p>
+</li>
+<li>
+<p>Example: <code>umount /mnt</code></p>
+</li>
+<li>
+<p><strong>df</strong>: Displays disk space usage for mounted file systems.</p>
+</li>
+<li>
+<p>Example: <code>df -h</code></p>
+</li>
+<li>
+<p><strong>du</strong>: Shows disk usage of files and directories.</p>
+</li>
+<li>
+<p>Example: <code>du -sh /path/to/directory</code></p>
+</li>
+<li>
+<p><strong>lsblk</strong>: Lists information about block devices (disks and partitions).</p>
+</li>
+<li>Example: <code>lsblk</code></li>
+</ul>
+<h3 id="file-system-check-and-repair">File System Check and Repair</h3>
+<p>Linux provides utilities to check and repair file systems</p>
+<ul>
+<li><strong>fsck</strong>: A file system consistency checker used to repair corrupted file systems.</li>
+<li>
+<p>Example: <code>fsck /dev/sdX1</code></p>
+</li>
+<li>
+<p><strong>e2fsck</strong>: A specific version of fsck for ext2, ext3, and ext4 file systems.</p>
+</li>
+<li>Example: <code>e2fsck /dev/sdX1</code></li>
+</ul>
+<p>Linux file systems and storage device management is essential for system administrators and users alike. With the knowledge gained from this module, you can efficiently partition disks, create file systems, mount storage devices, and maintain data integrity on your Linux system.</p>
+<h2 id="log-system">Log System</h2>
+<p>Learn about logging and monitoring system logs.</p>
+<h3 id="introduction-to-system-logs">Introduction to System Logs</h3>
+<p>System logs are important for monitoring and troubleshooting the health and behavior of a Linux system. These logs contain valuable information about system events, errors, and warnings.</p>
+<h3 id="log-files-location">Log Files Location</h3>
+<p>System logs are typically stored in the <code>/var/log</code> directory. Some common log files include</p>
+<ul>
+<li><strong>/var/log/messages</strong>: General system messages.</li>
+<li><strong>/var/log/syslog</strong>: System log messages.</li>
+<li><strong>/var/log/auth.log</strong>: Authentication-related messages.</li>
+<li><strong>/var/log/kern.log</strong>: Kernel messages.</li>
+<li><strong>/var/log/dmesg</strong>: Kernel ring buffer messages.</li>
+<li><strong>/var/log/secure</strong>: Security-related messages (on some distributions).</li>
+</ul>
+<h3 id="viewing-logs">Viewing Logs</h3>
+<p>You can view system logs using various commands</p>
+<ul>
+<li><strong>cat</strong>: Display the contents of a log file.</li>
+<li>
+<p>Example: <code>cat /var/log/messages</code></p>
+</li>
+<li>
+<p><strong>tail</strong>: Display the last few lines of a log file.</p>
+</li>
+<li>
+<p>Example: <code>tail /var/log/syslog</code></p>
+</li>
+<li>
+<p><strong>less</strong>: View log files page by page.</p>
+</li>
+<li>
+<p>Example: <code>less /var/log/auth.log</code></p>
+</li>
+<li>
+<p><strong>grep</strong>: Search for specific patterns or keywords in log files.</p>
+</li>
+<li>Example: <code>grep "error" /var/log/messages</code></li>
+</ul>
+<h3 id="log-rotation">Log Rotation</h3>
+<p>To prevent log files from growing indefinitely and consuming disk space, Linux systems implement log rotation. Log rotation involves archiving old log files, compressing them, and creating new log files.</p>
+<p>Common log rotation utilities include</p>
+<ul>
+<li><strong>logrotate</strong>: A system utility that manages log rotation and compression.</li>
+<li>Configuration file: <code>/etc/logrotate.conf</code></li>
+<li>Additional configuration files: <code>/etc/logrotate.d/</code></li>
+</ul>
+<h3 id="monitoring-logs-in-real-time">Monitoring Logs in Real-time</h3>
+<p>You can monitor logs in real-time using utilities like:</p>
+<ul>
+<li><strong>tail</strong>: Follows the growth of a log file in real-time.</li>
+<li>
+<p>Example: <code>tail -f /var/log/syslog</code></p>
+</li>
+<li>
+<p><strong>journalctl</strong>: Queries and displays entries from the systemd journal.</p>
+</li>
+<li>Example: <code>journalctl -f</code></li>
+</ul>
+<p>logging and monitoring system logs is essential for system administrators to diagnose issues, troubleshoot problems, and maintain the health and security of Linux systems.you can effectively monitor system activity and respond to incidents promptly.</p>
+<h2 id="services">Services</h2>
+<p>Understand how to manage services in Linux.</p>
+<h3 id="introduction-to-services">Introduction to Services</h3>
+<p>Services are background processes or daemons that run continuously to provide specific functionality or perform system tasks. Examples of services include web servers, database servers, SSH, and cron jobs.</p>
+<h3 id="service-management-commands">Service Management Commands</h3>
+<p>Linux provides several commands for managing services</p>
+<ul>
+<li>
+<p><strong>systemctl</strong>: The primary command-line tool for controlling system services and the systemd system and service manager.</p>
+</li>
+<li>
+<p><strong>Start a Service</strong>: <code>sudo systemctl start service_name</code></p>
+</li>
+<li><strong>Stop a Service</strong>: <code>sudo systemctl stop service_name</code></li>
+<li><strong>Restart a Service</strong>: <code>sudo systemctl restart service_name</code></li>
+<li><strong>Enable a Service</strong>: <code>sudo systemctl enable service_name</code></li>
+<li><strong>Disable a Service</strong>: <code>sudo systemctl disable service_name</code></li>
+<li><strong>Check Service Status</strong>: <code>sudo systemctl status service_name</code></li>
+<li><strong>View Service Logs</strong>: <code>sudo journalctl -u service_name</code></li>
+</ul>
+<h3 id="service-unit-files">Service Unit Files</h3>
+<p>Systemd manages services using unit files located in <code>/etc/systemd/system</code> and <code>/lib/systemd/system</code>. These unit files define the configuration and behavior of services.</p>
+<ul>
+<li><strong>Service Unit File</strong>: Defines how the service should be started, stopped, and managed.</li>
+<li><strong>Socket Unit File</strong>: Defines network sockets.</li>
+<li><strong>Target Unit File</strong>: Represents a group of services.</li>
+</ul>
+<h3 id="managing-systemd-units">Managing Systemd Units</h3>
+<p>You can create, edit, and manage systemd unit files using text editors like <code>vi</code> or <code>nano</code>. After making changes to unit files, you must reload systemd to apply changes:</p>
+<pre><code class="language-bash">$ sudo systemctl daemon-reload
+</code></pre>
+<h3 id="systemd-service-dependencies">Systemd Service Dependencies</h3>
+<p>Systemd allows you to define dependencies between services using directives like Requires, Wants, Before, and After. These directives ensure that services start in the correct order and meet their dependencies.</p>
+<p>manage services in Linux is essential for system administrators to maintain system functionality, ensure service availability, and troubleshoot issues effectively. With the knowledge gained from this module, you can confidently control and configure services on your Linux system using systemd.</p>
+<h2 id="secure-connection">Secure Connection</h2>
+<p>Explore methods for establishing secure connections.</p>
+<h3 id="secure-shell-ssh">Secure Shell (SSH)</h3>
+<p>SSH is a cryptographic network protocol used for secure communication between two systems. It provides strong encryption and authentication mechanisms to ensure secure data transmission.</p>
+<h4 id="key-features-of-ssh">Key Features of SSH</h4>
+<ul>
+<li><strong>Secure Data Encryption</strong>: SSH encrypts all data exchanged between the client and server, preventing eavesdropping and data interception.</li>
+<li><strong>Authentication</strong>: SSH supports various authentication methods, including password-based authentication and public key authentication.</li>
+<li><strong>Port Forwarding</strong>: SSH allows secure tunneling of network connections, facilitating secure access to remote services.</li>
+<li><strong>Remote Command Execution</strong>: SSH enables users to execute commands on remote systems securely.</li>
+</ul>
+<h4 id="usage-example">Usage Example</h4>
+<p>To establish an SSH connection to a remote server, use the following command:</p>
+<pre><code class="language-bash">$ ssh username@remote_host
+</code></pre>
+<h4 id="public-key-authentication">Public Key Authentication</h4>
+<p>Public key authentication enhances security by eliminating the need to transmit passwords over the network. Here's how to set up public key authentication:</p>
+<ol>
+<li>Generate an SSH key pair on your local machine using the <code>ssh-keygen</code> command.</li>
+<li>Copy the public key to the remote server's <code>~/.ssh/authorized_keys</code> file.</li>
+</ol>
+<pre><code class="language-bash">$ ssh-copy-id username@remote_host
+</code></pre>
+<h3 id="virtual-private-network-vpn">Virtual Private Network (VPN)</h3>
+<p>A VPN creates a secure, encrypted connection over a public network, such as the internet. It allows users to access private networks securely and extends the network's reach securely over the internet.</p>
+<h4 id="benefits-of-vpn">Benefits of VPN</h4>
+<ul>
+<li><strong>Data Encryption</strong>: VPN encrypts all data transmitted between the client and server, ensuring privacy and confidentiality.</li>
+<li><strong>Anonymity</strong>: VPN masks the user's IP address, providing anonymity and protecting against online surveillance.</li>
+<li><strong>Bypassing Geographical Restrictions</strong>: VPN allows users to bypass geographical restrictions and access region-locked content.</li>
+</ul>
+<h4 id="usage-example_1">Usage Example</h4>
+<p>To connect to a VPN server from the command line, use the <code>openvpn</code> command followed by the configuration file:</p>
+<pre><code class="language-bash">$ sudo openvpn /path/to/config.ovpn
+</code></pre>
+<p>Establishing secure connections is crucial for protecting sensitive data and ensuring privacy in a networked environment. like SSH and VPNs, Linux users can securely communicate and access resources over public networks with confidence.</p>
+<h2 id="wireless-network">Wireless Network</h2>
+<p>Learn about configuring and managing wireless networks.</p>
+<h3 id="wireless-networking-basics">Wireless Networking Basics</h3>
+<p>Wireless networking allows devices to connect to a network without the need for physical cables. Linux provides robust support for wireless networking, with tools and utilities to manage Wi-Fi connections.</p>
+<h3 id="wireless-configuration-with-iwconfig">Wireless Configuration with <code>iwconfig</code></h3>
+<p>The <code>iwconfig</code> command is used to configure wireless network interfaces in Linux. Here are some common usages:</p>
+<ul>
+<li>
+<p><strong>View Wireless Interface Information</strong>:
+  <code>bash
+  $ iwconfig</code></p>
+</li>
+<li>
+<p><strong>Set Wireless Interface Parameters</strong>:
+  <code>bash
+  $ sudo iwconfig wlan0 essid "network_name"
+  $ sudo iwconfig wlan0 key s:"network_password"</code></p>
+</li>
+</ul>
+<h3 id="connecting-to-wi-fi-networks-with-nmcli">Connecting to Wi-Fi Networks with <code>nmcli</code></h3>
+<p><code>nmcli</code> is a command-line tool for managing NetworkManager, the default network management service in many Linux distributions. It provides a convenient way to configure and manage wireless network connections.</p>
+<ul>
+<li>
+<p><strong>List Available Wi-Fi Networks</strong>:
+  <code>bash
+  $ nmcli device wifi list</code></p>
+</li>
+<li>
+<p><strong>Connect to a Wi-Fi Network</strong>:
+  <code>bash
+  $ sudo nmcli device wifi connect SSID password PASSWORD</code></p>
+</li>
+</ul>
+<h3 id="graphical-tools-for-wireless-networking">Graphical Tools for Wireless Networking</h3>
+<p>Many Linux distributions also offer graphical tools for configuring and managing wireless networks. Some popular ones include:</p>
+<ul>
+<li><strong>NetworkManager Applet</strong>: A system tray applet that provides a graphical interface for managing network connections.</li>
+<li><strong>WPA Supplicant</strong>: A graphical tool for configuring Wi-Fi connections using WPA security.</li>
+</ul>
+<h3 id="troubleshooting-wireless-connectivity-issues">Troubleshooting Wireless Connectivity Issues</h3>
+<p>If you encounter issues with wireless connectivity, here are some troubleshooting steps:</p>
+<ul>
+<li>Check if the wireless adapter is recognized by the system (<code>iwconfig</code>).</li>
+<li>Verify that the correct drivers are installed for the wireless adapter.</li>
+<li>Ensure that the wireless interface is enabled (<code>nmcli radio wifi on</code>).</li>
+<li>Restart the network service or reboot the system if necessary.</li>
+</ul>
+<p>Wireless networking is an integral part of modern computing, providing flexibility and mobility to users. By understanding how to configure and manage wireless networks in Linux, you can enjoy seamless connectivity and troubleshoot connectivity issues effectively.</p>
+<h2 id="kernel-modules">Kernel Modules</h2>
+<p>Understand kernel modules and their management.</p>
+<h3 id="introduction-to-kernel-modules">Introduction to Kernel Modules</h3>
+<p>Kernel modules are pieces of code that can be loaded and unloaded into the Linux kernel without restarting the system. They extend the functionality of the kernel, adding support for new hardware, filesystems, and other features.</p>
+<h4 id="types-of-kernel-modules">Types of Kernel Modules</h4>
+<p>There are three main types of kernel modules:</p>
+<ul>
+<li><strong>Device Drivers</strong>: Provide support for hardware devices such as network cards, graphics cards, and storage controllers.</li>
+<li><strong>Filesystem Modules</strong>: Add support for various filesystems like ext4, XFS, and NTFS.</li>
+<li><strong>Miscellaneous Modules</strong>: Include modules for networking protocols, security features, and virtualization support.</li>
+</ul>
+<h3 id="kernel-module-management-commands">Kernel Module Management Commands</h3>
+<p>Linux provides several commands for managing kernel modules:</p>
+<ul>
+<li>
+<p><strong>lsmod</strong>: Lists currently loaded kernel modules.
+  <code>bash
+  $ lsmod</code></p>
+</li>
+<li>
+<p><strong>modprobe</strong>: Loads or unloads kernel modules and resolves module dependencies.
+  <code>bash
+  $ sudo modprobe module_name
+  $ sudo modprobe -r module_name</code></p>
+</li>
+<li>
+<p><strong>insmod</strong>: Inserts a kernel module into the running kernel.
+  <code>bash
+  $ sudo insmod /path/to/module.ko</code></p>
+</li>
+<li>
+<p><strong>rmmod</strong>: Removes a kernel module from the running kernel.
+  <code>bash
+  $ sudo rmmod module_name</code></p>
+</li>
+</ul>
+<h3 id="module-configuration-files">Module Configuration Files</h3>
+<p>Kernel modules often have configuration files located in the <code>/etc/modprobe.d/</code> directory. These files specify options and parameters for module loading.</p>
+<h3 id="auto-loading-kernel-modules">Auto-loading Kernel Modules</h3>
+<p>Linux automatically loads necessary kernel modules during system boot based on configuration files located in the <code>/etc/modules-load.d/</code> directory and module dependencies specified in <code>/etc/modprobe.d/</code>.</p>
+<h3 id="troubleshooting-kernel-modules">Troubleshooting Kernel Modules</h3>
+<p>If you encounter issues with kernel modules, you can troubleshoot them using tools like <code>dmesg</code> to view kernel log messages and <code>modinfo</code> to display information about a kernel module.</p>
+<p>kernel modules and their management is essential for system administrators and developers working with Linux systems. By mastering kernel module management commands and techniques, you can effectively extend the functionality of the Linux kernel and troubleshoot issues related to hardware support and system functionality.</p>
+<h2 id="job-scheduling">Job Scheduling</h2>
+<p>Learn about scheduling tasks and jobs in Linux.</p>
+<h3 id="introduction-to-job-scheduling">Introduction to Job Scheduling</h3>
+<p>Job scheduling is the process of automatically executing tasks or commands at predefined times or intervals. Linux provides several utilities and services for scheduling and managing jobs.</p>
+<h3 id="cron">Cron</h3>
+<p>Cron is a time-based job scheduler in Unix-like operating systems, including Linux. It allows users to schedule tasks to run periodically at specified times, dates, or intervals.</p>
+<h4 id="cron-configuration-files">Cron Configuration Files</h4>
+<p>Cron jobs are defined in cron configuration files located in <code>/etc/cron.d/</code> and <code>/etc/cron.{hourly,daily,weekly,monthly}</code> directories. Users can also define their cron jobs using the <code>crontab</code> command.</p>
+<h4 id="crontab-command">Crontab Command</h4>
+<p>The <code>crontab</code> command allows users to create, modify, and delete their cron jobs.</p>
+<ul>
+<li><strong>Viewing Cron Jobs</strong>: <code>crontab -l</code></li>
+<li><strong>Editing Cron Jobs</strong>: <code>crontab -e</code></li>
+<li><strong>Removing All Cron Jobs</strong>: <code>crontab -r</code></li>
+</ul>
+<h4 id="cron-syntax">Cron Syntax</h4>
+<p>Cron jobs are specified using a specific syntax that consists of five fields:</p>
+<pre><code>* * * * * command_to_execute
+- - - - -
+| | | | |
+| | | | +---- Day of the week (0 - 7) (Sunday is 0 or 7)
+| | | +------ Month (1 - 12)
+| | +-------- Day of the month (1 - 31)
+| +---------- Hour (0 - 23)
++------------ Minute (0 - 59)
+</code></pre>
+<h4 id="example-cron-job">Example Cron Job</h4>
+<p>To schedule a job to run every day at 3:00 AM, the cron entry would be:</p>
+<pre><code>0 3 * * * /path/to/command
+</code></pre>
+<h3 id="anacron">Anacron</h3>
+<p>Anacron is another job scheduler that runs jobs periodically on a system, similar to cron. it is designed for systems that may not be running continuously.</p>
+<h4 id="configuration">Configuration</h4>
+<p>Anacron jobs are defined in configuration files located in <code>/etc/anacrontab</code> and <code>/etc/cron.hourly/</code>, <code>/etc/cron.daily/</code>, etc.</p>
+<p>Job scheduling is a powerful feature of Linux systems that allows users to automate repetitive tasks and manage system maintenance efficiently. By mastering cron and anacron, you can automate routine tasks, schedule backups, and streamline system administration tasks effectively.</p>
+<h2 id="python-scripting">Python Scripting</h2>
+<p>Explore scripting with Python in a Linux environment.</p>
+<h3 id="setting-up-python">Setting Up Python</h3>
+<p>Most Linux distributions come with Python pre-installed. However, it's recommended to use Python 3 for scripting as Python 2 has reached its end-of-life. You can check the installed Python versions using the following commands:</p>
+<pre><code class="language-bash">$ python --version
+$ python3 --version
+</code></pre>
+<p>If Python 3 is not installed, you can install it using your distribution's package manager. For example, on Ubuntu, you can use the following command:</p>
+<pre><code class="language-bash">$ sudo apt-get install python3
+</code></pre>
+<h3 id="creating-and-running-python-scripts">Creating and Running Python Scripts</h3>
+<ol>
+<li><strong>Create a Python Script</strong>: Open a text editor and write your Python script. Save the file with a <code>.py</code> extension.</li>
+</ol>
+<p>```python
+  #!/usr/bin/env python3</p>
+<p>def main():
+      # Prompt the user to enter their name
+      name = input("Enter your name: ")</p>
+<pre><code>  # Print a personalized greeting
+  print("Hello, {}! Welcome to the Linux environment.".format(name))
+</code></pre>
+<p>if <strong>name</strong> == "<strong>main</strong>":
+      main()</p>
+<p>```</p>
+<ol>
+<li><strong>Set Execution Permission</strong>: Make the script executable using the <code>chmod</code> command.</li>
+</ol>
+<p><code>bash
+   $ chmod +x script.py</code></p>
+<ol>
+<li><strong>Run the Script</strong>: You can run the script using the <code>python3</code> command followed by the script name.</li>
+</ol>
+<p><code>bash
+   $ python3 script.py</code></p>
+<p>Alternatively, you can use the shebang line (<code>#!/usr/bin/env python3</code>) at the beginning of your script to specify the Python interpreter to use, allowing you to run the script directly.</p>
+<p><code>bash
+   $ ./script.py</code></p>
+<h3 id="integrated-development-environments-ides">Integrated Development Environments (IDEs)</h3>
+<p>You can also use Integrated Development Environments (IDEs) for Python development in Linux. Some popular choices include:</p>
+<ul>
+<li><strong>Visual Studio Code</strong>: A lightweight but powerful IDE with built-in support for Python development.</li>
+<li><strong>PyCharm</strong>: A full-featured Python IDE from JetBrains with advanced features for professional developers.</li>
+<li><strong>Atom</strong>: A customizable text editor with numerous plugins available for Python development.</li>
+</ul>
+<p>Python is a versatile and powerful scripting language that is widely used in Linux environments for automation, system administration, and software development. By setting up Python and creating scripts, you can automate tasks, build applications, and leverage the rich ecosystem of Python libraries available in the Linux environment.</p>
+<h2 id="bash-scripting">Bash Scripting</h2>
+<p>Learn scripting using the Bash shell.</p>
+<h3 id="introduction-to-bash">Introduction to Bash</h3>
+<p>Bash (Bourne Again Shell) is the default shell in most Linux distributions. It provides a powerful command-line interface for interacting with the operating system and running scripts.</p>
+<h3 id="creating-a-bash-script">Creating a Bash Script</h3>
+<p>To create a Bash script, follow these steps:</p>
+<ol>
+<li>
+<p><strong>Create a New File</strong>: Open a text editor and create a new file with a <code>.sh</code> extension. This will be your Bash script.</p>
+</li>
+<li>
+<p><strong>Write Your Script</strong>: Write your Bash commands and save the file. Here's a simple example:</p>
+</li>
+</ol>
+<p>```bash
+   #!/bin/bash</p>
+<p># Print a greeting message
+   echo "Hello, Linux!"
+   ```</p>
+<ol>
+<li><strong>Set Execution Permission</strong>: Make the script executable using the <code>chmod</code> command.</li>
+</ol>
+<p><code>bash
+   $ chmod +x script.sh</code></p>
+<ol>
+<li><strong>Run the Script</strong>: You can run the script using <code>./</code> followed by the script name.</li>
+</ol>
+<p><code>bash
+   $ ./script.sh</code></p>
+<h3 id="basic-syntax">Basic Syntax</h3>
+<h4 id="variables">Variables</h4>
+<p>Variables are used to store data. They are assigned using the <code>=</code> operator.</p>
+<pre><code class="language-bash">name=&quot;Linux&quot;
+echo &quot;Hello, $name!&quot;
+</code></pre>
+<h4 id="functions">Functions</h4>
+<p>Functions allow you to organize your code into reusable blocks.</p>
+<pre><code class="language-bash"># Define a function
+greet() {
+    echo &quot;Hello, $1!&quot;
+}
+
+# Call the function
+greet &quot;World&quot;
+</code></pre>
+<h4 id="conditional-statements">Conditional Statements</h4>
+<p>Conditional statements allow you to execute different commands based on conditions.</p>
+<pre><code class="language-bash"># If statement
+if [ condition ]; then
+    echo &quot;Condition is true&quot;
+else
+    echo &quot;Condition is false&quot;
+fi
+</code></pre>
+<h4 id="loops">Loops</h4>
+<p>Loops allow you to repeat a block of code multiple times.</p>
+<pre><code class="language-bash"># For loop
+for i in {1..5}; do
+    echo &quot;Iteration $i&quot;
+done
+
+# While loop
+counter=0
+while [ $counter -lt 5 ]; do
+    echo &quot;Count: $counter&quot;
+    ((counter++))
+done
+</code></pre>
+<h2 id="advanced-topics">Advanced Topics</h2>
+<p>Bash scripting offers several advanced features that allow for more sophisticated scripting solutions:</p>
+<h3 id="file-manipulation">File Manipulation</h3>
+<p>File manipulation involves operations such as creating, reading, writing, and deleting files.</p>
+<h4 id="example-creating-and-writing-to-a-file">Example: Creating and Writing to a File</h4>
+<pre><code class="language-bash"># Create a new file
+touch myfile.txt
+
+# Write content to the file
+echo &quot;Hello, World!&quot; &gt; myfile.txt
+</code></pre>
+<h3 id="string-manipulation">String Manipulation</h3>
+<p>String manipulation allows for operations on strings such as concatenation, substring extraction, and pattern matching.</p>
+<h4 id="example-concatenating-strings">Example: Concatenating Strings</h4>
+<pre><code class="language-bash"># Concatenate two strings
+string1=&quot;Hello&quot;
+string2=&quot;World&quot;
+concatenated=&quot;$string1 $string2&quot;
+echo $concatenated
+</code></pre>
+<h3 id="command-substitution">Command Substitution</h3>
+<p>Command substitution allows you to use the output of a command as an argument or value within another command.</p>
+<h4 id="example-getting-the-current-date">Example: Getting the Current Date</h4>
+<pre><code class="language-bash"># Store the current date in a variable
+current_date=$(date +&quot;%Y-%m-%d&quot;)
+echo &quot;Today's date is: $current_date&quot;
+</code></pre>
+<h3 id="error-handling">Error Handling</h3>
+<p>Error handling involves strategies for gracefully handling errors or unexpected conditions in a script.</p>
+<h4 id="example-checking-if-a-file-exists">Example: Checking if a File Exists</h4>
+<pre><code class="language-bash"># Check if a file exists
+file=&quot;myfile.txt&quot;
+if [ -e &quot;$file&quot; ]; then
+    echo &quot;$file exists.&quot;
+else
+    echo &quot;$file does not exist.&quot;
+fi
+</code></pre>
+<p>Bash scripting will greatly enhance your ability to automate tasks, write custom tools, and streamline your workflow in the Linux environment. By leveraging variables, functions, conditional statements, loops, and advanced features like file manipulation, string manipulation, command substitution, and error handling, you can create powerful scripts to solve complex problems efficiently.</p>
+<p>For more in-depth learning, check out the book <a href="https://nostarch.com/linuxbasicsforhackers">"Linux Basics for Hackers"</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/Vasanthabalaji01" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/vasanthabalaji" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.instagram.com/mrcloudexplorer" target="_blank" rel="noopener" title="www.instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141m0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7m146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8m76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8M398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "header.autohide", "navigation.tabs"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d6f25eb3.min.js"></script>
+      
+    
+  </body>
+</html>
