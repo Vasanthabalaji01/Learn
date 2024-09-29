@@ -166,9 +166,6 @@ nav:
     - Xmind: random/xmind/xmind.md
     - Notion: random/notion/notion.md
     - MKDocs: random/mkdocs/mkdocs.md
-  - Coures:
-    - Index: cources/coures.md
-    - Tech Fundamentals: cources/tech_fun.md
   - Mindfulness: Mindfulness/Mindfulness.md
     
 
