@@ -1,6 +1,6 @@
 ## Basic syntax
 
-Let's go through Python's basic syntax
+Let's go through Python's basic syntax ==
 
 ### 1. Statements and Indentation
 Python uses indentation to denote code blocks. For example:
